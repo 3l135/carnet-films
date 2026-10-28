@@ -7,5 +7,5 @@ window.CARNET_CONFIG = {
 
   // Supabase : app.supabase.com > ton projet > Project Settings > API
   SUPABASE_URL: "https://uqectlbludcaeloirgjo.supabase.co",
-  SUPABASE_ANON_KEY: ""   // la clé « anon public »
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxZWN0bGJsdWRjYWVsb2lyZ2pvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMxODIyMzksImV4cCI6MjEwODc1ODIzOX0.RF9B5LiTZipfsiSnwAJjVKlDSBPnEVreauCV7_ya0nk"
 };
