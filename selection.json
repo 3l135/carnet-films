@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T21:39:09Z",
+  "intro": "Dix titres à voir chez toi, du Spielberg en VOD aux pépites gratuites d'Arte.tv, avec quelques frissons pour Halloween.",
+  "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Disclosure Day",
+      "year": 2026,
+      "director": "Steven Spielberg",
+      "genre": "Science-fiction",
+      "where": "VOD · location",
+      "why": "Spielberg retrouve la science-fiction de Rencontres du troisième type avec un vrai sens du spectacle ; la presse a largement suivi.",
+      "scores": {
+        "allocinePresse": 3.9,
+        "allocineSpect": 3.2,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Toy Story 5",
+      "year": 2026,
+      "director": "Andrew Stanton, McKenna Harris",
+      "genre": "Animation",
+      "where": "VOD · location",
+      "why": "Pixar remet la bande de Woody en selle avec un sujet très actuel ; parfait pour une soirée en famille, et les spectateurs adorent.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Backrooms",
+      "year": 2026,
+      "director": "Kane Parsons",
+      "genre": "Horreur",
+      "where": "VOD · location",
+      "why": "Pour Halloween, une horreur d'atmosphère tirée d'une légende internet, portée par Chiwetel Ejiofor et Renate Reinsve.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.1,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Étrangère",
+      "year": 2026,
+      "director": "Gaya Jiji",
+      "genre": "Drame",
+      "where": "VOD · location",
+      "why": "Un drame intime et sensible avec Zar Amir, découverte des Nuits de Mashhad ; bien accueilli par la presse comme par le public.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.6,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Affaire Nevenka",
+      "year": 2024,
+      "director": "Icíar Bollaín",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit)",
+      "why": "Un récit vrai et glaçant sur une affaire de harcèlement qui a marqué l'Espagne ; très bien noté par les spectateurs.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 4.1,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Compartiment N°6",
+      "year": 2021,
+      "director": "Juho Kuosmanen",
+      "genre": "Comédie dramatique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Une rencontre improbable dans un train vers Mourmansk, drôle et tendre : une pépite primée à Cannes à rattraper gratuitement.",
+      "scores": {
+        "allocinePresse": 3.9,
+        "allocineSpect": 3.8,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Sans un bruit",
+      "year": 2018,
+      "director": "John Krasinski",
+      "genre": "Horreur",
+      "where": "Netflix",
+      "why": "Le thriller où le moindre son peut tuer : une heure et demie de tension pure, idéale pour la semaine d'Halloween.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Fantôme de l'Opéra",
+      "year": 1925,
+      "director": "Rupert Julian",
+      "genre": "Fantastique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Le grand classique muet avec Lon Chaney, dont le masque n'a rien perdu de son effet : un frisson patrimonial pour Halloween.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Crystal Lake",
+      "year": 2026,
+      "director": "Brad Caleb Kane",
+      "genre": "Horreur",
+      "where": "HBO Max",
+      "why": "La préquelle de Vendredi 13 avec Linda Cardellini, saluée comme une relecture tendue et viscérale ; les huit épisodes sont en ligne.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Nobody Wants This",
+      "year": 2024,
+      "director": "Erin Foster",
+      "genre": "Comédie romantique",
+      "where": "Netflix · saison 3 depuis le 22 octobre",
+      "why": "Pour souffler après les frissons : la comédie romantique pétillante avec Kristen Bell et Adam Brody revient pour une troisième saison.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    }
+  ]
+}
