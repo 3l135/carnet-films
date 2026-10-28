@@ -12,10 +12,16 @@ create table if not exists public.entries (
   pepite      smallint    not null default 0 check (pepite between 0 and 3),
   viewings    date[]      not null default '{}',
   annotations jsonb       not null default '[]'::jsonb,
+  watchlist   boolean     not null default false,
+  wl_added    date,
   updated_at  timestamptz not null default now(),
   primary key (user_id, media_type, tmdb_id),
   constraint pepite_seulement_a_5_etoiles check (pepite = 0 or stars = 5)
 );
+
+-- Si la table existait déjà avant la liste « À voir » :
+alter table public.entries add column if not exists watchlist boolean not null default false;
+alter table public.entries add column if not exists wl_added  date;
 
 alter table public.entries enable row level security;
 

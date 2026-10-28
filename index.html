@@ -67,6 +67,7 @@ body::after{content:"";position:fixed;inset:-25%;z-index:-1;pointer-events:none;
 .nav a{padding:7px 14px;border-radius:999px;color:var(--muted);text-decoration:none;font-weight:600;font-size:.88rem;white-space:nowrap}
 .nav a[aria-current="page"]{background:var(--surface-2);color:var(--ink);box-shadow:inset 0 1px 0 var(--glass-hi),0 2px 10px rgba(0,0,0,.18)}
 .nav a .n{font-family:var(--f-mono);font-size:.72rem;opacity:.7;margin-left:5px}
+.nav a .ic{display:none}
 .search{flex:1 1 200px;min-width:0;position:relative}
 .search input{width:100%;padding:10px 14px 10px 38px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
 .search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--muted)}
@@ -209,6 +210,47 @@ select,.btn{padding:9px 14px;border-radius:999px;border:1px solid var(--line);ba
 .modal input{padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
 .modal h2{font-size:1.2rem}
 
+/* verre liquide Apple : capsule épaisse, reflet spéculaire, bord réfractif, ressort au toucher */
+.lg{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;cursor:pointer;font-weight:700;color:var(--ink);
+  border:1px solid rgba(255,255,255,.32);background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(255,255,255,.06) 55%,rgba(255,255,255,.12));
+  backdrop-filter:blur(26px) saturate(190%) brightness(1.06);-webkit-backdrop-filter:blur(26px) saturate(190%) brightness(1.06);
+  box-shadow:inset 0 1.5px 1px rgba(255,255,255,.7),inset 0 -1.5px 2px rgba(0,0,0,.18),inset 0 0 0 .5px rgba(255,255,255,.25),0 10px 30px rgba(0,0,0,.28);
+  transition:transform .35s cubic-bezier(.2,1.4,.4,1),background .25s,box-shadow .25s}
+.lg::before{content:"";position:absolute;inset:1px 10% auto;height:46%;border-radius:999px;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0));opacity:.55}
+.lg:hover{transform:translateY(-1px) scale(1.02)}
+.lg:active{transform:scale(.94)}
+.lg.on{color:var(--accent-ink);border-color:rgba(255,255,255,.5);background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 88%,#fff),var(--accent-2));
+  box-shadow:inset 0 1.5px 1px rgba(255,255,255,.8),inset 0 -2px 3px rgba(0,0,0,.18),0 10px 30px color-mix(in srgb,var(--accent) 40%,transparent)}
+.lg svg{width:18px;height:18px;flex:none}
+.wl{padding:11px 18px;font-size:.92rem;margin-top:6px;align-self:flex-start}
+.cw{position:relative;min-width:0}
+.cw .card{width:100%}
+.cw .ov{position:absolute;top:0;left:0;width:100%;aspect-ratio:2/3;pointer-events:none;z-index:3}
+.wlq{position:absolute;left:7px;bottom:7px;width:36px;height:36px;padding:0;pointer-events:auto;opacity:0;transform:scale(.85)}
+.wlq svg{width:16px;height:16px}
+.cw:hover .wlq,.wlq.on,.wlq:focus-visible{opacity:1;transform:none}
+@media (hover:none){.wlq{opacity:1;transform:none}}
+.badge.wlb{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:var(--accent-ink);border-color:rgba(255,255,255,.4);font-weight:600}
+.toast{position:fixed;z-index:40;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;padding:12px 20px;font-size:.9rem;pointer-events:none;transition:opacity .25s,transform .35s cubic-bezier(.2,1.4,.4,1)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.wlhead{display:flex;gap:16px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
+
+/* mobile : barre d'onglets flottante en verre, comme sur iPhone */
+@media (max-width:720px){
+  .bar{backdrop-filter:none;-webkit-backdrop-filter:none;background:color-mix(in srgb,var(--bg) 78%,transparent)}
+  .bar .nav{position:fixed;z-index:15;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));width:max-content;max-width:calc(100% - 24px);padding:6px;
+    border:1px solid rgba(255,255,255,.3);background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.06));
+    backdrop-filter:blur(28px) saturate(190%);-webkit-backdrop-filter:blur(28px) saturate(190%);
+    box-shadow:inset 0 1.5px 1px rgba(255,255,255,.6),inset 0 -1px 2px rgba(0,0,0,.15),0 14px 40px rgba(0,0,0,.4)}
+  .bar .nav a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 9px;font-size:.66rem;min-width:58px;border-radius:22px}
+  .bar .nav a .ic{display:block;width:20px;height:20px}
+  .bar .nav a .n{display:none}
+  main{padding-bottom:110px}
+  footer{padding-bottom:110px}
+  .toast{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+
 footer{color:var(--faint);font-size:.75rem;padding-block:24px 30px;border-top:1px solid var(--line)}
 footer p{margin:0 0 6px;max-width:80ch}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -220,10 +262,11 @@ footer p{margin:0 0 6px;max-width:80ch}
   <div class="wrap">
     <a class="logo" href="#aujourdhui"><i aria-hidden="true">🍿</i>Carnet de films</a>
     <nav class="nav" aria-label="Sections">
-      <a href="#aujourdhui" data-v="aujourdhui">Aujourd'hui</a>
-      <a href="#catalogue" data-v="catalogue">Catalogue</a>
-      <a href="#mes-titres" data-v="mes-titres">Mes titres<span class="n" id="nMine"></span></a>
-      <a href="#pepites" data-v="pepites">Pépites<span class="n" id="nPep"></span></a>
+      <a href="#aujourdhui" data-v="aujourdhui"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span class="lb">Aujourd'hui</span></a>
+      <a href="#a-voir" data-v="a-voir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg><span class="lb">À voir</span><span class="n" id="nWl"></span></a>
+      <a href="#catalogue" data-v="catalogue"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span class="lb">Catalogue</span></a>
+      <a href="#mes-titres" data-v="mes-titres"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg><span class="lb">Mes titres</span><span class="n" id="nMine"></span></a>
+      <a href="#pepites" data-v="pepites"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg><span class="lb">Pépites</span><span class="n" id="nPep"></span></a>
     </nav>
     <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input type="search" id="q" placeholder="Film, série, acteur…" aria-label="Rechercher" autocomplete="off"></label>
@@ -291,6 +334,26 @@ footer p{margin:0 0 6px;max-width:80ch}
     <div class="more"><button class="btn" id="moreBtn" hidden>Afficher plus</button></div>
   </section>
 
+  <!-- À VOIR -->
+  <section class="view" id="v-a-voir" hidden>
+    <div class="wlhead">
+      <div><div class="eyebrow">Ma liste</div><h1>À voir</h1>
+        <p class="lede">Les films et séries que tu veux regarder. Touche « À voir » dans une fiche, ou le bouton + sur une affiche. Quand tu notes un titre, il quitte la liste.</p></div>
+    </div>
+    <div class="filters">
+      <select id="wType" aria-label="Type"><option value="">Films et séries</option><option value="movie">Films</option><option value="tv">Séries</option></select>
+      <select id="wSort" aria-label="Trier">
+        <option value="added">Ajoutés récemment</option>
+        <option value="old">Ajoutés il y a longtemps</option>
+        <option value="title">Titre A → Z</option>
+        <option value="year">Les plus récents</option>
+      </select>
+      <button class="lg" id="wRandom" style="padding:9px 16px;font-size:.88rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="M4 4l5 5"/></svg>Je choisis pour toi</button>
+      <span class="count" id="wlCount"></span>
+    </div>
+    <div class="grid" id="wlGrid"></div>
+  </section>
+
   <!-- MES TITRES -->
   <section class="view" id="v-mes-titres" hidden>
     <div><div class="eyebrow">Mon carnet</div><h1>Mes titres</h1></div>
@@ -331,6 +394,7 @@ footer p{margin:0 0 6px;max-width:80ch}
       <h2 id="dTitle"></h2>
       <div class="s" id="dSub"></div>
       <div class="scores" id="dScores"></div>
+      <button class="lg wl" id="dWl"></button>
     </div>
   </div>
   <p class="muted" id="dSyn" style="margin:16px 0 0;max-width:65ch"></p>
@@ -384,7 +448,8 @@ footer p{margin:0 0 6px;max-width:80ch}
   <div class="saved" id="lMsg"></div>
 </div>
 
-<script src="config.js?v=2"></script>
+<div class="toast lg" id="toast" role="status" aria-live="polite"></div>
+<script src="config.js?v=3"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
 (() => {
@@ -453,6 +518,11 @@ async function pushRemote(e){
 }
 async function deleteRemote(t,id){ if(sb&&user) await sb.from("entries").delete().eq("media_type",t).eq("tmdb_id",id); }
 
+const isSeen = e => !!e && (e.stars!=null || (e.viewings||[]).length>0);
+const ICON_PLUS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
+const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
+const ICON_BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg>';
+let toastT; function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),2200); }
 const total = e => e && e.stars!=null ? e.stars + (e.stars===5 ? (e.pepite||0) : 0) : -1;
 const lastView = e => (e && e.viewings && e.viewings.length) ? [...e.viewings].sort().pop() : "";
 
@@ -465,24 +535,30 @@ function posterHTML(x, size){
   const t=x.title||"", fs=t.length>28?.72:t.length>14?.9:1.15;
   return '<div class="poster" style="font-size:15px"><div class="art" style="background:'+art+'"></div>'+(x.year?'<span class="py">'+esc(x.year)+'</span>':'')+'<span class="pt" style="font-size:'+fs+'em">'+esc(t)+'</span></div>';
 }
-function badges(x){
+function badges(x,noWl){
   const e=entries.get(key(x.type,x.id)); let h="";
   if(x.type==="tv") h+='<span class="badge tag">Série</span>';
-  if(e){ h += e.stars==null ? '<span class="badge seen">Vu</span>' : '<span class="badge">🍿 '+e.stars+(e.stars===5&&e.pepite?' <span class="g">'+"✦".repeat(e.pepite)+'</span>':'')+'</span>'; }
+  if(isSeen(e)){ h += e.stars==null ? '<span class="badge seen">Vu</span>' : '<span class="badge">🍿 '+e.stars+(e.stars===5&&e.pepite?' <span class="g">'+"✦".repeat(e.pepite)+'</span>':'')+'</span>'; }
+  else if(e && e.watchlist && !noWl) h+='<span class="badge wlb">À voir</span>';
   else if(x.vote && x.votes>20) h+='<span class="badge vote">TMDB '+x.vote.toFixed(1).replace(".",",")+'</span>';
   return h;
 }
+const known=new Map();
 function cardHTML(x, extra){
-  return '<button class="card" data-t="'+x.type+'" data-id="'+x.id+'"><div class="pw">'+posterHTML(x)+badges(x)+'</div>'+
-    '<span class="ct">'+esc(x.title)+'</span><span class="cs">'+esc([x.year, x.genre||genreName(x.type,x.genres)].filter(Boolean).join(" · "))+'</span>'+(extra||"")+'</button>';
+  known.set(key(x.type,x.id),{type:x.type,id:x.id,title:x.title,year:x.year,poster:x.poster});
+  const e=entries.get(key(x.type,x.id)), on=!!(e&&e.watchlist), seen=isSeen(e);
+  const q = seen ? "" : '<div class="ov"><button class="lg wlq'+(on?' on':'')+'" data-wl="'+x.type+':'+x.id+'" aria-label="'+(on?"Retirer de À voir":"Ajouter à À voir")+'" aria-pressed="'+on+'">'+(on?ICON_CHECK:ICON_PLUS)+'</button></div>';
+  return '<div class="cw"><button class="card" data-t="'+x.type+'" data-id="'+x.id+'"><div class="pw">'+posterHTML(x)+badges(x,!seen)+'</div>'+
+    '<span class="ct">'+esc(x.title)+'</span><span class="cs">'+esc([x.year, x.genre||genreName(x.type,x.genres)].filter(Boolean).join(" · "))+'</span>'+(extra||"")+'</button>'+q+'</div>';
 }
 const skeleton = n => Array.from({length:n},()=>'<div class="card skel"><div class="poster"></div></div>').join("");
 function status(msg){ const s=$("status"); s.hidden=!msg; s.innerHTML=msg||""; }
 function renderStats(){
-  const all=[...entries.values()], rated=all.filter(e=>e.stars!=null), peps=rated.filter(e=>e.stars===5&&e.pepite).length;
+  const all=[...entries.values()].filter(isSeen), rated=all.filter(e=>e.stars!=null), peps=rated.filter(e=>e.stars===5&&e.pepite).length;
+  const wl=[...entries.values()].filter(e=>e.watchlist).length;
   const avg=rated.length?(rated.reduce((s,e)=>s+e.stars,0)/rated.length).toFixed(1).replace(".",","):"–";
-  $("stats").innerHTML='<span class="chip"><b>'+all.length+'</b><span>vus</span></span><span class="chip"><b>'+avg+'</b><span>🍿 de moyenne</span></span><span class="chip gold"><b>'+peps+'</b><span>pépites</span></span>';
-  $("nMine").textContent=all.length||""; $("nPep").textContent=peps||"";
+  $("stats").innerHTML='<span class="chip"><b>'+all.length+'</b><span>vus</span></span><span class="chip"><b>'+avg+'</b><span>🍿 de moyenne</span></span><span class="chip gold"><b>'+peps+'</b><span>pépites</span></span><span class="chip"><b>'+wl+'</b><span>à voir</span></span>';
+  $("nMine").textContent=all.length||""; $("nPep").textContent=peps||""; $("nWl").textContent=wl||"";
 }
 
 // ---------------- AUJOURD'HUI
@@ -640,7 +716,7 @@ function entryCard(e){ return cardHTML({type:e.media_type,id:e.tmdb_id,title:e.t
 function renderMine(){
   renderStats();
   const t=$("mType").value, s=$("mSort").value;
-  let arr=[...entries.values()].filter(e=>!t||e.media_type===t);
+  let arr=[...entries.values()].filter(e=>isSeen(e)&&(!t||e.media_type===t));
   if(s==="title") arr.sort((a,b)=>(a.title||"").localeCompare(b.title||"","fr"));
   else if(s==="score") arr.sort((a,b)=>total(b)-total(a));
   else arr.sort((a,b)=>(lastView(b)||b.updated_at||"").localeCompare(lastView(a)||a.updated_at||""));
@@ -654,16 +730,34 @@ function renderPep(){
   $("pepGrid").innerHTML=arr.length?arr.map(entryCard).join(""):'<div class="empty">Aucune pépite pour l\'instant. Donne 5 pop-corn à un titre pour débloquer 1 à 3 ✦ en plus.</div>';
 }
 
+function renderWl(){
+  renderStats();
+  const t=$("wType").value, s=$("wSort").value;
+  let arr=[...entries.values()].filter(e=>e.watchlist&&(!t||e.media_type===t));
+  const added=e=>e.wl_added||e.updated_at||"";
+  if(s==="title") arr.sort((a,b)=>(a.title||"").localeCompare(b.title||"","fr"));
+  else if(s==="year") arr.sort((a,b)=>(b.year||0)-(a.year||0));
+  else if(s==="old") arr.sort((a,b)=>added(a).localeCompare(added(b)));
+  else arr.sort((a,b)=>added(b).localeCompare(added(a)));
+  $("wlCount").textContent=arr.length+" titre"+(arr.length>1?"s":"");
+  $("wRandom").hidden=arr.length<2;
+  $("wlGrid").innerHTML=arr.length?arr.map(e=>cardHTML({type:e.media_type,id:e.tmdb_id,title:e.title,year:e.year,poster:e.poster_path,vote:0}, e.wl_added?'<span class="cs">Ajouté le '+esc(fmtDate(e.wl_added))+'</span>':'')).join("")
+    :'<div class="empty"><span style="font-size:2rem">🍿</span>Ta liste est vide. Dans le Catalogue ou la sélection du jour, touche le bouton + d\'une affiche ou « À voir » dans une fiche.</div>';
+}
+["wType","wSort"].forEach(id=>$(id).onchange=renderWl);
+$("wRandom").onclick=()=>{ const arr=[...entries.values()].filter(e=>e.watchlist&&(!$("wType").value||e.media_type===$("wType").value)); if(!arr.length) return; const e=arr[Math.floor(Math.random()*arr.length)]; openTitle(e.media_type,e.tmdb_id); };
+
 // ---------------- navigation
 let view="aujourdhui";
 function render(){
   if(view==="aujourdhui") renderToday();
   if(view==="mes-titres") renderMine();
   if(view==="pepites") renderPep();
+  if(view==="a-voir") renderWl();
   renderStats();
 }
 function go(v){
-  if(!["aujourdhui","catalogue","mes-titres","pepites"].includes(v)) v="aujourdhui";
+  if(!["aujourdhui","a-voir","catalogue","mes-titres","pepites"].includes(v)) v="aujourdhui";
   const changed=view!==v; view=v;
   document.querySelectorAll(".view").forEach(s=>s.hidden=s.id!=="v-"+v);
   document.querySelectorAll(".nav a").forEach(a=>{ if(a.dataset.v===v) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
@@ -671,11 +765,15 @@ function go(v){
   render(); if(changed) window.scrollTo(0,0);
 }
 window.addEventListener("hashchange",()=>go(location.hash.slice(1)));
-document.addEventListener("click",e=>{ const c=e.target.closest(".card[data-id],.pick[data-id]"); if(c) openTitle(c.dataset.t,+c.dataset.id); });
+document.addEventListener("click",e=>{
+  const q=e.target.closest("[data-wl]");
+  if(q){ e.preventDefault(); const [t,id]=q.dataset.wl.split(":"); const x=known.get(key(t,+id)); if(x) toggleWl(x); return; }
+  const c=e.target.closest(".card[data-id],.pick[data-id]"); if(c) openTitle(c.dataset.t,+c.dataset.id);
+});
 
 // ---------------- fiche
 let cur=null;
-const blank = () => ({stars:null,pepite:0,viewings:[],annotations:[]});
+const blank = () => ({stars:null,pepite:0,viewings:[],annotations:[],watchlist:false,wl_added:null});
 function entryOf(){ return entries.get(key(cur.type,cur.id)) || blank(); }
 async function openTitle(t,id){
   cur={type:t,id,title:"",year:null,poster:""};
@@ -723,6 +821,8 @@ document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ if(!$("login").hi
 
 function drawNote(){
   const n=entryOf(), s=n.stars;
+  const wb=$("dWl"); wb.hidden=isSeen(n); wb.classList.toggle("on",!!n.watchlist); wb.setAttribute("aria-pressed",!!n.watchlist);
+  wb.innerHTML=(n.watchlist?ICON_CHECK+"Dans ma liste À voir":ICON_BOOK+"À voir");
   let h='<button class="zero'+(s===0?' on':'')+'" data-s="0" aria-label="0 pop-corn">0</button>';
   for(let i=1;i<=5;i++) h+='<button class="'+(s!=null&&i<=s?'on':'')+'" data-s="'+i+'" aria-label="'+i+' pop-corn">🍿</button>';
   $("dStars").innerHTML=h;
@@ -740,23 +840,36 @@ function drawNote(){
   $("dAnnos").innerHTML=a.length?a.map(x=>'<div class="anno"><span class="tc">'+esc(x.tc||"—")+'</span><div class="tx">'+esc(x.text)+'<span class="dt">'+esc(fmtDate(x.at))+'</span></div><button data-a="'+esc(x.id)+'">Supprimer</button></div>').join(""):'<span class="muted">Note une réplique, un plan, un moment marquant.</span>';
 }
 let chain=Promise.resolve();
-function commit(n){
-  const c=cur, k=key(c.type,c.id);
-  const e={...n, media_type:c.type, tmdb_id:c.id, title:c.title, year:c.year, poster_path:c.poster, updated_at:new Date().toISOString()};
+function saveEntry(c,n,say){
+  const k=key(c.type,c.id), old=entries.get(k)||{};
+  const e={...blank(),...n, media_type:c.type, tmdb_id:c.id, title:c.title||old.title||"", year:c.year||old.year||null, poster_path:c.poster||old.poster_path||"", updated_at:new Date().toISOString()};
   if(e.stars!==5) e.pepite=0;
-  const empty = e.stars==null && !(e.viewings||[]).length && !(e.annotations||[]).length;
+  if(!e.watchlist) e.wl_added=null;
+  const empty = e.stars==null && !(e.viewings||[]).length && !(e.annotations||[]).length && !e.watchlist;
   if(empty) entries.delete(k); else entries.set(k,e);
-  saveLocal(); drawNote(); renderStats();
-  $("dSaved").textContent = user ? "Synchronisation…" : "Enregistré sur cet appareil";
+  saveLocal(); renderStats();
+  say(user ? "Synchronisation…" : "Enregistré sur cet appareil");
   chain=chain.then(async()=>{
     if(!user) return;
-    try{ empty ? await deleteRemote(c.type,c.id) : await pushRemote(e); $("dSaved").textContent="Enregistré et synchronisé"; }
-    catch(err){ $("dSaved").textContent="Enregistré sur cet appareil ; la synchronisation a échoué ("+(err.message||"erreur")+")."; }
+    try{ empty ? await deleteRemote(c.type,c.id) : await pushRemote(e); say("Enregistré et synchronisé"); }
+    catch(err){ say("Enregistré sur cet appareil ; la synchronisation a échoué ("+(err.message||"erreur")+")."); }
   });
 }
-$("dStars").addEventListener("click",ev=>{ const b=ev.target.closest("button"); if(!b||!cur) return; const n={...entryOf()}; n.stars=+b.dataset.s; if(!(n.viewings||[]).length) n.viewings=[today()]; commit(n); });
+function commit(n){ saveEntry(cur,n,m=>{ $("dSaved").textContent=m; }); drawNote(); }
+function toggleWl(c){
+  const k=key(c.type,c.id), n={...(entries.get(k)||blank())};
+  n.watchlist=!n.watchlist; n.wl_added=n.watchlist?today():null;
+  saveEntry(c,n,()=>{});
+  toast(n.watchlist?"Ajouté à À voir : "+(c.title||""):"Retiré de À voir");
+  document.querySelectorAll('[data-wl="'+c.type+':'+c.id+'"]').forEach(b=>{ b.classList.toggle("on",n.watchlist); b.setAttribute("aria-pressed",n.watchlist); b.innerHTML=n.watchlist?ICON_CHECK:ICON_PLUS; });
+  if(cur && cur.type===c.type && cur.id===c.id) drawNote();
+  if(view==="a-voir") renderWl();
+}
+$("dStars").addEventListener("click",ev=>{ const b=ev.target.closest("button"); if(!b||!cur) return; const n={...entryOf()}; n.stars=+b.dataset.s; if(!(n.viewings||[]).length) n.viewings=[today()];
+  if(n.watchlist){ n.watchlist=false; toast("Noté : retiré de À voir"); } commit(n); });
+$("dWl").onclick=()=>{ if(cur) toggleWl(cur); };
 $("dNug").addEventListener("click",ev=>{ const b=ev.target.closest("button"); if(!b||b.disabled) return; const n={...entryOf()}, p=+b.dataset.p; n.pepite=n.pepite===p?p-1:p; commit(n); });
-$("dViewAdd").onclick=()=>{ const d=$("dViewDate").value; if(!d||!cur) return; const n={...entryOf()}; n.viewings=[...new Set([...(n.viewings||[]),d])]; commit(n); };
+$("dViewAdd").onclick=()=>{ const d=$("dViewDate").value; if(!d||!cur) return; const n={...entryOf()}; n.viewings=[...new Set([...(n.viewings||[]),d])]; if(n.watchlist){ n.watchlist=false; toast("Vu : retiré de À voir"); } commit(n); };
 $("dViews").addEventListener("click",ev=>{ const b=ev.target.closest("button[data-d]"); if(!b) return; const n={...entryOf()}; n.viewings=(n.viewings||[]).filter(x=>x!==b.dataset.d); commit(n); });
 $("dAnnoAdd").onclick=()=>{ const t=$("dAnnoText").value.trim(); if(!t){ $("dAnnoText").focus(); return; } const n={...entryOf()}; n.annotations=[...(n.annotations||[]),{id:Date.now().toString(36),at:today(),tc:$("dAnnoTc").value.trim(),text:t}]; $("dAnnoText").value=""; $("dAnnoTc").value=""; commit(n); };
 $("dAnnos").addEventListener("click",ev=>{ const b=ev.target.closest("button[data-a]"); if(!b) return; const n={...entryOf()}; n.annotations=(n.annotations||[]).filter(x=>x.id!==b.dataset.a); commit(n); });
