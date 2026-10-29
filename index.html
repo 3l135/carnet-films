@@ -271,6 +271,28 @@ select,.btn{padding:9px 14px;border-radius:999px;border:1px solid var(--line);ba
   .toast{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
 }
 
+/* quoi de neuf sur les plateformes */
+.plat{display:flex;flex-direction:column;gap:16px;margin-top:10px}
+.plat h2{font-size:1.35rem;font-weight:900}
+.pchips{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 8px;scrollbar-width:none}
+.pchips::-webkit-scrollbar{display:none}
+.pchip{flex:none;display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 6px;font-size:.85rem;font-weight:600;opacity:.55}
+.pchip img{width:28px;height:28px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.pchip.on{opacity:1}
+.pchip.on img{outline:2px solid var(--accent-2);outline-offset:1px}
+.prow{display:flex;flex-direction:column;gap:10px}
+.prow .ph{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.prow .ph b{white-space:nowrap}
+@media (max-width:560px){ .prow .ph b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis} .prow .ph .seg{order:3;margin-left:0} }
+.prow .ph img{width:30px;height:30px;border-radius:8px}
+.prow .ph b{font-family:var(--f-display);font-size:1rem}
+.prow .ph .seg{margin-left:auto}
+.prow .ph .seg button{padding:5px 11px;font-size:.78rem}
+.prow .ph a{font-size:.82rem;font-weight:600;color:var(--accent);text-decoration:none;white-space:nowrap}
+.hrow{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(118px,28vw,150px);gap:14px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity;scrollbar-width:thin}
+.hrow > *{scroll-snap-align:start}
+.hrow .cs .new{color:var(--accent-2);font-weight:700}
+
 footer{color:var(--faint);font-size:.75rem;padding-block:24px 30px;border-top:1px solid var(--line)}
 footer p{margin:0 0 6px;max-width:80ch}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -328,6 +350,17 @@ footer p{margin:0 0 6px;max-width:80ch}
     </div>
     <div class="sel" id="sel"></div>
     <p class="src" id="selSrc"></p>
+
+    <div class="plat" id="plat">
+      <div>
+        <div class="eyebrow">En direct de tes plateformes</div>
+        <h2>Quoi de neuf en streaming</h2>
+        <p class="lede">Les sorties récentes disponibles en France sur chaque plateforme, mises à jour chaque jour. Touche une plateforme pour l'ajouter ou la retirer de tes plateformes.</p>
+      </div>
+      <div class="pchips" id="pChips" role="group" aria-label="Mes plateformes"></div>
+      <div id="pRows" class="plat"></div>
+      <p class="src">Disponibilités : JustWatch via TMDB. « Nouveautés » = les films et séries les plus récents disponibles sur la plateforme (la date d'arrivée exacte d'un ancien titre n'est pas publiée).</p>
+    </div>
   </section>
 
   <!-- CATALOGUE -->
@@ -349,6 +382,7 @@ footer p{margin:0 0 6px;max-width:80ch}
       </select>
       <select id="cYear" aria-label="Décennie"><option value="">Toutes les années</option></select>
       <select id="cCountry" aria-label="Pays"><option value="">Tous les pays</option></select>
+      <select id="cProv" aria-label="Plateforme"><option value="">Toutes les plateformes</option></select>
       <span class="count" id="catCount"></span>
     </div>
     <div class="grid" id="grid"></div>
@@ -512,7 +546,7 @@ async function tmdb(path, params={}){
 const yearOf = x => +(String(x.release_date||x.first_air_date||"").slice(0,4)) || null;
 const titleOf = x => x.title || x.name || "";
 const norm = (x,t) => ({ type: t || x.media_type, id: x.id, title: titleOf(x), original: x.original_title||x.original_name||"", year: yearOf(x),
-  poster: x.poster_path||"", backdrop: x.backdrop_path||"", vote: x.vote_average||0, votes: x.vote_count||0, overview: x.overview||"", genres: x.genre_ids||[] });
+  poster: x.poster_path||"", backdrop: x.backdrop_path||"", vote: x.vote_average||0, votes: x.vote_count||0, overview: x.overview||"", genres: x.genre_ids||[], date: x.release_date||x.first_air_date||"" });
 
 let GENRES = {movie:new Map(), tv:new Map()};
 async function loadGenres(){
@@ -656,10 +690,61 @@ async function loadRegenFilters(){
   $("rGenre").innerHTML='<option value="">Tous les genres</option>'+opts.map(([id,n])=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join("");
   try{
     const r=await tmdb("/watch/providers/movie",{watch_region:"FR"});
-    PROVIDERS=r.results.sort((a,b)=>(a.display_priorities&&a.display_priorities.FR||99)-(b.display_priorities&&b.display_priorities.FR||99)).slice(0,14);
-    $("rProv").innerHTML='<option value="">Toutes les plateformes</option>'+PROVIDERS.map(p=>'<option value="'+p.provider_id+'">'+esc(p.provider_name)+'</option>').join("");
-  }catch(e){}
+    const prio=x=>{ const v=x.display_priorities&&x.display_priorities.FR; return typeof v==="number"?v:(typeof x.display_priority==="number"?x.display_priority:999); };
+    PROVIDERS=r.results.filter(x=>x.display_priorities?("FR" in x.display_priorities):true).sort((a,b)=>prio(a)-prio(b)).slice(0,14);
+    const opts='<option value="">Toutes les plateformes</option>'+PROVIDERS.map(p=>'<option value="'+p.provider_id+'">'+esc(p.provider_name)+'</option>').join("");
+    $("rProv").innerHTML=opts; $("cProv").innerHTML=opts;
+    renderPlatforms();
+  }catch(e){ $("plat").hidden=true; }
 }
+
+// ---------------- QUOI DE NEUF SUR LES PLATEFORMES
+let myProv = ls.get("carnet-plateformes", null);
+const platMode = {};            // provider_id -> "new" | "pop"
+function renderPlatforms(){
+  if(!PROVIDERS.length) return;
+  if(!Array.isArray(myProv) || !myProv.length) myProv = PROVIDERS.slice(0,5).map(p=>p.provider_id);
+  $("pChips").innerHTML = PROVIDERS.map(p=>'<button class="lg pchip'+(myProv.includes(p.provider_id)?' on':'')+'" data-prov="'+p.provider_id+'" aria-pressed="'+myProv.includes(p.provider_id)+'"><img src="'+IMG+'w92'+esc(p.logo_path)+'" alt="">'+esc(p.provider_name)+'</button>').join("");
+  const rows = myProv.map(id=>PROVIDERS.find(p=>p.provider_id===id)).filter(Boolean);
+  $("pRows").innerHTML = rows.length ? rows.map(p=>'<section class="prow" data-row="'+p.provider_id+'"><div class="ph"><img src="'+IMG+'w92'+esc(p.logo_path)+'" alt=""><b>'+esc(p.provider_name)+'</b>'+
+      '<div class="seg" role="group" aria-label="Affichage"><button data-pm="new" aria-pressed="'+((platMode[p.provider_id]||"new")==="new")+'">Nouveautés</button><button data-pm="pop" aria-pressed="'+(platMode[p.provider_id]==="pop")+'">Populaires</button></div>'+
+      '<a href="#catalogue" data-all="'+p.provider_id+'">Tout voir</a></div><div class="hrow">'+skeleton(6)+'</div></section>').join("")
+    : '<div class="empty">Touche une plateforme ci-dessus pour suivre ses nouveautés.</div>';
+  rows.forEach(p=>loadPlatformRow(p.provider_id));
+}
+async function loadPlatformRow(id){
+  const sec=document.querySelector('[data-row="'+id+'"]'); if(!sec) return;
+  const mode=platMode[id]||"new", box=sec.querySelector(".hrow");
+  const base={watch_region:"FR",with_watch_providers:id,with_watch_monetization_types:"flatrate|free|ads"};
+  try{
+    const [m,t]=await Promise.all(["movie","tv"].map(ty=>{
+      const df=ty==="movie"?"primary_release_date":"first_air_date";
+      const p = mode==="new" ? {...base,sort_by:df+".desc",[df+".lte"]:today(),[df+".gte"]:new Date(Date.now()-540*864e5).toISOString().slice(0,10),"vote_count.gte":ty==="movie"?15:5}
+                             : {...base,sort_by:"popularity.desc"};
+      return tmdb("/discover/"+ty,p);
+    }));
+    let items=[...m.results.map(x=>norm(x,"movie")),...t.results.map(x=>norm(x,"tv"))].filter(x=>x.poster);
+    if(mode==="new") items.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+    else items.sort((a,b)=>0);
+    if(mode==="pop"){ const mm=items.filter(x=>x.type==="movie"), tt=items.filter(x=>x.type==="tv"); items=[]; for(let i=0;i<Math.max(mm.length,tt.length);i++){ if(mm[i]) items.push(mm[i]); if(tt[i]) items.push(tt[i]); } }
+    items=items.slice(0,20);
+    const recent=d=> d && (Date.now()-new Date(d))/864e5 < 45;
+    box.innerHTML = items.length ? items.map(x=>cardHTML(x, mode==="new"&&recent(x.date)?'<span class="cs"><span class="new">Nouveau</span> · '+esc(fmtDate(x.date))+'</span>':'')).join("")
+      : '<div class="empty">Rien de récent trouvé pour cette plateforme.</div>';
+  }catch(e){ box.innerHTML='<div class="empty">TMDB ne répond pas. Réessaie dans un instant.</div>'; }
+}
+$("pChips").addEventListener("click",ev=>{
+  const b=ev.target.closest("[data-prov]"); if(!b) return;
+  const id=+b.dataset.prov;
+  myProv = myProv.includes(id) ? myProv.filter(x=>x!==id) : [...myProv,id];
+  ls.set("carnet-plateformes",myProv); renderPlatforms();
+});
+$("pRows").addEventListener("click",ev=>{
+  const m=ev.target.closest("[data-pm]");
+  if(m){ const id=+m.closest("[data-row]").dataset.row; platMode[id]=m.dataset.pm; m.parentNode.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===m)); loadPlatformRow(id); return; }
+  const a=ev.target.closest("[data-all]");
+  if(a){ $("cProv").value=a.dataset.all; $("cSort").value="date.desc"; if(view==="catalogue") loadCatalog(true); }
+});
 function genreIdsFor(t,name){ for(const [id,n] of GENRES[t]) if(n===name) return id; if(name==="Action"&&t==="tv") return 10759; if(name==="Science-Fiction"&&t==="tv") return 10765; return null; }
 async function newSelection(){
   const btn=$("rGo"); btn.disabled=true; $("sel").innerHTML='<div class="empty">Recherche de titres…</div>';
@@ -715,9 +800,10 @@ async function loadCatalog(reset){
       const p={page:cat.page,with_genres:g,sort_by:s==="date.desc"?df+".desc":s,"vote_count.gte":s==="vote_average.desc"?(t==="movie"?800:300):(s==="date.desc"?20:0)};
       if(y){ p[df+".gte"]=y+"-01-01"; p[df+".lte"]=(+y+9)+"-12-31"; }
       const ctry=$("cCountry").value; if(ctry) p.with_origin_country=ctry;
+      const prov=$("cProv").value; if(prov){ p.watch_region="FR"; p.with_watch_providers=prov; p.with_watch_monetization_types="flatrate|free|ads"; if(s==="date.desc") p["vote_count.gte"]=t==="movie"?10:3; }
       if(s==="date.desc") p[df+".lte"]=p[df+".lte"]||today();
       r=await tmdb("/discover/"+t,p);
-      const cName=(COUNTRIES.find(c=>c[0]===$("cCountry").value)||[])[1];
+      const cName=[(COUNTRIES.find(c=>c[0]===$("cCountry").value)||[])[1], prov?"sur "+((PROVIDERS.find(x=>String(x.provider_id)===prov)||{}).provider_name||""):""].filter(Boolean).join(" · ");
       $("catTitle").textContent=(s==="vote_average.desc"?"Les mieux notés":s==="date.desc"?"Les plus récents":"Les plus populaires")+(t==="tv"?" · séries":" · films")+(cName?" · "+cName:"");
     }
     cat.total=r.total_results; cat.items.push(...r.results.map(x=>norm(x,x.media_type||cat.type)));
@@ -737,7 +823,7 @@ function fillCatGenres(){
   if([...GENRES[cat.type].keys()].map(String).includes(cur)) $("cGenre").value=cur;
 }
 (function(){ let h='<option value="">Toutes les années</option>'; for(let d=2020; d>=1920; d-=10) h+='<option value="'+d+'">Années '+d+'</option>'; $("cYear").innerHTML=h; })();
-["cGenre","cSort","cYear","cCountry"].forEach(id=>$(id).onchange=()=>loadCatalog(true));
+["cGenre","cSort","cYear","cCountry","cProv"].forEach(id=>$(id).onchange=()=>loadCatalog(true));
 $("moreBtn").onclick=()=>{ cat.page++; loadCatalog(false); };
 let qT; $("q").addEventListener("input",()=>{ clearTimeout(qT); qT=setTimeout(()=>{ if(view!=="catalogue") location.hash="catalogue"; else loadCatalog(true); },300); });
 
