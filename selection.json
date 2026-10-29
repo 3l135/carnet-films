@@ -1,20 +1,52 @@
 {
-  "date": "2026-10-28",
-  "generatedAt": "2026-10-28T05:19:04Z",
-  "intro": "Dix titres à voir chez toi : de Gaulle et Sorogoyen en VOD, le retour de Lupin, un frisson finlandais pour Halloween et un grand classique de la fantasy.",
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T05:20:46Z",
+  "intro": "Dix titres à voir chez toi : de Gaulle et les Minions en VOD, Carrie pour Halloween, Lupin toujours en piste et un polar des années 60 gratuit sur Arte.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "La Bataille de Gaulle – Partie 1 : L'Âge de fer",
+      "title": "La Bataille de Gaulle – Partie 2 : J'écris ton nom",
       "year": 2026,
       "director": "Antonin Baudry",
       "genre": "Historique",
-      "where": "VOD · location (Canal VOD, Orange, Rakuten)",
-      "why": "Le premier volet de la grande fresque gaullienne, ample et romanesque ; le public l'a plébiscité, et la suite arrive en VOD dès demain.",
+      "where": "VOD · achat et location depuis le 29 octobre",
+      "why": "La suite de la fresque gaullienne arrive chez toi : plus tendue que le premier volet, elle a conquis le public comme la presse.",
+      "scores": {
+        "allocinePresse": 3.9,
+        "allocineSpect": 4.5,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Toy Story 5",
+      "year": 2026,
+      "director": "Andrew Stanton, McKenna Harris",
+      "genre": "Animation",
+      "where": "VOD · achat et location",
+      "why": "Woody et Buzz face aux écrans et aux jouets connectés : un Pixar drôle et tendre à partager en famille pendant les vacances.",
       "scores": {
         "allocinePresse": 3.5,
-        "allocineSpect": 4.4,
+        "allocineSpect": 4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Des Minions et des monstres",
+      "year": 2026,
+      "director": "Pierre Coffin, Patrick Delage",
+      "genre": "Animation",
+      "where": "VOD · achat depuis le 29 octobre",
+      "why": "Les Minions s'attaquent au cinéma de monstres : un délire visuel idéal pour une soirée Halloween avec les enfants.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.1,
         "senscritique": null,
         "telerama": null
       }
@@ -27,7 +59,7 @@
       "director": "Rodrigo Sorogoyen",
       "genre": "Drame",
       "where": "VOD · location",
-      "why": "Sorogoyen retrouve la tension sèche d'As bestas avec un Javier Bardem impressionnant : un drame dense, l'un des films marquants de Cannes 2026.",
+      "why": "Sorogoyen et Javier Bardem dans un drame intense, l'un des films marquants de Cannes 2026, à rattraper en VOD.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -38,44 +70,60 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Nightborn",
-      "year": 2026,
-      "director": "Hanna Bergholm",
-      "genre": "Horreur",
-      "where": "VOD · location",
-      "why": "Par la réalisatrice de Hatching, un conte horrifique finlandais sur une maternité cauchemardesque, parfait pour la semaine d'Halloween.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Contre l'ouragan",
-      "year": 2026,
-      "director": "Jorge Michel Grau",
-      "genre": "Drame catastrophe",
-      "where": "Netflix",
-      "why": "Le récit à hauteur d'homme de l'ouragan Otis qui a dévasté Acapulco en 2023 : un film de survie tendu, tout juste arrivé sur Netflix.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Les Vieux Fourneaux 2 : Bons pour l'asile",
+      "title": "Notre-Dame brûle",
       "year": 2022,
-      "director": "Christophe Duthuron",
+      "director": "Jean-Jacques Annaud",
+      "genre": "Catastrophe",
+      "where": "Disney+",
+      "why": "La reconstitution haletante de l'incendie de 2019, minute par minute, avec un vrai sens du spectacle et des pompiers en héros.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.8,
+        "senscritique": 5.6,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Cocorico 2",
+      "year": 2026,
+      "director": "Julien Hervé",
       "genre": "Comédie",
-      "where": "Netflix",
-      "why": "Pierre Richard, Eddy Mitchell et Bernard Le Coq rempilent en papys indignés : une comédie bon enfant pour décompresser.",
+      "where": "Canal+ · depuis le 23 octobre",
+      "why": "Christian Clavier et Didier Bourdon rejouent le choc des familles : une comédie populaire sans prétention pour se détendre.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": 3.6,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Symphonie pour un massacre",
+      "year": 1963,
+      "director": "Jacques Deray",
+      "genre": "Polar",
+      "where": "Arte.tv (gratuit)",
+      "why": "Un polar noir français des années 60, sec et cruel, autour d'un trafic qui tourne mal : une pépite méconnue à découvrir gratuitement.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 3.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Carrie",
+      "year": 2026,
+      "director": "Mike Flanagan",
+      "genre": "Horreur",
+      "where": "Prime Video · minisérie depuis le 7 octobre",
+      "why": "Le maître de l'horreur télé revisite Stephen King en huit épisodes : le programme tout trouvé pour la semaine d'Halloween.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -84,33 +132,17 @@
       }
     },
     {
-      "type": "movie",
+      "type": "tv",
       "tmdbId": null,
-      "title": "L'Affaire Nevenka",
-      "year": 2024,
-      "director": "Icíar Bollaín",
-      "genre": "Drame",
-      "where": "Arte.tv (gratuit)",
-      "why": "Un récit vrai et glaçant sur une affaire de harcèlement qui a marqué l'Espagne ; à rattraper gratuitement tant qu'il est en ligne.",
-      "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Seigneur des anneaux : La Communauté de l'anneau",
-      "year": 2001,
-      "director": "Peter Jackson",
-      "genre": "Fantasy",
+      "title": "Le Piège",
+      "year": 2026,
+      "director": "Isabel Kleefeld",
+      "genre": "Thriller",
       "where": "Netflix",
-      "why": "Le classique absolu de la fantasy, toujours aussi spectaculaire : de quoi lancer un marathon de la trilogie pendant les vacances.",
+      "why": "Une romancière recluse tend un piège à l'homme qu'elle croit coupable du meurtre de sa sœur : un thriller allemand en six épisodes, idéal en binge.",
       "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 4.5,
+        "allocinePresse": null,
+        "allocineSpect": null,
         "senscritique": null,
         "telerama": null
       }
@@ -125,41 +157,9 @@
       "where": "Netflix · partie 4 depuis le 23 octobre",
       "why": "Omar Sy reprend le costume d'Assane Diop pour huit nouveaux épisodes de cambriolages et de faux-semblants.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "The Terminal List",
-      "year": 2022,
-      "director": "David DiGilio",
-      "genre": "Thriller militaire",
-      "where": "Prime Video · saison 2 depuis le 21 octobre",
-      "why": "Chris Pratt revient en ex-Navy SEAL pour une saison 2 musclée ; boudée par la presse mais très appréciée des spectateurs.",
-      "scores": {
-        "allocinePresse": 1.8,
-        "allocineSpect": 4,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "Where's Wanda?",
-      "year": 2024,
-      "director": "Oliver Lansley",
-      "genre": "Comédie noire",
-      "where": "Apple TV · saison 2 depuis le 21 octobre",
-      "why": "Une comédie noire allemande décalée où une famille enquête elle-même sur la disparition de sa fille ; nouvel épisode chaque semaine.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.5,
+        "senscritique": 5.6,
         "telerama": null
       }
     }
