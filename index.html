@@ -180,10 +180,20 @@ select,.btn{padding:9px 14px;border-radius:999px;border:1px solid var(--line);ba
 .cast div{flex:0 0 76px;font-size:.75rem;line-height:1.25}
 .cast img,.cast .ph{width:76px;height:96px;border-radius:8px;object-fit:cover;background:var(--surface-2);display:block;margin-bottom:4px}
 .cast small{color:var(--muted)}
-.stars{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
-.stars button{background:none;border:0;cursor:pointer;font-size:2.1rem;line-height:1;padding:0 3px;filter:grayscale(1) brightness(.9);opacity:.3;transition:transform .15s,opacity .15s,filter .15s}
-.stars button.on{filter:drop-shadow(0 4px 10px rgba(255,200,80,.45));opacity:1}
-.stars button:hover{transform:scale(1.18) rotate(-6deg);opacity:.85}
+.stars{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.pc{position:relative;display:inline-block;width:2.6rem;height:2.6rem;font-size:2.2rem;line-height:2.6rem;text-align:center;transition:transform .2s cubic-bezier(.2,1.4,.4,1)}
+.pc .off,.pc .full{position:absolute;inset:0;pointer-events:none}
+.pc .off{filter:grayscale(1) brightness(.95);opacity:.28}
+.pc .full{filter:drop-shadow(0 4px 10px rgba(255,200,80,.45));clip-path:inset(0 100% 0 0);transition:clip-path .18s}
+.pc[data-fill="half"] .full{clip-path:inset(0 50% 0 0)}
+.pc[data-fill="full"] .full{clip-path:inset(0 0 0 0)}
+.pc button{position:absolute;top:0;bottom:0;width:50%;background:none;border:0;padding:0;cursor:pointer;z-index:2;border-radius:6px}
+.pc button.l{left:0} .pc button.r{right:0}
+.pc:hover{transform:scale(1.1) rotate(-4deg)}
+.scoreBig{font-family:var(--f-display);font-weight:900;font-size:1.6rem;margin-left:10px;font-variant-numeric:tabular-nums;min-width:4.2ch}
+.scoreBig small{font-size:.8rem;color:var(--muted);font-weight:700}
+.rateRow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}
+.rateRow input[type=range]{flex:1 1 180px;min-width:0;accent-color:var(--accent)}
 .stars button.zero{filter:none;opacity:1}
 .stars .zero{font-family:var(--f-mono);font-size:.78rem;border:1px solid var(--line);border-radius:8px;padding:6px 9px;margin-right:8px;color:var(--muted)}
 .stars .zero.on{border-color:var(--star);color:var(--star)}
@@ -383,7 +393,7 @@ footer p{margin:0 0 6px;max-width:80ch}
   <!-- PÉPITES -->
   <section class="view" id="v-pepites" hidden>
     <div><div class="eyebrow">Le meilleur du meilleur</div><h1>Mes pépites</h1>
-      <p class="lede">Les titres à 5 pop-corn qui méritent encore plus : de ✦ à ✦✦✦.</p></div>
+      <p class="lede">Les titres à 10/10 qui méritent encore plus : de ✦ à ✦✦✦.</p></div>
     <div class="grid" id="pepGrid"></div>
   </section>
 </div></main>
@@ -413,6 +423,7 @@ footer p{margin:0 0 6px;max-width:80ch}
   <div class="block">
     <h3>Ma note</h3>
     <div class="stars" id="dStars"></div>
+    <div class="rateRow"><input type="range" id="dScore" min="0" max="10" step="1" value="5" aria-label="Note sur 10"></div>
     <div class="verdict" id="dVerdict"></div>
     <div class="pep" id="dPep">
       <div class="ph"><strong>✦ Pépite</strong><span class="hint" id="dPepHint"></span></div>
@@ -468,7 +479,10 @@ footer p{margin:0 0 6px;max-width:80ch}
 const CFG = window.CARNET_CONFIG || {};
 const $ = id => document.getElementById(id);
 const IMG = "https://image.tmdb.org/t/p/";
-const VERDICTS = ["Zéro, rien à sauver","Mauvais","Bof","Correct","Très bien","Excellent"];
+const VERDICTS = ["Nul, rien à sauver","Très mauvais","Mauvais","Médiocre","Bof","Moyen","Correct","Bien","Très bien","Excellent","Chef-d'œuvre"];
+// Note sur 10 (demi-pop-corn). Les anciennes notes sur 5 sont converties (×2).
+const scoreOf = e => !e ? null : (e.score!=null ? e.score : (e.stars!=null ? e.stars*2 : null));
+const fmtScore = v => v==null ? "–" : String(v).replace(".",",");
 const PEP = ["","Pépite","Grande pépite","Pépite absolue"];
 
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -509,13 +523,13 @@ const genreName = (t,ids) => (ids||[]).map(i=>GENRES[t].get(i)).filter(Boolean).
 
 // ---------------- notes (Supabase + copie locale)
 let sb=null, user=null;
-let entries = new Map(ls.get("carnet-entries",[]).map(e=>[key(e.media_type,e.tmdb_id),e]));
+let entries = new Map(ls.get("carnet-entries",[]).map(e=>{ if(e.score==null && e.stars!=null) e.score=e.stars*2; return [key(e.media_type,e.tmdb_id),e]; }));
 function saveLocal(){ ls.set("carnet-entries",[...entries.values()]); }
 async function pullRemote(){
   if(!sb||!user) return;
   const {data,error} = await sb.from("entries").select("*");
   if(error){ status("La synchronisation a échoué : "+error.message); return; }
-  const local=entries; entries=new Map(data.map(e=>[key(e.media_type,e.tmdb_id),e]));
+  const local=entries; entries=new Map(data.map(e=>{ if(e.score==null && e.stars!=null) e.score=e.stars*2; return [key(e.media_type,e.tmdb_id),e]; }));
   // envoie les notes prises hors connexion
   const missing=[...local.values()].filter(e=>!entries.has(key(e.media_type,e.tmdb_id)));
   for(const e of missing){ entries.set(key(e.media_type,e.tmdb_id),e); pushRemote(e); }
@@ -524,17 +538,22 @@ async function pullRemote(){
 async function pushRemote(e){
   if(!sb||!user) return;
   const row={...e, user_id:user.id}; delete row.created_at;
-  const {error}=await sb.from("entries").upsert(row);
+  row.stars = row.score==null ? null : Math.floor(row.score/2);
+  let {error}=await sb.from("entries").upsert(row);
+  if(error && /score/i.test(error.message||"")){
+    delete row.score; ({error}=await sb.from("entries").upsert(row));
+    status("Ta base Supabase n'a pas encore la note sur 10 : relance le fichier <b>supabase.sql</b> dans SQL Editor (voir README). En attendant, la note est arrondie au pop-corn entier sur tes autres appareils.");
+  }
   if(error) throw error;
 }
 async function deleteRemote(t,id){ if(sb&&user) await sb.from("entries").delete().eq("media_type",t).eq("tmdb_id",id); }
 
-const isSeen = e => !!e && (e.stars!=null || (e.viewings||[]).length>0);
+const isSeen = e => !!e && (scoreOf(e)!=null || (e.viewings||[]).length>0);
 const ICON_PLUS='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
 const ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
 const ICON_BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg>';
 let toastT; function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),2200); }
-const total = e => e && e.stars!=null ? e.stars + (e.stars===5 ? (e.pepite||0) : 0) : -1;
+const total = e => { const v=scoreOf(e); return v==null ? -1 : v + (v===10 ? (e.pepite||0) : 0); };
 const lastView = e => (e && e.viewings && e.viewings.length) ? [...e.viewings].sort().pop() : "";
 
 // ---------------- rendu commun
@@ -549,7 +568,7 @@ function posterHTML(x, size){
 function badges(x,noWl){
   const e=entries.get(key(x.type,x.id)); let h="";
   if(x.type==="tv") h+='<span class="badge tag">Série</span>';
-  if(isSeen(e)){ h += e.stars==null ? '<span class="badge seen">Vu</span>' : '<span class="badge">🍿 '+e.stars+(e.stars===5&&e.pepite?' <span class="g">'+"✦".repeat(e.pepite)+'</span>':'')+'</span>'; }
+  if(isSeen(e)){ const v=scoreOf(e); h += v==null ? '<span class="badge seen">Vu</span>' : '<span class="badge">🍿 '+fmtScore(v)+'/10'+(v===10&&e.pepite?' <span class="g">'+"✦".repeat(e.pepite)+'</span>':'')+'</span>'; }
   else if(e && e.watchlist && !noWl) h+='<span class="badge wlb">À voir</span>';
   else if(x.vote && x.votes>20) h+='<span class="badge vote">TMDB '+x.vote.toFixed(1).replace(".",",")+'</span>';
   return h;
@@ -565,9 +584,9 @@ function cardHTML(x, extra){
 const skeleton = n => Array.from({length:n},()=>'<div class="card skel"><div class="poster"></div></div>').join("");
 function status(msg){ const s=$("status"); s.hidden=!msg; s.innerHTML=msg||""; }
 function renderStats(){
-  const all=[...entries.values()].filter(isSeen), rated=all.filter(e=>e.stars!=null), peps=rated.filter(e=>e.stars===5&&e.pepite).length;
+  const all=[...entries.values()].filter(isSeen), rated=all.filter(e=>scoreOf(e)!=null), peps=rated.filter(e=>scoreOf(e)===10&&e.pepite).length;
   const wl=[...entries.values()].filter(e=>e.watchlist).length;
-  const avg=rated.length?(rated.reduce((s,e)=>s+e.stars,0)/rated.length).toFixed(1).replace(".",","):"–";
+  const avg=rated.length?(rated.reduce((s,e)=>s+scoreOf(e),0)/rated.length).toFixed(1).replace(".",",")+"/10":"–";
   $("stats").innerHTML='<span class="chip"><b>'+all.length+'</b><span>vus</span></span><span class="chip"><b>'+avg+'</b><span>🍿 de moyenne</span></span><span class="chip gold"><b>'+peps+'</b><span>pépites</span></span><span class="chip"><b>'+wl+'</b><span>à voir</span></span>';
   $("nMine").textContent=all.length||""; $("nPep").textContent=peps||""; $("nWl").textContent=wl||"";
 }
@@ -737,8 +756,8 @@ function renderMine(){
 ["mType","mSort"].forEach(id=>$(id).onchange=renderMine);
 function renderPep(){
   renderStats();
-  const arr=[...entries.values()].filter(e=>e.stars===5&&e.pepite).sort((a,b)=>b.pepite-a.pepite);
-  $("pepGrid").innerHTML=arr.length?arr.map(entryCard).join(""):'<div class="empty">Aucune pépite pour l\'instant. Donne 5 pop-corn à un titre pour débloquer 1 à 3 ✦ en plus.</div>';
+  const arr=[...entries.values()].filter(e=>scoreOf(e)===10&&e.pepite).sort((a,b)=>b.pepite-a.pepite);
+  $("pepGrid").innerHTML=arr.length?arr.map(entryCard).join(""):'<div class="empty">Aucune pépite pour l\'instant. Donne 10/10 à un titre pour débloquer 1 à 3 ✦ en plus.</div>';
 }
 
 function renderWl(){
@@ -784,7 +803,7 @@ document.addEventListener("click",e=>{
 
 // ---------------- fiche
 let cur=null;
-const blank = () => ({stars:null,pepite:0,viewings:[],annotations:[],watchlist:false,wl_added:null});
+const blank = () => ({score:null,stars:null,pepite:0,viewings:[],annotations:[],watchlist:false,wl_added:null});
 function entryOf(){ return entries.get(key(cur.type,cur.id)) || blank(); }
 async function openTitle(t,id){
   cur={type:t,id,title:"",year:null,poster:""};
@@ -831,16 +850,22 @@ $("dClose").onclick=closeTitle; $("scrim").onclick=closeTitle;
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ if(!$("login").hidden) closeLogin(); else if(cur) closeTitle(); } });
 
 function drawNote(){
-  const n=entryOf(), s=n.stars;
+  const n=entryOf(), s=scoreOf(n);
   const wb=$("dWl"); wb.hidden=isSeen(n); wb.classList.toggle("on",!!n.watchlist); wb.setAttribute("aria-pressed",!!n.watchlist);
   wb.innerHTML=(n.watchlist?ICON_CHECK+"Dans ma liste À voir":ICON_BOOK+"À voir");
-  let h='<button class="zero'+(s===0?' on':'')+'" data-s="0" aria-label="0 pop-corn">0</button>';
-  for(let i=1;i<=5;i++) h+='<button class="'+(s!=null&&i<=s?'on':'')+'" data-s="'+i+'" aria-label="'+i+' pop-corn">🍿</button>';
+  let h='<button class="zero'+(s===0?' on':'')+'" data-s="0" aria-label="0 sur 10">0</button>';
+  for(let i=1;i<=5;i++){
+    const fill = s==null ? "" : s>=i*2 ? "full" : s===i*2-1 ? "half" : "";
+    h+='<span class="pc" data-fill="'+fill+'"><span class="off">🍿</span><span class="full">🍿</span>'+
+       '<button class="l" data-s="'+(i*2-1)+'" aria-label="'+(i*2-1)+' sur 10"></button><button class="r" data-s="'+(i*2)+'" aria-label="'+(i*2)+' sur 10"></button></span>';
+  }
+  h+='<span class="scoreBig">'+(s==null?'–':fmtScore(s))+'<small>/10</small></span>';
   $("dStars").innerHTML=h;
-  $("dVerdict").innerHTML = s==null ? "Pas encore noté. Touche un pop-corn, ou 0." : '<b>'+s+'/5</b> · '+VERDICTS[s]+(s===5&&n.pepite?' · <b style="color:var(--nugget)">'+PEP[n.pepite]+' '+"✦".repeat(n.pepite)+'</b>':'');
-  const locked=s!==5;
+  $("dScore").value = s==null ? 5 : s; $("dScore").setAttribute("aria-valuetext", s==null ? "Pas noté" : s+" sur 10");
+  $("dVerdict").innerHTML = s==null ? "Pas encore noté. Touche la moitié gauche ou droite d'un pop-corn, ou fais glisser le curseur." : '<b>'+fmtScore(s)+'/10</b> · '+VERDICTS[s]+(s===10&&n.pepite?' · <b style="color:var(--nugget)">'+PEP[n.pepite]+' '+"✦".repeat(n.pepite)+'</b>':'');
+  const locked=s!==10;
   $("dPep").dataset.locked=locked;
-  $("dPepHint").textContent = locked ? "Se débloque à 5 pop-corn" : "1 à 3 étoiles bonus pour les chefs-d'œuvre";
+  $("dPepHint").textContent = locked ? "Se débloque à 10/10" : "1 à 3 étoiles bonus pour les chefs-d'œuvre";
   let g=""; for(let i=1;i<=3;i++) g+='<button '+(locked?'disabled ':'')+'class="'+(!locked&&i<=(n.pepite||0)?'on':'')+'" data-p="'+i+'" aria-label="'+PEP[i]+'">✦</button>';
   $("dNug").innerHTML=g;
   const v=[...(n.viewings||[])].sort().reverse();
@@ -854,9 +879,10 @@ let chain=Promise.resolve();
 function saveEntry(c,n,say){
   const k=key(c.type,c.id), old=entries.get(k)||{};
   const e={...blank(),...n, media_type:c.type, tmdb_id:c.id, title:c.title||old.title||"", year:c.year||old.year||null, poster_path:c.poster||old.poster_path||"", updated_at:new Date().toISOString()};
-  if(e.stars!==5) e.pepite=0;
+  if(scoreOf(e)!==10) e.pepite=0;
+  e.stars = e.score==null ? null : Math.floor(e.score/2);
   if(!e.watchlist) e.wl_added=null;
-  const empty = e.stars==null && !(e.viewings||[]).length && !(e.annotations||[]).length && !e.watchlist;
+  const empty = e.score==null && !(e.viewings||[]).length && !(e.annotations||[]).length && !e.watchlist;
   if(empty) entries.delete(k); else entries.set(k,e);
   saveLocal(); renderStats();
   say(user ? "Synchronisation…" : "Enregistré sur cet appareil");
@@ -876,7 +902,10 @@ function toggleWl(c){
   if(cur && cur.type===c.type && cur.id===c.id) drawNote();
   if(view==="a-voir") renderWl();
 }
-$("dStars").addEventListener("click",ev=>{ const b=ev.target.closest("button"); if(!b||!cur) return; const n={...entryOf()}; n.stars=+b.dataset.s; if(!(n.viewings||[]).length) n.viewings=[today()];
+function setScore(v){ if(!cur) return; const n={...entryOf()}; n.score=v; if(!(n.viewings||[]).length) n.viewings=[today()];
+  if(n.watchlist){ n.watchlist=false; toast("Noté : retiré de À voir"); } commit(n); }
+let scoreT; $("dScore").addEventListener("input",ev=>{ const v=+ev.target.value; const n={...entryOf(),score:v}; $("dStars").querySelector(".scoreBig").innerHTML=fmtScore(v)+'<small>/10</small>'; clearTimeout(scoreT); scoreT=setTimeout(()=>setScore(v),250); });
+$("dStars").addEventListener("click",ev=>{ const b=ev.target.closest("button[data-s]"); if(!b||!cur) return; const n={...entryOf()}; n.score=+b.dataset.s; if(!(n.viewings||[]).length) n.viewings=[today()];
   if(n.watchlist){ n.watchlist=false; toast("Noté : retiré de À voir"); } commit(n); });
 $("dWl").onclick=()=>{ if(cur) toggleWl(cur); };
 $("dNug").addEventListener("click",ev=>{ const b=ev.target.closest("button"); if(!b||b.disabled) return; const n={...entryOf()}, p=+b.dataset.p; n.pepite=n.pepite===p?p-1:p; commit(n); });

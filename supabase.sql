@@ -9,6 +9,7 @@ create table if not exists public.entries (
   year        integer,
   poster_path text,
   stars       smallint    check (stars between 0 and 5),
+  score       smallint    check (score between 0 and 10),
   pepite      smallint    not null default 0 check (pepite between 0 and 3),
   viewings    date[]      not null default '{}',
   annotations jsonb       not null default '[]'::jsonb,
@@ -22,6 +23,9 @@ create table if not exists public.entries (
 -- Si la table existait déjà avant la liste « À voir » :
 alter table public.entries add column if not exists watchlist boolean not null default false;
 alter table public.entries add column if not exists wl_added  date;
+-- Note sur 10 (demi-pop-corn) ; reprend les anciennes notes sur 5.
+alter table public.entries add column if not exists score smallint check (score between 0 and 10);
+update public.entries set score = stars * 2 where score is null and stars is not null;
 
 alter table public.entries enable row level security;
 
