@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-30",
-  "generatedAt": "2026-10-30T05:19:22Z",
-  "intro": "Dix titres à voir chez toi : Dujardin chez les collabos sur Canal+, de Gaulle et Sorogoyen en VOD, Scream 7 pour Halloween et deux classiques de 1958 gratuits sur Arte.",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T05:18:49Z",
+  "intro": "Dix titres à voir chez toi pour Halloween : Exit 8 et Doctor Sleep pour frissonner, Dupieux et Ali G pour rire, un Hitchcock gratuit sur Arte et trois séries dont Lupin et Nocturne.",
   "items": [
     {
       "type": "movie",
@@ -10,8 +10,8 @@
       "year": 2026,
       "director": "Xavier Giannoli",
       "genre": "Drame historique",
-      "where": "Canal+ · depuis le 27 octobre",
-      "why": "Jean Dujardin en patron de presse happé par la Collaboration : une fresque ample et nuancée, saluée de toutes parts.",
+      "where": "Canal+",
+      "why": "Jean Dujardin en patron de presse happé par la Collaboration : une fresque ample et nuancée, à rattraper si vous l'avez manquée.",
       "scores": {
         "allocinePresse": 4.2,
         "allocineSpect": 4.2,
@@ -22,76 +22,108 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "La Bataille de Gaulle – Partie 2 : J'écris ton nom",
+      "title": "Ali G : J'suis qui ?",
       "year": 2026,
-      "director": "Antonin Baudry",
-      "genre": "Historique",
-      "where": "VOD · achat depuis le 28 octobre",
-      "why": "Le second volet de la fresque gaullienne, plébiscité par le public, à enchaîner avec le premier.",
-      "scores": {
-        "allocinePresse": 3.9,
-        "allocineSpect": 4.5,
-        "senscritique": 7.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Être aimé",
-      "year": 2026,
-      "director": "Rodrigo Sorogoyen",
-      "genre": "Drame",
-      "where": "VOD · location",
-      "why": "Javier Bardem dans un drame familial tendu signé Sorogoyen, l'un des temps forts de Cannes 2026.",
-      "scores": {
-        "allocinePresse": 3.8,
-        "allocineSpect": 3.9,
-        "senscritique": 7.1,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Scream 7",
-      "year": 2026,
-      "director": "Kevin Williamson",
-      "genre": "Horreur",
-      "where": "Canal+ · depuis le 30 octobre",
-      "why": "Pour Halloween, Ghostface revient sous la direction du scénariste du premier film : du slasher pur, à prendre comme un tour de manège.",
-      "scores": {
-        "allocinePresse": 2.4,
-        "allocineSpect": 2.4,
-        "senscritique": 4.4,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Apocalypse Z : New World",
-      "year": 2026,
-      "director": "Carles Torrens",
-      "genre": "Horreur",
-      "where": "Prime Video · depuis le 30 octobre",
-      "why": "La suite espagnole du film de zombies d'Amazon, cette fois aux Canaries : de l'action horrifique sans temps mort pour le week-end.",
+      "director": "Sacha Baron Cohen",
+      "genre": "Comédie",
+      "where": "Prime Video · depuis le 28 octobre",
+      "why": "Sacha Baron Cohen ressuscite son rappeur de Staines pour une comédie potache et provocatrice : on rit ou on grince, mais c'est l'événement du moment sur Prime.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
+        "allocineSpect": 2.8,
+        "senscritique": 5.1,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Contre l'ouragan",
+      "title": "L'Accident de piano",
+      "year": 2025,
+      "director": "Quentin Dupieux",
+      "genre": "Comédie noire",
+      "where": "Netflix",
+      "why": "Adèle Exarchopoulos en influenceuse insensible à la douleur : du Dupieux grinçant et court, idéal pour une soirée décalée.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.1,
+        "senscritique": 6,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Exit 8",
+      "year": 2025,
+      "director": "Genki Kawamura",
+      "genre": "Horreur",
+      "where": "Canal+ · à la demande",
+      "why": "Un couloir de métro qui se répète à l'infini : l'adaptation du jeu culte japonais transforme une idée minimaliste en cauchemar hypnotique, parfait pour Halloween.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3,
+        "senscritique": 6.1,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Doctor Sleep",
+      "year": 2019,
+      "director": "Mike Flanagan",
+      "genre": "Horreur",
+      "where": "Netflix",
+      "why": "La suite de Shining par Mike Flanagan, avec Ewan McGregor en Danny Torrance adulte : un fantastique ample et mélancolique pour la nuit d'Halloween.",
+      "scores": {
+        "allocinePresse": 3.1,
+        "allocineSpect": 3.6,
+        "senscritique": 6.3,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Des Minions et des monstres",
       "year": 2026,
-      "director": "Jorge Michel Grau",
-      "genre": "Survie",
-      "where": "Netflix · depuis le 23 octobre",
-      "why": "Deux demi-frères pris dans l'ouragan Otis au large d'Acapulco : un survival mexicain inspiré d'une catastrophe réelle.",
+      "director": "Pierre Coffin, Patrick Delage",
+      "genre": "Animation",
+      "where": "VOD · depuis le 29 octobre",
+      "why": "Les Minions débarquent dans le Hollywood des films de monstres : le plus inventif de la franchise, à voir en famille ce week-end.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.1,
+        "senscritique": 5.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Maison du docteur Edwardes",
+      "year": 1945,
+      "director": "Alfred Hitchcock",
+      "genre": "Thriller",
+      "where": "Arte.tv (gratuit)",
+      "why": "Ingrid Bergman et Gregory Peck dans un Hitchcock psychanalytique, avec sa fameuse séquence de rêve conçue par Dalí : un classique à voir gratuitement.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 3.7,
+        "senscritique": 7.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Lupin",
+      "year": 2021,
+      "director": "George Kay",
+      "genre": "Policier",
+      "where": "Netflix · partie 4 depuis le 23 octobre",
+      "why": "Omar Sy rendosse le costume d'Assane Diop pour huit nouveaux épisodes : une partie 4 qui divise les fans, mais qui reste un divertissement léger.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": 1.9,
@@ -100,66 +132,34 @@
       }
     },
     {
-      "type": "movie",
+      "type": "tv",
       "tmdbId": null,
-      "title": "Retribution",
-      "year": 2023,
-      "director": "Nimród Antal",
-      "genre": "Action",
-      "where": "Netflix",
-      "why": "Liam Neeson coincé dans une voiture piégée avec ses enfants : un thriller tendu d'une heure et demie, efficace sans plus.",
+      "title": "Nocturne",
+      "year": 2026,
+      "director": "Rowan Joffé, John Hlavin",
+      "genre": "Thriller",
+      "where": "Apple TV · depuis le 30 octobre",
+      "why": "Liev Schreiber traque un tueur en série joué par Stephen Graham dans cette adaptation américaine de Lars Kepler, sombre et tendue.",
       "scores": {
-        "allocinePresse": 2.1,
-        "allocineSpect": 2.3,
-        "senscritique": 4.6,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Ascenseur pour l'échafaud",
-      "year": 1958,
-      "director": "Louis Malle",
-      "genre": "Polar",
-      "where": "Arte.tv (gratuit)",
-      "why": "Jeanne Moreau, Paris la nuit et la trompette de Miles Davis : un classique du film noir français à (re)voir gratuitement.",
-      "scores": {
-        "allocinePresse": 4.3,
-        "allocineSpect": 3.9,
-        "senscritique": 7.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Homme de l'Ouest",
-      "year": 1958,
-      "director": "Anthony Mann",
-      "genre": "Western",
-      "where": "Arte.tv (gratuit) · diffusé le 26 octobre",
-      "why": "Gary Cooper rattrapé par son passé de hors-la-loi : un western sombre et méconnu, parmi les plus beaux d'Anthony Mann.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.6,
-        "senscritique": 7.2,
+        "allocinePresse": 3.9,
+        "allocineSpect": 3.2,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Un jour on fera l'amour",
+      "title": "VisionQuest",
       "year": 2026,
-      "director": "Jérôme Bonnell",
-      "genre": "Romance",
-      "where": "Arte.tv (gratuit) · minisérie en 3 épisodes",
-      "why": "Une histoire d'amour qui se cherche sur des années, primée au festival de La Rochelle : trois épisodes délicats à dévorer d'une traite.",
+      "director": "Terry Matalas",
+      "genre": "Super-héros",
+      "where": "Disney+",
+      "why": "Paul Bettany retrouve Vision pour clore la trilogie ouverte par WandaVision : mémoire, identité et retour d'Ultron.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
+        "allocinePresse": 3.1,
+        "allocineSpect": 3.6,
+        "senscritique": 5.5,
         "telerama": null
       }
     }
