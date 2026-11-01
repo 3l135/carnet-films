@@ -127,6 +127,21 @@ select,.btn{padding:9px 14px;border-radius:999px;border:1px solid var(--line);ba
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .btn:disabled{opacity:.5;cursor:default}
 .count{color:var(--muted);font-size:.85rem;margin-left:auto;font-variant-numeric:tabular-nums}
+.fbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fbar select{max-width:100%}
+@media (max-width:720px){
+  .fbar{flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:4px max(16px,env(safe-area-inset-left,0px)) 10px;scrollbar-width:none}
+  .fbar::-webkit-scrollbar{display:none}
+  .fbar > *{flex:none}
+}
+.active{display:flex;gap:6px;flex-wrap:wrap;align-items:center;min-height:0}
+.active:empty{display:none}
+.achip{display:inline-flex;align-items:center;gap:6px;padding:5px 6px 5px 12px;border-radius:999px;font-size:.8rem;font-weight:600;border:1px solid var(--line);background:var(--surface-2);cursor:pointer}
+.achip span{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--surface);font-size:.85rem}
+.achip.clear{background:none;padding:5px 12px;color:var(--accent)}
+.catinfo{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.catinfo .count{margin-left:0}
+.note{font-size:.8rem;color:var(--faint)}
 
 /* grille */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px 14px}
@@ -369,22 +384,24 @@ footer p{margin:0 0 6px;max-width:80ch}
       <div class="eyebrow">Catalogue TMDB</div>
       <h1 id="catTitle">Les plus populaires</h1>
     </div>
-    <div class="filters">
+    <div class="fbar" id="fbar">
       <div class="seg" role="group" aria-label="Type">
-        <button data-t="movie" aria-pressed="true">Films</button>
+        <button data-t="all" aria-pressed="true">Tout</button>
+        <button data-t="movie" aria-pressed="false">Films</button>
         <button data-t="tv" aria-pressed="false">Séries</button>
       </div>
-      <select id="cGenre" aria-label="Genre"><option value="">Tous les genres</option></select>
       <select id="cSort" aria-label="Trier">
         <option value="popularity.desc">Les plus populaires</option>
         <option value="vote_average.desc">Les mieux notés</option>
         <option value="date.desc">Les plus récents</option>
       </select>
-      <select id="cYear" aria-label="Décennie"><option value="">Toutes les années</option></select>
-      <select id="cCountry" aria-label="Pays"><option value="">Tous les pays</option></select>
+      <select id="cGenre" aria-label="Genre"><option value="">Tous les genres</option></select>
       <select id="cProv" aria-label="Plateforme"><option value="">Toutes les plateformes</option></select>
-      <span class="count" id="catCount"></span>
+      <select id="cCountry" aria-label="Pays"><option value="">Tous les pays</option></select>
+      <select id="cYear" aria-label="Décennie"><option value="">Toutes les années</option></select>
     </div>
+    <div class="active" id="cActive"></div>
+    <div class="catinfo"><span class="count" id="catCount"></span><span class="note" id="catNote"></span></div>
     <div class="grid" id="grid"></div>
     <div class="more"><button class="btn" id="moreBtn" hidden>Afficher plus</button></div>
   </section>
@@ -546,7 +563,7 @@ async function tmdb(path, params={}){
 const yearOf = x => +(String(x.release_date||x.first_air_date||"").slice(0,4)) || null;
 const titleOf = x => x.title || x.name || "";
 const norm = (x,t) => ({ type: t || x.media_type, id: x.id, title: titleOf(x), original: x.original_title||x.original_name||"", year: yearOf(x),
-  poster: x.poster_path||"", backdrop: x.backdrop_path||"", vote: x.vote_average||0, votes: x.vote_count||0, overview: x.overview||"", genres: x.genre_ids||[], date: x.release_date||x.first_air_date||"" });
+  poster: x.poster_path||"", backdrop: x.backdrop_path||"", vote: x.vote_average||0, votes: x.vote_count||0, overview: x.overview||"", genres: x.genre_ids||[], date: x.release_date||x.first_air_date||"", countries: x.origin_country||[], lang: x.original_language||"", pop: x.popularity||0 });
 
 let GENRES = {movie:new Map(), tv:new Map()};
 async function loadGenres(){
@@ -743,9 +760,17 @@ $("pRows").addEventListener("click",ev=>{
   const m=ev.target.closest("[data-pm]");
   if(m){ const id=+m.closest("[data-row]").dataset.row; platMode[id]=m.dataset.pm; m.parentNode.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===m)); loadPlatformRow(id); return; }
   const a=ev.target.closest("[data-all]");
-  if(a){ $("cProv").value=a.dataset.all; $("cSort").value="date.desc"; if(view==="catalogue") loadCatalog(true); }
+  if(a){ $("q").value=""; ["cGenre","cYear","cCountry"].forEach(id=>$(id).value=""); setCatType("all"); $("cProv").value=a.dataset.all; $("cSort").value="date.desc"; if(view==="catalogue") loadCatalog(true); }
 });
-function genreIdsFor(t,name){ for(const [id,n] of GENRES[t]) if(n===name) return id; if(name==="Action"&&t==="tv") return 10759; if(name==="Science-Fiction"&&t==="tv") return 10765; return null; }
+// Fait correspondre un genre entre films et séries (les séries regroupent certains genres : « Action & Adventure »…)
+const GENRE_BRIDGE={tv:{28:10759,12:10759,878:10765,14:10765,10752:10768}, movie:{10759:28,10765:878,10768:10752}};
+function genreIdsFor(t,name){
+  if(!name) return null;
+  for(const [id,n] of GENRES[t]) if(n.toLowerCase()===name.toLowerCase()) return id;
+  const other=t==="tv"?"movie":"tv";
+  for(const [id,n] of GENRES[other]) if(n.toLowerCase()===name.toLowerCase() && GENRE_BRIDGE[t][id]) return GENRE_BRIDGE[t][id];
+  return null;
+}
 async function newSelection(){
   const btn=$("rGo"); btn.disabled=true; $("sel").innerHTML='<div class="empty">Recherche de titres…</div>';
   const gName=$("rGenre").value, prov=$("rProv").value, era=$("rEra").value, ctry=$("rCountry").value;
@@ -784,48 +809,126 @@ async function newSelection(){
 $("rGo").onclick=newSelection;
 
 // ---------------- CATALOGUE
-let cat={type:"movie",page:1,total:0,items:[],q:"",loading:false};
-async function loadCatalog(reset){
-  if(cat.loading) return; cat.loading=true;
-  if(reset){ cat.page=1; cat.items=[]; $("grid").innerHTML=skeleton(12); }
-  const q=$("q").value.trim(), g=$("cGenre").value, s=$("cSort").value, y=$("cYear").value;
-  try{
-    let r;
-    if(q){
-      r=await tmdb("/search/multi",{query:q,page:cat.page,include_adult:false});
-      r.results=r.results.filter(x=>x.media_type==="movie"||x.media_type==="tv");
-      $("catTitle").textContent="Résultats pour « "+q+" »";
-    } else {
-      const t=cat.type, df=t==="movie"?"primary_release_date":"first_air_date";
-      const p={page:cat.page,with_genres:g,sort_by:s==="date.desc"?df+".desc":s,"vote_count.gte":s==="vote_average.desc"?(t==="movie"?800:300):(s==="date.desc"?20:0)};
-      if(y){ p[df+".gte"]=y+"-01-01"; p[df+".lte"]=(+y+9)+"-12-31"; }
-      const ctry=$("cCountry").value; if(ctry) p.with_origin_country=ctry;
-      const prov=$("cProv").value; if(prov){ p.watch_region="FR"; p.with_watch_providers=prov; p.with_watch_monetization_types="flatrate|free|ads"; if(s==="date.desc") p["vote_count.gte"]=t==="movie"?10:3; }
-      if(s==="date.desc") p[df+".lte"]=p[df+".lte"]||today();
-      r=await tmdb("/discover/"+t,p);
-      const cName=[(COUNTRIES.find(c=>c[0]===$("cCountry").value)||[])[1], prov?"sur "+((PROVIDERS.find(x=>String(x.provider_id)===prov)||{}).provider_name||""):""].filter(Boolean).join(" · ");
-      $("catTitle").textContent=(s==="vote_average.desc"?"Les mieux notés":s==="date.desc"?"Les plus récents":"Les plus populaires")+(t==="tv"?" · séries":" · films")+(cName?" · "+cName:"");
-    }
-    cat.total=r.total_results; cat.items.push(...r.results.map(x=>norm(x,x.media_type||cat.type)));
-    $("catCount").textContent=cat.total.toLocaleString("fr-FR")+" titre"+(cat.total>1?"s":"");
-    $("grid").innerHTML = cat.items.length ? cat.items.map(x=>cardHTML(x)).join("") : '<div class="empty">Aucun résultat. Vérifie l\'orthographe ou essaie le titre original.</div>';
-    $("moreBtn").hidden = cat.page >= Math.min(r.total_pages,500);
-  }catch(e){ $("grid").innerHTML='<div class="empty">'+(CFG.TMDB_TOKEN?"TMDB ne répond pas. Réessaie dans un instant.":"Ajoute ton jeton TMDB dans config.js pour afficher le catalogue.")+'</div>'; }
-  cat.loading=false;
+// Recherche et filtres : chaque changement annule la requête précédente (plus de résultats périmés),
+// et les filtres s'appliquent aussi pendant une recherche.
+const LANG_OF={FR:"fr",US:"en",GB:"en",IE:"en",CA:"en",AU:"en",NZ:"en",BE:"fr",IT:"it",ES:"es",MX:"es",AR:"es",DE:"de",DK:"da",SE:"sv",NO:"no",FI:"fi",NL:"nl",PL:"pl",JP:"ja",KR:"ko",CN:"zh",HK:"cn",TW:"zh",IN:"hi",IR:"fa",TR:"tr",IL:"he",BR:"pt"};
+let cat={type:"all",page:1,items:[],keys:new Set(),req:0,busy:false,totalPages:1,total:0,approx:false};
+function catFilters(){ return {q:$("q").value.trim(), type:cat.type, g:$("cGenre").value, s:$("cSort").value, y:$("cYear").value, ctry:$("cCountry").value, prov:$("cProv").value}; }
+function discoverParams(t,f,page){
+  const df=t==="movie"?"primary_release_date":"first_air_date";
+  const narrow = !!(f.ctry||f.prov||f.g||f.y);
+  const p={page, sort_by: f.s==="date.desc" ? df+".desc" : f.s};
+  if(f.g){ const id=genreIdsFor(t,f.g); if(!id) return null; p.with_genres=id; }
+  if(f.y){ p[df+".gte"]=f.y+"-01-01"; p[df+".lte"]=(+f.y+9)+"-12-31"; }
+  if(f.ctry) p.with_origin_country=f.ctry;
+  if(f.prov){ p.watch_region="FR"; p.with_watch_providers=f.prov; p.with_watch_monetization_types="flatrate|free|ads"; }
+  if(f.s==="vote_average.desc") p["vote_count.gte"] = narrow ? (t==="movie"?60:25) : (t==="movie"?600:200);
+  if(f.s==="date.desc"){ p[df+".lte"] = p[df+".lte"] && p[df+".lte"]<today() ? p[df+".lte"] : today(); p["vote_count.gte"] = f.prov ? (t==="movie"?5:2) : (t==="movie"?15:5); }
+  return p;
 }
-document.querySelectorAll('#v-catalogue .seg button').forEach(b=>b.onclick=()=>{
-  cat.type=b.dataset.t; document.querySelectorAll('#v-catalogue .seg button').forEach(x=>x.setAttribute("aria-pressed",x===b));
-  fillCatGenres(); loadCatalog(true);
-});
+function sortItems(items,s){
+  if(s==="vote_average.desc") items.sort((a,b)=>(b.votes>=20)-(a.votes>=20) || b.vote-a.vote);
+  else if(s==="date.desc") items.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  else items.sort((a,b)=>b.pop-a.pop);
+  return items;
+}
+async function providersOf(x){
+  try{ const w=await tmdb("/"+x.type+"/"+x.id+"/watch/providers"); const fr=w.results&&w.results.FR; return [...(fr&&fr.flatrate||[]),...(fr&&fr.free||[]),...(fr&&fr.ads||[])].map(p=>String(p.provider_id)); }catch(e){ return []; }
+}
+async function fetchCatalogPage(f,page){
+  if(f.q){
+    const r=await tmdb("/search/multi",{query:f.q,page,include_adult:false});
+    let items=r.results.filter(x=>x.media_type==="movie"||x.media_type==="tv").map(x=>norm(x,x.media_type));
+    if(f.type!=="all") items=items.filter(x=>x.type===f.type);
+    if(f.g) items=items.filter(x=>{ const id=genreIdsFor(x.type,f.g); return id && x.genres.includes(id); });
+    if(f.y) items=items.filter(x=>x.year && x.year>=+f.y && x.year<=+f.y+9);
+    if(f.ctry) items=items.filter(x=> x.countries.length ? x.countries.includes(f.ctry) : x.lang===LANG_OF[f.ctry]);
+    if(f.prov){ const ok=await Promise.all(items.map(providersOf)); items=items.filter((x,i)=>ok[i].includes(String(f.prov))); }
+    // garde l'ordre de pertinence, mais pousse en bas les titres très obscurs sans affiche
+    items.sort((a,b)=>(!!b.poster)-(!!a.poster));
+    if(f.s!=="popularity.desc") sortItems(items,f.s);
+    return {items,totalPages:r.total_pages,total:r.total_results,approx:true};
+  }
+  const types=f.type==="all"?["movie","tv"]:[f.type];
+  const res=await Promise.all(types.map(t=>{ const p=discoverParams(t,f,page); return p ? tmdb("/discover/"+t,p).then(r=>({t,r})) : Promise.resolve({t,r:{results:[],total_pages:0,total_results:0}}); }));
+  let items=res.flatMap(({t,r})=>r.results.map(x=>norm(x,t)));
+  if(types.length>1) sortItems(items,f.s);
+  return {items,totalPages:Math.max(...res.map(x=>x.r.total_pages||0)),total:res.reduce((n,x)=>n+(x.r.total_results||0),0),approx:false};
+}
+function catTitle(f){
+  const what = f.type==="movie"?"films":f.type==="tv"?"séries":"films et séries";
+  if(f.q) return "Résultats pour « "+f.q+" »";
+  const head = f.s==="vote_average.desc"?"Les mieux notés":f.s==="date.desc"?"Les plus récents":"Les plus populaires";
+  return head+" · "+what;
+}
+function renderActive(f){
+  const chips=[];
+  const provName=id=>(PROVIDERS.find(x=>String(x.provider_id)===String(id))||{}).provider_name||"Plateforme";
+  if(f.q) chips.push(["q","« "+f.q+" »"]);
+  if(f.type!=="all") chips.push(["type",f.type==="movie"?"Films":"Séries"]);
+  if(f.g) chips.push(["cGenre",f.g]);
+  if(f.prov) chips.push(["cProv",provName(f.prov)]);
+  if(f.ctry) chips.push(["cCountry",(COUNTRIES.find(c=>c[0]===f.ctry)||[])[1]||f.ctry]);
+  if(f.y) chips.push(["cYear","Années "+f.y]);
+  $("cActive").innerHTML = chips.length ? chips.map(([k,l])=>'<button class="achip" data-clear="'+k+'" aria-label="Retirer le filtre '+esc(l)+'">'+esc(l)+'<span aria-hidden="true">×</span></button>').join("")+(chips.length>1?'<button class="achip clear" data-clear="all">Tout effacer</button>':'') : "";
+}
+async function loadCatalog(reset){
+  if(!reset && cat.busy) return;
+  const my = reset ? ++cat.req : cat.req;
+  if(reset){ cat.page=1; cat.items=[]; cat.keys=new Set(); $("grid").innerHTML=skeleton(12); $("moreBtn").hidden=true; }
+  else cat.page++;
+  cat.busy=true;
+  const f=catFilters();
+  $("catTitle").textContent=catTitle(f); renderActive(f);
+  try{
+    let r=await fetchCatalogPage(f,cat.page);
+    if(my!==cat.req) return;
+    let added=r.items.filter(x=>!cat.keys.has(key(x.type,x.id)));
+    // recherche filtrée : va chercher les pages suivantes tant qu'il y a trop peu de résultats
+    while(r.approx && added.length<8 && cat.page<Math.min(r.totalPages,5)){
+      cat.page++; const r2=await fetchCatalogPage(f,cat.page); if(my!==cat.req) return;
+      r={...r2}; added=added.concat(r2.items.filter(x=>!cat.keys.has(key(x.type,x.id)) && !added.some(y=>y.type===x.type&&y.id===x.id)));
+    }
+    added.forEach(x=>cat.keys.add(key(x.type,x.id)));
+    cat.items.push(...added); cat.totalPages=r.totalPages; cat.total=r.total; cat.approx=r.approx;
+    $("catCount").textContent = r.approx ? cat.items.length+" résultat"+(cat.items.length>1?"s":"")+" affiché"+(cat.items.length>1?"s":"")
+                                         : cat.total.toLocaleString("fr-FR")+" titre"+(cat.total>1?"s":"");
+    $("catNote").textContent = f.q && f.s!=="popularity.desc" ? "Pendant une recherche, le tri s'applique aux résultats affichés." : "";
+    $("grid").innerHTML = cat.items.length ? cat.items.map(x=>cardHTML(x)).join("")
+      : '<div class="empty">Aucun titre ne correspond.'+(($("cActive").children.length)?' <button class="btn" data-clear="all">Effacer les filtres</button>':' Vérifie l\'orthographe ou essaie le titre original.')+'</div>';
+    $("moreBtn").hidden = cat.page >= Math.min(cat.totalPages,500);
+  }catch(e){
+    if(my===cat.req) $("grid").innerHTML='<div class="empty">'+(CFG.TMDB_TOKEN?"TMDB ne répond pas. Réessaie dans un instant.":"Ajoute ton jeton TMDB dans config.js pour afficher le catalogue.")+'</div>';
+  }finally{ if(my===cat.req) cat.busy=false; }
+}
+function setCatType(t){
+  cat.type=t; document.querySelectorAll('#v-catalogue .seg button').forEach(x=>x.setAttribute("aria-pressed",x.dataset.t===t));
+}
+document.querySelectorAll('#v-catalogue .seg button').forEach(b=>b.onclick=()=>{ setCatType(b.dataset.t); loadCatalog(true); });
 function fillCatGenres(){
   const cur=$("cGenre").value;
-  $("cGenre").innerHTML='<option value="">Tous les genres</option>'+[...GENRES[cat.type]].sort((a,b)=>a[1].localeCompare(b[1],"fr")).map(([id,n])=>'<option value="'+id+'">'+esc(n)+'</option>').join("");
-  if([...GENRES[cat.type].keys()].map(String).includes(cur)) $("cGenre").value=cur;
+  const names=[...new Set([...GENRES.movie.values(),...GENRES.tv.values()])].filter(n=>!/&/.test(n)).sort((a,b)=>a.localeCompare(b,"fr"));
+  $("cGenre").innerHTML='<option value="">Tous les genres</option>'+names.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join("");
+  if(names.includes(cur)) $("cGenre").value=cur;
 }
 (function(){ let h='<option value="">Toutes les années</option>'; for(let d=2020; d>=1920; d-=10) h+='<option value="'+d+'">Années '+d+'</option>'; $("cYear").innerHTML=h; })();
 ["cGenre","cSort","cYear","cCountry","cProv"].forEach(id=>$(id).onchange=()=>loadCatalog(true));
-$("moreBtn").onclick=()=>{ cat.page++; loadCatalog(false); };
-let qT; $("q").addEventListener("input",()=>{ clearTimeout(qT); qT=setTimeout(()=>{ if(view!=="catalogue") location.hash="catalogue"; else loadCatalog(true); },300); });
+$("moreBtn").onclick=()=>loadCatalog(false);
+function clearFilter(k){
+  if(k==="all"){ ["cGenre","cYear","cCountry","cProv"].forEach(id=>$(id).value=""); $("q").value=""; setCatType("all"); }
+  else if(k==="q") $("q").value="";
+  else if(k==="type") setCatType("all");
+  else $(k).value="";
+  loadCatalog(true);
+}
+document.addEventListener("click",ev=>{ const c=ev.target.closest("[data-clear]"); if(c) clearFilter(c.dataset.clear); });
+let qT;
+function onSearch(now){
+  clearTimeout(qT);
+  qT=setTimeout(()=>{ if(view!=="catalogue") location.hash="catalogue"; else loadCatalog(true); }, now?0:350);
+}
+$("q").addEventListener("input",()=>onSearch(false));
+$("q").addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("q").blur(); onSearch(true); } });
 
 // ---------------- MES TITRES / PÉPITES
 function entryCard(e){ return cardHTML({type:e.media_type,id:e.tmdb_id,title:e.title,year:e.year,poster:e.poster_path,vote:0}, lastView(e)?'<span class="cs">Vu le '+esc(fmtDate(lastView(e)))+'</span>':''); }
