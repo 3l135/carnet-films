@@ -1,8 +1,40 @@
 {
-  "date": "2026-10-31",
-  "generatedAt": "2026-10-31T05:18:49Z",
-  "intro": "Dix titres à voir chez toi pour Halloween : Exit 8 et Doctor Sleep pour frissonner, Dupieux et Ali G pour rire, un Hitchcock gratuit sur Arte et trois séries dont Lupin et Nocturne.",
+  "date": "2026-11-01",
+  "generatedAt": "2026-11-01T05:18:33Z",
+  "intro": "Dix titres à voir chez toi ce week-end de Toussaint : Le Théorème de Marguerite et Mon garçon arrivent sur Netflix, The Substance et Midsommar pour prolonger Halloween, un Hitchcock gratuit sur Arte et deux séries dont Entretien avec un vampire.",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Drame",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "Ella Rumpf en doctorante en maths qui voit sa thèse s'effondrer et réapprend à vivre : un portrait sensible et lumineux, l'une des belles surprises françaises récentes.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": 6.4,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "The Substance",
+      "year": 2024,
+      "director": "Coralie Fargeat",
+      "genre": "Body horror",
+      "where": "Ciné+ OCS (Canal+) · depuis le 31 octobre",
+      "why": "Demi Moore face à son double rajeuni : une satire féroce et gore de l'obsession de la jeunesse, Prix du scénario à Cannes, à ne pas regarder en mangeant.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 3.6,
+        "senscritique": 6.9,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -22,80 +54,64 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Ali G : J'suis qui ?",
+      "title": "Midsommar",
+      "year": 2019,
+      "director": "Ari Aster",
+      "genre": "Horreur",
+      "where": "Ciné+ OCS (Canal+)",
+      "why": "Un deuil, un couple qui se délite et une fête païenne suédoise en plein jour : l'horreur solaire d'Ari Aster, devenue un classique moderne du genre.",
+      "scores": {
+        "allocinePresse": 3.7,
+        "allocineSpect": 3.5,
+        "senscritique": 7.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Mon garçon",
+      "year": 2017,
+      "director": "Christian Carion",
+      "genre": "Thriller",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "Guillaume Canet, tourné sans scénario en main, cherche son fils disparu dans la montagne : un thriller sec et original dans sa fabrication.",
+      "scores": {
+        "allocinePresse": 2.9,
+        "allocineSpect": 2.9,
+        "senscritique": 5.6,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Scream 7",
       "year": 2026,
-      "director": "Sacha Baron Cohen",
-      "genre": "Comédie",
-      "where": "Prime Video · depuis le 28 octobre",
-      "why": "Sacha Baron Cohen ressuscite son rappeur de Staines pour une comédie potache et provocatrice : on rit ou on grince, mais c'est l'événement du moment sur Prime.",
+      "director": "Kevin Williamson",
+      "genre": "Horreur",
+      "where": "Canal+ · depuis le 30 octobre",
+      "why": "Le scénariste du premier Scream passe à la réalisation et ramène Sidney Prescott : pour les fans de la saga, même si l'épisode a déçu beaucoup de monde.",
+      "scores": {
+        "allocinePresse": 2.4,
+        "allocineSpect": 2.4,
+        "senscritique": 4.4,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Opus",
+      "year": 2025,
+      "director": "Mark Anthony Green",
+      "genre": "Thriller",
+      "where": "Canal+ · à la demande",
+      "why": "John Malkovich en pop star recluse qui invite des journalistes dans sa secte : un thriller satirique A24 étrange et inégal, pour les curieux.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": 2.8,
-        "senscritique": 5.1,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Accident de piano",
-      "year": 2025,
-      "director": "Quentin Dupieux",
-      "genre": "Comédie noire",
-      "where": "Netflix",
-      "why": "Adèle Exarchopoulos en influenceuse insensible à la douleur : du Dupieux grinçant et court, idéal pour une soirée décalée.",
-      "scores": {
-        "allocinePresse": 3.4,
-        "allocineSpect": 3.1,
-        "senscritique": 6,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Exit 8",
-      "year": 2025,
-      "director": "Genki Kawamura",
-      "genre": "Horreur",
-      "where": "Canal+ · à la demande",
-      "why": "Un couloir de métro qui se répète à l'infini : l'adaptation du jeu culte japonais transforme une idée minimaliste en cauchemar hypnotique, parfait pour Halloween.",
-      "scores": {
-        "allocinePresse": 3.4,
-        "allocineSpect": 3,
-        "senscritique": 6.1,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Doctor Sleep",
-      "year": 2019,
-      "director": "Mike Flanagan",
-      "genre": "Horreur",
-      "where": "Netflix",
-      "why": "La suite de Shining par Mike Flanagan, avec Ewan McGregor en Danny Torrance adulte : un fantastique ample et mélancolique pour la nuit d'Halloween.",
-      "scores": {
-        "allocinePresse": 3.1,
-        "allocineSpect": 3.6,
-        "senscritique": 6.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Des Minions et des monstres",
-      "year": 2026,
-      "director": "Pierre Coffin, Patrick Delage",
-      "genre": "Animation",
-      "where": "VOD · depuis le 29 octobre",
-      "why": "Les Minions débarquent dans le Hollywood des films de monstres : le plus inventif de la franchise, à voir en famille ce week-end.",
-      "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 3.1,
-        "senscritique": 5.7,
+        "allocineSpect": 2.3,
+        "senscritique": 5.3,
         "telerama": null
       }
     },
@@ -118,16 +134,16 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Lupin",
-      "year": 2021,
-      "director": "George Kay",
-      "genre": "Policier",
-      "where": "Netflix · partie 4 depuis le 23 octobre",
-      "why": "Omar Sy rendosse le costume d'Assane Diop pour huit nouveaux épisodes : une partie 4 qui divise les fans, mais qui reste un divertissement léger.",
+      "title": "Entretien avec un vampire",
+      "year": 2022,
+      "director": "Rolin Jones",
+      "genre": "Fantastique",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "La relecture d'Anne Rice en confession à huis clos entre Louis et le journaliste Molloy : somptueuse, cruelle et romanesque, enfin sur Netflix.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 1.9,
-        "senscritique": null,
+        "allocinePresse": 4,
+        "allocineSpect": 3.4,
+        "senscritique": 6.5,
         "telerama": null
       }
     },
@@ -144,22 +160,6 @@
         "allocinePresse": 3.9,
         "allocineSpect": 3.2,
         "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "VisionQuest",
-      "year": 2026,
-      "director": "Terry Matalas",
-      "genre": "Super-héros",
-      "where": "Disney+",
-      "why": "Paul Bettany retrouve Vision pour clore la trilogie ouverte par WandaVision : mémoire, identité et retour d'Ultron.",
-      "scores": {
-        "allocinePresse": 3.1,
-        "allocineSpect": 3.6,
-        "senscritique": 5.5,
         "telerama": null
       }
     }
