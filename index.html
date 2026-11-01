@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='none'/%3E%3Ctext x='16' y='25' font-size='24' text-anchor='middle'%3E%F0%9F%8D%BF%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://image.tmdb.org">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
 /* Layout : verre liquide sur fond d'aurore. Barre collante, vues en onglets, grille d'affiches, fiche en panneau de verre. */
 :root{
@@ -329,6 +329,91 @@ select,.btn{padding:9px 14px;border-radius:999px;border:1px solid var(--line);ba
 footer{color:var(--faint);font-size:.75rem;padding-block:24px 30px;border-top:1px solid var(--line)}
 footer p{margin:0 0 6px;max-width:80ch}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ===== Refonte « verre clair » : transparent, neutre, léger ===== */
+:root{
+  --bg:#0b0b0d; --bg-2:rgba(28,28,32,.72); --surface:rgba(255,255,255,.07); --surface-2:rgba(255,255,255,.13); --line:rgba(255,255,255,.14);
+  --ink:#f5f5f7; --muted:rgba(245,245,247,.62); --faint:rgba(245,245,247,.4);
+  --accent:#f5f5f7; --accent-2:#30d158; --accent-ink:#0b0b0d;
+  --glass:rgba(255,255,255,.08); --glass-strong:rgba(255,255,255,.18); --glass-rim:rgba(255,255,255,.22); --glass-hi:rgba(255,255,255,.35);
+  --glass-shadow:0 8px 28px rgba(0,0,0,.28);
+  --f-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+:root[data-theme="light"]{
+  --bg:#f2f2f4; --bg-2:rgba(250,250,252,.78); --surface:rgba(255,255,255,.5); --surface-2:rgba(255,255,255,.75); --line:rgba(0,0,0,.08);
+  --ink:#1d1d1f; --muted:rgba(29,29,31,.6); --faint:rgba(29,29,31,.42);
+  --accent:#1d1d1f; --accent-2:#1f9d55; --accent-ink:#ffffff;
+  --glass:rgba(255,255,255,.42); --glass-strong:rgba(255,255,255,.72); --glass-rim:rgba(255,255,255,.9); --glass-hi:rgba(255,255,255,1);
+  --glass-shadow:0 6px 24px rgba(0,0,0,.08);
+}
+/* fond fixe, sans animation ni flou (beaucoup plus fluide) */
+body::after{animation:none;filter:none;inset:0;
+  background:radial-gradient(60% 50% at 10% 0%,rgba(255,190,150,.16),transparent 70%),radial-gradient(50% 45% at 95% 10%,rgba(190,170,255,.14),transparent 70%),radial-gradient(60% 50% at 50% 100%,rgba(150,220,200,.12),transparent 70%)}
+/* le flou d'arrière-plan est réservé aux éléments qui flottent au-dessus du contenu */
+.chip,.seg,.pick,.regen,select,.btn,.block,.status,.badge,.sc,.vd,.lk a,.prov span,.empty,.stars .zero,.search input,.acct,.achip,.wlq,.pchip{backdrop-filter:none;-webkit-backdrop-filter:none}
+/* verre clair : transparent, liseré lumineux, reflet en haut, aucune teinte */
+.nav,.search input,.acct,.chip,.seg,.pick,.regen,select,.btn,.block,.modal,.status,.lk a,.vd,.achip,.pchip,.lg,.empty{
+  background:var(--glass);background-image:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,0) 60%);
+  border:1px solid var(--glass-rim);color:var(--ink);
+  box-shadow:inset 0 1px 0 var(--glass-hi),inset 0 -1px 0 rgba(0,0,0,.04),var(--glass-shadow)}
+.bar,.sheet,.modal,.toast{backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%)}
+.bar{background:color-mix(in srgb,var(--bg) 55%,transparent)}
+.sheet{background-color:var(--bg-2)}
+/* état actif = verre plus clair, pas de couleur */
+.seg button[aria-pressed="true"],.nav a[aria-current="page"],.lg.on,.btn.primary,.pchip.on{
+  background:var(--glass-strong);background-image:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.08));color:var(--ink);
+  box-shadow:inset 0 1px 0 var(--glass-hi),0 2px 10px rgba(0,0,0,.12);border-color:var(--glass-rim)}
+.btn.primary{font-weight:700}
+.lg.on{color:var(--ink)}
+.pchip{opacity:.6}.pchip.on{opacity:1}.pchip.on img{outline:none}
+.eyebrow{color:var(--muted)}
+.rank{background:rgba(20,20,22,.55)!important;color:#fff!important;border:1px solid rgba(255,255,255,.35);box-shadow:none!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.badge{background:rgba(15,15,18,.55);border:1px solid rgba(255,255,255,.2)}
+.badge.wlb,.badge.tag{background:rgba(255,255,255,.28);color:#fff;border-color:rgba(255,255,255,.4)}
+.badge.seen{background:rgba(48,209,88,.85)}
+.wlq{background:rgba(20,20,22,.45);color:#fff;border:1px solid rgba(255,255,255,.4);box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.wlq.on{background:rgba(255,255,255,.85);color:#1d1d1f}
+.rateRow input[type=range]{accent-color:var(--ink)}
+:focus-visible{outline-color:var(--ink)}
+.anno{border-left-color:var(--muted)}
+.lk a::after{color:var(--faint)}
+.prow .ph a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+
+/* page plus courte */
+main{padding-block:18px 32px}
+.view{gap:16px}
+h1{font-size:clamp(1.6rem,4.2vw,2.5rem)}
+.lede{font-size:.92rem}
+.selmeta{align-items:center}
+.stats{gap:6px}
+.chip{padding:5px 11px;font-size:.85rem}
+.selbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.arrows{display:none;gap:6px;margin-left:auto}
+@media (hover:hover) and (pointer:fine){ .arrows{display:inline-flex} }
+.arrows button{width:34px;height:34px;padding:0;border-radius:50%;font-size:1.1rem;line-height:1;cursor:pointer}
+/* sélection du jour en carrousel horizontal */
+.sel{display:grid;grid-auto-flow:column;grid-auto-columns:min(84vw,400px);grid-template-columns:none;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 10px;scrollbar-width:none}
+.sel::-webkit-scrollbar,.hrow::-webkit-scrollbar{display:none}
+.hrow{scrollbar-width:none}
+.sel > *{scroll-snap-align:start}
+.sel .empty{grid-column:auto}
+.pick{grid-template-columns:96px 1fr;gap:12px;padding:12px}
+.pick .t{font-size:.95rem}
+.pick .why{font-size:.85rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pick .scores{gap:4px}
+.pick .sc{font-size:.66rem;padding:2px 6px}
+.plat{gap:12px;margin-top:4px}
+.plat .lede{display:none}
+.prow{gap:6px}
+.hrow{grid-auto-columns:clamp(108px,26vw,138px);gap:12px;padding-bottom:6px}
+footer{padding-block:16px 24px}
+footer p{font-size:.72rem}
+/* mobile : la barre d'onglets reste en bas (le flou de l'en-tête la piégeait en haut) */
+@media (max-width:720px){ .bar{backdrop-filter:none;-webkit-backdrop-filter:none;background:color-mix(in srgb,var(--bg) 82%,transparent)} }
+.lede{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:560px){ .stats{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none} .stats::-webkit-scrollbar{display:none} .stats .chip{flex:none} .selmeta{gap:10px} }
+/* rendu : les longues grilles ne sont dessinées qu'à l'approche de l'écran */
+.grid > .cw{content-visibility:auto;contain-intrinsic-size:auto 300px}
 </style>
 </head>
 <body>
@@ -363,9 +448,12 @@ footer p{margin:0 0 6px;max-width:80ch}
       </div>
       <div class="stats" id="stats"></div>
     </div>
-    <div class="seg" role="group" aria-label="Choix de la sélection">
-      <button id="segDaily" aria-pressed="true">Sélection de Claude</button>
-      <button id="segMine" aria-pressed="false">Autre sélection</button>
+    <div class="selbar">
+      <div class="seg" role="group" aria-label="Choix de la sélection">
+        <button id="segDaily" aria-pressed="true">Sélection de Claude</button>
+        <button id="segMine" aria-pressed="false">Autre sélection</button>
+      </div>
+      <div class="arrows"><button class="lg" data-scroll="#sel" data-dir="-1" aria-label="Précédents">‹</button><button class="lg" data-scroll="#sel" data-dir="1" aria-label="Suivants">›</button></div>
     </div>
     <div class="regen" id="regen" hidden>
       <span class="lbl">Une sélection instantanée parmi les titres les mieux notés sur TMDB et disponibles chez toi en France : 7 films et 3 séries que tu n'as pas encore notés. Filtre par genre, plateforme, pays ou époque.</span>
@@ -388,7 +476,7 @@ footer p{margin:0 0 6px;max-width:80ch}
       <div>
         <div class="eyebrow">En direct de tes plateformes</div>
         <h2>Quoi de neuf en streaming</h2>
-        <p class="lede">Les sorties récentes disponibles en France sur chaque plateforme, mises à jour chaque jour. Touche une plateforme pour l'ajouter ou la retirer de tes plateformes.</p>
+        <p class="lede">Les sorties récentes disponibles en France, plateforme par plateforme.</p>
       </div>
       <div class="pchips" id="pChips" role="group" aria-label="Mes plateformes"></div>
       <div id="pRows" class="plat"></div>
@@ -509,7 +597,7 @@ footer p{margin:0 0 6px;max-width:80ch}
 
 <footer class="gut"><div class="wrap">
   <p>Ce site utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB. Affiches, résumés et fiches : <a href="https://www.themoviedb.org" target="_blank" rel="noopener">The Movie Database (TMDB)</a>. Disponibilités en streaming : données <a href="https://www.justwatch.com/fr" target="_blank" rel="noopener">JustWatch</a> via TMDB.</p>
-  <p>Notes de la sélection quotidienne : AlloCiné (presse et spectateurs, sur 5), SensCritique (sur 10), Télérama. Un tiret signale une note introuvable.</p>
+  <p>Notes de la sélection quotidienne : AlloCiné (presse et spectateurs, sur 5), SensCritique (sur 10), Télérama.</p>
 </div></footer>
 
 <!-- fiche -->
@@ -668,7 +756,8 @@ const lastView = e => (e && e.viewings && e.viewings.length) ? [...e.viewings].s
 // ---------------- rendu commun
 const PAL=[[12,38],[200,250],[160,190],[280,330],[30,60],[340,20],[220,180],[100,150],[260,210],[0,45]];
 function posterHTML(x, size){
-  if(x.poster) return '<div class="poster"><img src="'+IMG+(size||"w342")+esc(x.poster)+'" alt="Affiche de '+esc(x.title)+'" loading="lazy"></div>';
+  if(x.poster) return size ? '<div class="poster"><img src="'+IMG+size+esc(x.poster)+'" alt="Affiche de '+esc(x.title)+'" loading="lazy" decoding="async"></div>'
+    : '<div class="poster"><img src="'+IMG+'w185'+esc(x.poster)+'" srcset="'+IMG+'w185'+esc(x.poster)+' 185w, '+IMG+'w342'+esc(x.poster)+' 342w" sizes="(max-width:560px) 45vw, 160px" alt="Affiche de '+esc(x.title)+'" loading="lazy" decoding="async"></div>';
   const h=hash(x.type+x.id+x.title), p=PAL[h%PAL.length], a=p[0]+((h>>8)%20), b=p[1]+((h>>12)%20);
   const art=`radial-gradient(circle at ${30+(h%40)}% 38%, hsl(${(a+180)%360} 70% 70%) 0 17%, transparent 17.5%), linear-gradient(160deg, hsl(${a} 62% 46%), hsl(${b} 58% 22%))`;
   const t=x.title||"", fs=t.length>28?.72:t.length>14?.9:1.15;
@@ -703,6 +792,10 @@ function renderStats(){
 // ---------------- AUJOURD'HUI
 let daily=null, dailyResolved=[], selMode="daily", mineSel=ls.get("carnet-autre-selection",null);
 function scoreChips(s){
+  if(s){ const lab={allocinePresse:"AlloCiné presse",allocineSpect:"Spectateurs",senscritique:"SensCritique",telerama:"Télérama"};
+    const have=Object.keys(lab).filter(k=>s[k]!=null && s[k]!=="");
+    if(have.length) return have.map(k=>'<span class="sc"><em>'+lab[k]+'</em> <b>'+String(s[k]).replace(".",",")+'</b></span>').join("");
+    return ""; }
   if(!s) return "";
   const v=x=> x==null||x==="" ? "–" : String(x).replace(".",",");
   return '<span class="sc"><em>AlloCiné presse</em> <b>'+v(s.allocinePresse)+'</b></span><span class="sc"><em>Spectateurs</em> <b>'+v(s.allocineSpect)+'</b></span><span class="sc"><em>SensCritique</em> <b>'+v(s.senscritique)+'</b></span><span class="sc"><em>Télérama</em> <b>'+v(s.telerama)+'</b></span>';
@@ -736,7 +829,7 @@ function renderToday(){
     if(!daily){ $("sel").innerHTML='<div class="empty">La sélection du jour arrive chaque matin.</div>'; $("selLede").textContent=""; $("selDate").textContent="Sélection du jour"; return; }
     $("selDate").textContent="Sélection du "+fmtDate(daily.date,true);
     $("selLede").textContent=daily.intro||"";
-    $("selSrc").textContent="Choisie chaque matin par Claude à partir des notes AlloCiné, SensCritique et Télérama. Un tiret signale une note introuvable.";
+    $("selSrc").textContent="Choisie chaque matin par Claude à partir des notes AlloCiné, SensCritique et Télérama.";
     const list=dailyResolved.length?dailyResolved:daily.items;
     $("sel").innerHTML=list.map((p,i)=>{
       const x={type:p.type,id:p.id||("x"+i),title:p.title,year:p.year,poster:p.poster};
@@ -773,19 +866,25 @@ async function loadRegenFilters(){
   }catch(e){ $("plat").hidden=true; }
 }
 
+document.addEventListener("click",ev=>{ const b=ev.target.closest("[data-scroll]"); if(!b) return; const el=document.querySelector(b.dataset.scroll); if(el) el.scrollBy({left:(+b.dataset.dir)*el.clientWidth*0.85,behavior:"smooth"}); });
+
 // ---------------- QUOI DE NEUF SUR LES PLATEFORMES
 let myProv = ls.get("carnet-plateformes", null);
 const platMode = {};            // provider_id -> "new" | "pop"
 function renderPlatforms(){
   if(!PROVIDERS.length) return;
-  if(!Array.isArray(myProv) || !myProv.length) myProv = PROVIDERS.slice(0,5).map(p=>p.provider_id);
-  $("pChips").innerHTML = PROVIDERS.map(p=>'<button class="lg pchip'+(myProv.includes(p.provider_id)?' on':'')+'" data-prov="'+p.provider_id+'" aria-pressed="'+myProv.includes(p.provider_id)+'"><img src="'+IMG+'w92'+esc(p.logo_path)+'" alt="">'+esc(p.provider_name)+'</button>').join("");
-  const rows = myProv.map(id=>PROVIDERS.find(p=>p.provider_id===id)).filter(Boolean);
+  let active = ls.get("carnet-plateforme", null);
+  if(!PROVIDERS.some(p=>p.provider_id===active)) active = PROVIDERS[0].provider_id;
+  $("pChips").innerHTML = PROVIDERS.slice(0,10).map(p=>'<button class="lg pchip'+(p.provider_id===active?' on':'')+'" data-prov="'+p.provider_id+'" aria-pressed="'+(p.provider_id===active)+'"><img src="'+IMG+'w92'+esc(p.logo_path)+'" alt="">'+esc(p.provider_name)+'</button>').join("");
+  const rows = PROVIDERS.filter(p=>p.provider_id===active);
   $("pRows").innerHTML = rows.length ? rows.map(p=>'<section class="prow" data-row="'+p.provider_id+'"><div class="ph"><img src="'+IMG+'w92'+esc(p.logo_path)+'" alt=""><b>'+esc(p.provider_name)+'</b>'+
       '<div class="seg" role="group" aria-label="Affichage"><button data-pm="new" aria-pressed="'+((platMode[p.provider_id]||"new")==="new")+'">Nouveautés</button><button data-pm="pop" aria-pressed="'+(platMode[p.provider_id]==="pop")+'">Populaires</button></div>'+
-      '<a href="#catalogue" data-all="'+p.provider_id+'">Tout voir</a></div><div class="hrow">'+skeleton(6)+'</div></section>').join("")
+      '<a href="#catalogue" data-all="'+p.provider_id+'">Tout voir</a><span class="arrows"><button class="lg" data-scroll="[data-row=\''+p.provider_id+'\'] .hrow" data-dir="-1" aria-label="Précédents">‹</button><button class="lg" data-scroll="[data-row=\''+p.provider_id+'\'] .hrow" data-dir="1" aria-label="Suivants">›</button></span></div><div class="hrow">'+skeleton(6)+'</div></section>').join("")
     : '<div class="empty">Touche une plateforme ci-dessus pour suivre ses nouveautés.</div>';
-  rows.forEach(p=>loadPlatformRow(p.provider_id));
+  if(!window.IntersectionObserver){ rows.forEach(p=>loadPlatformRow(p.provider_id)); return; }
+  if(window._platObs) window._platObs.disconnect();
+  window._platObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ window._platObs.unobserve(e.target); loadPlatformRow(+e.target.dataset.row); } }),{rootMargin:"400px 0px"});
+  document.querySelectorAll("#pRows .prow").forEach(el=>window._platObs.observe(el));
 }
 async function loadPlatformRow(id){
   const sec=document.querySelector('[data-row="'+id+'"]'); if(!sec) return;
@@ -811,8 +910,7 @@ async function loadPlatformRow(id){
 $("pChips").addEventListener("click",ev=>{
   const b=ev.target.closest("[data-prov]"); if(!b) return;
   const id=+b.dataset.prov;
-  myProv = myProv.includes(id) ? myProv.filter(x=>x!==id) : [...myProv,id];
-  ls.set("carnet-plateformes",myProv); renderPlatforms();
+  ls.set("carnet-plateforme",id); renderPlatforms();
 });
 $("pRows").addEventListener("click",ev=>{
   const m=ev.target.closest("[data-pm]");
