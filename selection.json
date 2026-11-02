@@ -1,37 +1,21 @@
 {
-  "date": "2026-11-01",
-  "generatedAt": "2026-11-01T05:18:33Z",
-  "intro": "Dix titres à voir chez toi ce week-end de Toussaint : Le Théorème de Marguerite et Mon garçon arrivent sur Netflix, The Substance et Midsommar pour prolonger Halloween, un Hitchcock gratuit sur Arte et deux séries dont Entretien avec un vampire.",
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T05:22:00Z",
+  "intro": "Dix titres à voir chez toi cette semaine : Hamnet et Les Rayons et les Ombres sur Canal+, Tenzing sur Apple TV, deux pépites gratuites sur Arte dont Z de Costa-Gavras, et deux séries qui démarrent aujourd'hui, Singapura et la saison 4 de The Gilded Age.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Le Théorème de Marguerite",
-      "year": 2023,
-      "director": "Anna Novion",
+      "title": "Hamnet",
+      "year": 2025,
+      "director": "Chloé Zhao",
       "genre": "Drame",
-      "where": "Netflix · depuis le 1er novembre",
-      "why": "Ella Rumpf en doctorante en maths qui voit sa thèse s'effondrer et réapprend à vivre : un portrait sensible et lumineux, l'une des belles surprises françaises récentes.",
+      "where": "Canal+",
+      "why": "Jessie Buckley et Paul Mescal en Agnes et William Shakespeare, frappés par la mort de leur fils : un mélodrame d'une intensité rare, qui divise autant qu'il bouleverse.",
       "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 3.9,
-        "senscritique": 6.4,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "The Substance",
-      "year": 2024,
-      "director": "Coralie Fargeat",
-      "genre": "Body horror",
-      "where": "Ciné+ OCS (Canal+) · depuis le 31 octobre",
-      "why": "Demi Moore face à son double rajeuni : une satire féroce et gore de l'obsession de la jeunesse, Prix du scénario à Cannes, à ne pas regarder en mangeant.",
-      "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 3.6,
-        "senscritique": 6.9,
+        "allocinePresse": 3.8,
+        "allocineSpect": 4.1,
+        "senscritique": 7,
         "telerama": null
       }
     },
@@ -43,7 +27,7 @@
       "director": "Xavier Giannoli",
       "genre": "Drame historique",
       "where": "Canal+",
-      "why": "Jean Dujardin en patron de presse happé par la Collaboration : une fresque ample et nuancée, à rattraper si vous l'avez manquée.",
+      "why": "Jean Dujardin en patron de presse happé par la Collaboration : une fresque ample et nuancée, à rattraper si vous l'avez manquée en salle.",
       "scores": {
         "allocinePresse": 4.2,
         "allocineSpect": 4.2,
@@ -54,112 +38,128 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Midsommar",
-      "year": 2019,
-      "director": "Ari Aster",
-      "genre": "Horreur",
-      "where": "Ciné+ OCS (Canal+)",
-      "why": "Un deuil, un couple qui se délite et une fête païenne suédoise en plein jour : l'horreur solaire d'Ari Aster, devenue un classique moderne du genre.",
-      "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 3.5,
-        "senscritique": 7.2,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Mon garçon",
-      "year": 2017,
-      "director": "Christian Carion",
-      "genre": "Thriller",
-      "where": "Netflix · depuis le 1er novembre",
-      "why": "Guillaume Canet, tourné sans scénario en main, cherche son fils disparu dans la montagne : un thriller sec et original dans sa fabrication.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 2.9,
-        "senscritique": 5.6,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Scream 7",
+      "title": "Tenzing",
       "year": 2026,
-      "director": "Kevin Williamson",
-      "genre": "Horreur",
-      "where": "Canal+ · depuis le 30 octobre",
-      "why": "Le scénariste du premier Scream passe à la réalisation et ramène Sidney Prescott : pour les fans de la saga, même si l'épisode a déçu beaucoup de monde.",
-      "scores": {
-        "allocinePresse": 2.4,
-        "allocineSpect": 2.4,
-        "senscritique": 4.4,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Opus",
-      "year": 2025,
-      "director": "Mark Anthony Green",
-      "genre": "Thriller",
-      "where": "Canal+ · à la demande",
-      "why": "John Malkovich en pop star recluse qui invite des journalistes dans sa secte : un thriller satirique A24 étrange et inégal, pour les curieux.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 2.3,
-        "senscritique": 5.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "La Maison du docteur Edwardes",
-      "year": 1945,
-      "director": "Alfred Hitchcock",
-      "genre": "Thriller",
-      "where": "Arte.tv (gratuit)",
-      "why": "Ingrid Bergman et Gregory Peck dans un Hitchcock psychanalytique, avec sa fameuse séquence de rêve conçue par Dalí : un classique à voir gratuitement.",
+      "director": "Jennifer Peedom",
+      "genre": "Aventure",
+      "where": "Apple TV",
+      "why": "Le récit de la conquête de l'Everest du point de vue du sherpa Tenzing Norgay, avec Tom Hiddleston et Willem Dafoe : un grand film d'aventure à hauteur d'homme.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": 3.7,
-        "senscritique": 7.2,
+        "senscritique": 6.8,
         "telerama": null
       }
     },
     {
-      "type": "tv",
+      "type": "movie",
       "tmdbId": null,
-      "title": "Entretien avec un vampire",
-      "year": 2022,
-      "director": "Rolin Jones",
-      "genre": "Fantastique",
-      "where": "Netflix · depuis le 1er novembre",
-      "why": "La relecture d'Anne Rice en confession à huis clos entre Louis et le journaliste Molloy : somptueuse, cruelle et romanesque, enfin sur Netflix.",
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Drame",
+      "where": "Netflix",
+      "why": "Ella Rumpf en doctorante en maths qui voit sa thèse s'effondrer et réapprend à vivre : un portrait sensible et lumineux.",
       "scores": {
-        "allocinePresse": 4,
-        "allocineSpect": 3.4,
-        "senscritique": 6.5,
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": 6.4,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Compétition officielle",
+      "year": 2021,
+      "director": "Mariano Cohn, Gastón Duprat",
+      "genre": "Comédie",
+      "where": "Arte.tv (gratuit)",
+      "why": "Penélope Cruz en cinéaste tyrannique qui fait s'affronter Antonio Banderas et Oscar Martínez en répétitions : une satire jubilatoire des egos du cinéma.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.5,
+        "senscritique": 6.6,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Z",
+      "year": 1969,
+      "director": "Costa-Gavras",
+      "genre": "Thriller politique",
+      "where": "Arte.tv (gratuit)",
+      "why": "L'assassinat d'un député pacifiste et l'enquête d'un juge qui remonte jusqu'au pouvoir : le thriller politique fondateur de Costa-Gavras, toujours aussi nerveux.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 4.2,
+        "senscritique": 7.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Aile ou la Cuisse",
+      "year": 1976,
+      "director": "Claude Zidi",
+      "genre": "Comédie",
+      "where": "Netflix · depuis le 30 octobre",
+      "why": "Louis de Funès en critique gastronomique contre Coluche et la malbouffe industrielle : un classique de la comédie française, idéal en famille.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 3.9,
+        "senscritique": 6.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Collision Course",
+      "year": 2026,
+      "director": "Daniel Sánchez Arévalo",
+      "genre": "Thriller",
+      "where": "Netflix · depuis le 30 octobre",
+      "why": "Un braquage de banque à Madrid qui vire au jeu de dupes : un thriller espagnol divertissant pour une soirée sans prise de tête.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 2.8,
+        "senscritique": 5.8,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Nocturne",
+      "title": "Singapura",
       "year": 2026,
-      "director": "Rowan Joffé, John Hlavin",
-      "genre": "Thriller",
-      "where": "Apple TV · depuis le 30 octobre",
-      "why": "Liev Schreiber traque un tueur en série joué par Stephen Graham dans cette adaptation américaine de Lars Kepler, sombre et tendue.",
+      "director": "Elsa Marpeau",
+      "genre": "Polar",
+      "where": "Canal+ · depuis le 2 novembre",
+      "why": "Un meurtre dans la communauté des expatriés français de Singapour, adapté du roman de sa créatrice : un polar moite et dépaysant, deux épisodes dès ce soir.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "The Gilded Age",
+      "year": 2022,
+      "director": "Julian Fellowes",
+      "genre": "Drame d'époque",
+      "where": "HBO Max · saison 4 depuis le 2 novembre",
+      "why": "Le créateur de Downton Abbey dans le New York des années 1880 : la saison 4 relance les rivalités entre vieilles fortunes et nouveaux riches.",
       "scores": {
         "allocinePresse": 3.9,
-        "allocineSpect": 3.2,
-        "senscritique": null,
+        "allocineSpect": 4,
+        "senscritique": 6.7,
         "telerama": null
       }
     }
