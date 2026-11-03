@@ -1,8 +1,24 @@
 {
-  "date": "2026-11-02",
-  "generatedAt": "2026-11-02T05:22:00Z",
-  "intro": "Dix titres à voir chez toi cette semaine : Hamnet et Les Rayons et les Ombres sur Canal+, Tenzing sur Apple TV, deux pépites gratuites sur Arte dont Z de Costa-Gavras, et deux séries qui démarrent aujourd'hui, Singapura et la saison 4 de The Gilded Age.",
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T05:22:15Z",
+  "intro": "Dix titres à voir chez toi : Ceux qui comptent arrive ce soir sur Canal+, Nosferatu sur France.tv, trois films gratuits sur Arte dont Phoenix de Petzold, et deux séries, MobLand et Entretien avec un vampire, désormais sur Netflix.",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Ceux qui comptent",
+      "year": 2026,
+      "director": "Jean-Baptiste Leonetti",
+      "genre": "Comédie dramatique",
+      "where": "Canal+ · depuis le 3 novembre",
+      "why": "Sandrine Kiberlain et Pierre Lottin dans une comédie tendre sur des êtres cabossés qui se trouvent : une première diffusion à découvrir dès ce soir.",
+      "scores": {
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.5,
+        "senscritique": 5.7,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -11,27 +27,11 @@
       "director": "Chloé Zhao",
       "genre": "Drame",
       "where": "Canal+",
-      "why": "Jessie Buckley et Paul Mescal en Agnes et William Shakespeare, frappés par la mort de leur fils : un mélodrame d'une intensité rare, qui divise autant qu'il bouleverse.",
+      "why": "Jessie Buckley et Paul Mescal en Agnes et William Shakespeare, frappés par la mort de leur fils : un mélodrame d'une intensité rare.",
       "scores": {
         "allocinePresse": 3.8,
         "allocineSpect": 4.1,
         "senscritique": 7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Les Rayons et les Ombres",
-      "year": 2026,
-      "director": "Xavier Giannoli",
-      "genre": "Drame historique",
-      "where": "Canal+",
-      "why": "Jean Dujardin en patron de presse happé par la Collaboration : une fresque ample et nuancée, à rattraper si vous l'avez manquée en salle.",
-      "scores": {
-        "allocinePresse": 4.2,
-        "allocineSpect": 4.2,
-        "senscritique": 6.9,
         "telerama": null
       }
     },
@@ -43,7 +43,7 @@
       "director": "Jennifer Peedom",
       "genre": "Aventure",
       "where": "Apple TV",
-      "why": "Le récit de la conquête de l'Everest du point de vue du sherpa Tenzing Norgay, avec Tom Hiddleston et Willem Dafoe : un grand film d'aventure à hauteur d'homme.",
+      "why": "La conquête de l'Everest racontée du point de vue du sherpa Tenzing Norgay : un grand récit d'aventure à hauteur d'homme.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": 3.7,
@@ -54,95 +54,79 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Le Théorème de Marguerite",
-      "year": 2023,
-      "director": "Anna Novion",
-      "genre": "Drame",
-      "where": "Netflix",
-      "why": "Ella Rumpf en doctorante en maths qui voit sa thèse s'effondrer et réapprend à vivre : un portrait sensible et lumineux.",
-      "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 3.9,
-        "senscritique": 6.4,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Compétition officielle",
-      "year": 2021,
-      "director": "Mariano Cohn, Gastón Duprat",
-      "genre": "Comédie",
-      "where": "Arte.tv (gratuit)",
-      "why": "Penélope Cruz en cinéaste tyrannique qui fait s'affronter Antonio Banderas et Oscar Martínez en répétitions : une satire jubilatoire des egos du cinéma.",
-      "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 3.5,
-        "senscritique": 6.6,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Z",
-      "year": 1969,
-      "director": "Costa-Gavras",
-      "genre": "Thriller politique",
-      "where": "Arte.tv (gratuit)",
-      "why": "L'assassinat d'un député pacifiste et l'enquête d'un juge qui remonte jusqu'au pouvoir : le thriller politique fondateur de Costa-Gavras, toujours aussi nerveux.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 4.2,
-        "senscritique": 7.7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Aile ou la Cuisse",
-      "year": 1976,
-      "director": "Claude Zidi",
-      "genre": "Comédie",
-      "where": "Netflix · depuis le 30 octobre",
-      "why": "Louis de Funès en critique gastronomique contre Coluche et la malbouffe industrielle : un classique de la comédie française, idéal en famille.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.9,
-        "senscritique": 6.7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Collision Course",
-      "year": 2026,
-      "director": "Daniel Sánchez Arévalo",
+      "title": "Miséricorde",
+      "year": 2024,
+      "director": "Alain Guiraudie",
       "genre": "Thriller",
-      "where": "Netflix · depuis le 30 octobre",
-      "why": "Un braquage de banque à Madrid qui vire au jeu de dupes : un thriller espagnol divertissant pour une soirée sans prise de tête.",
+      "where": "Arte.tv (gratuit)",
+      "why": "Un retour au village qui tourne au polar rural, entre désir, culpabilité et humour noir : Guiraudie au sommet de son étrangeté.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 2.8,
-        "senscritique": 5.8,
+        "allocinePresse": 3.9,
+        "allocineSpect": 3.3,
+        "senscritique": 6.8,
         "telerama": null
       }
     },
     {
-      "type": "tv",
+      "type": "movie",
       "tmdbId": null,
-      "title": "Singapura",
-      "year": 2026,
-      "director": "Elsa Marpeau",
+      "title": "Nosferatu",
+      "year": 2024,
+      "director": "Robert Eggers",
+      "genre": "Horreur",
+      "where": "France.tv (gratuit)",
+      "why": "Le mythe du vampire revisité dans une esthétique gothique somptueuse, avec Lily-Rose Depp et Bill Skarsgård : idéal pour prolonger Halloween.",
+      "scores": {
+        "allocinePresse": 3.3,
+        "allocineSpect": 3.2,
+        "senscritique": 6.3,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Phoenix",
+      "year": 2014,
+      "director": "Christian Petzold",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit)",
+      "why": "Une rescapée des camps, défigurée, retrouve son mari qui ne la reconnaît pas : une pépite de Petzold, vertigineuse jusqu'à sa scène finale.",
+      "scores": {
+        "allocinePresse": 4.2,
+        "allocineSpect": 3.7,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Police Python 357",
+      "year": 1976,
+      "director": "Alain Corneau",
       "genre": "Polar",
-      "where": "Canal+ · depuis le 2 novembre",
-      "why": "Un meurtre dans la communauté des expatriés français de Singapour, adapté du roman de sa créatrice : un polar moite et dépaysant, deux épisodes dès ce soir.",
+      "where": "Arte.tv (gratuit)",
+      "why": "Yves Montand en flic piégé par une enquête qui l'accuse lui-même, face à Simone Signoret et François Périer : un classique du polar français des années 70.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": null,
+        "allocineSpect": 3.6,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Apocalypse Z: New World",
+      "year": 2026,
+      "director": "Carles Torrens",
+      "genre": "Horreur",
+      "where": "Prime Video · depuis le 30 octobre",
+      "why": "La suite espagnole d'Apocalypse Z relance la survie en pleine pandémie zombie : à réserver aux amateurs du genre, l'accueil du public est mitigé.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 2.2,
         "senscritique": null,
         "telerama": null
       }
@@ -150,16 +134,32 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4 depuis le 2 novembre",
-      "why": "Le créateur de Downton Abbey dans le New York des années 1880 : la saison 4 relance les rivalités entre vieilles fortunes et nouveaux riches.",
+      "title": "MobLand",
+      "year": 2025,
+      "director": "Ronan Bennett",
+      "genre": "Thriller",
+      "where": "Paramount+ · saison 2, un épisode chaque vendredi",
+      "why": "Tom Hardy en fixer d'une famille mafieuse londonienne, avec Helen Mirren et Pierce Brosnan : la saison 2 est en cours, de quoi rattraper le retard.",
       "scores": {
-        "allocinePresse": 3.9,
-        "allocineSpect": 4,
-        "senscritique": 6.7,
+        "allocinePresse": 3.8,
+        "allocineSpect": 4.3,
+        "senscritique": 7.5,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Entretien avec un vampire",
+      "year": 2022,
+      "director": "Rolin Jones",
+      "genre": "Fantastique",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "L'adaptation ambitieuse d'Anne Rice, sensuelle et cruelle, arrive sur Netflix : deux saisons à dévorer d'un coup.",
+      "scores": {
+        "allocinePresse": 4,
+        "allocineSpect": 3.4,
+        "senscritique": null,
         "telerama": null
       }
     }
