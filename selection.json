@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-03",
-  "generatedAt": "2026-11-03T05:22:15Z",
-  "intro": "Dix titres à voir chez toi : Ceux qui comptent arrive ce soir sur Canal+, Nosferatu sur France.tv, trois films gratuits sur Arte dont Phoenix de Petzold, et deux séries, MobLand et Entretien avec un vampire, désormais sur Netflix.",
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T05:18:36Z",
+  "intro": "Dix titres à voir chez toi : The Greatest et la saison 2 de Stick arrivent aujourd'hui, Le Théorème de Marguerite sur Netflix, et trois films gratuits sur Arte dont La Belle Équipe et The Game.",
   "items": [
     {
       "type": "movie",
@@ -10,8 +10,8 @@
       "year": 2026,
       "director": "Jean-Baptiste Leonetti",
       "genre": "Comédie dramatique",
-      "where": "Canal+ · depuis le 3 novembre",
-      "why": "Sandrine Kiberlain et Pierre Lottin dans une comédie tendre sur des êtres cabossés qui se trouvent : une première diffusion à découvrir dès ce soir.",
+      "where": "Canal+",
+      "why": "Sandrine Kiberlain et Pierre Lottin en âmes cabossées qui finissent par se trouver : une comédie tendre, tout juste arrivée sur Canal+.",
       "scores": {
         "allocinePresse": 3.2,
         "allocineSpect": 3.5,
@@ -27,7 +27,7 @@
       "director": "Chloé Zhao",
       "genre": "Drame",
       "where": "Canal+",
-      "why": "Jessie Buckley et Paul Mescal en Agnes et William Shakespeare, frappés par la mort de leur fils : un mélodrame d'une intensité rare.",
+      "why": "Jessie Buckley et Paul Mescal en couple Shakespeare frappé par le deuil : un mélodrame bouleversant, à voir au calme.",
       "scores": {
         "allocinePresse": 3.8,
         "allocineSpect": 4.1,
@@ -43,7 +43,7 @@
       "director": "Jennifer Peedom",
       "genre": "Aventure",
       "where": "Apple TV",
-      "why": "La conquête de l'Everest racontée du point de vue du sherpa Tenzing Norgay : un grand récit d'aventure à hauteur d'homme.",
+      "why": "L'ascension de l'Everest racontée du côté du sherpa Tenzing Norgay : un récit d'aventure ample et humain.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": 3.7,
@@ -54,95 +54,63 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Miséricorde",
-      "year": 2024,
-      "director": "Alain Guiraudie",
-      "genre": "Thriller",
-      "where": "Arte.tv (gratuit)",
-      "why": "Un retour au village qui tourne au polar rural, entre désir, culpabilité et humour noir : Guiraudie au sommet de son étrangeté.",
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Comédie dramatique",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "Ella Rumpf en jeune mathématicienne qui voit sa vie basculer après une erreur : un portrait lumineux, drôle et singulier.",
       "scores": {
-        "allocinePresse": 3.9,
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": 6.4,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "The Game",
+      "year": 1997,
+      "director": "David Fincher",
+      "genre": "Thriller",
+      "where": "Arte.tv (gratuit) · depuis le 28 octobre",
+      "why": "Michael Douglas pris au piège d'un jeu grandeur nature qui dérape : un thriller paranoïaque de Fincher, redoutablement efficace.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 4,
+        "senscritique": 7.1,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Kaïro",
+      "year": 2001,
+      "director": "Kiyoshi Kurosawa",
+      "genre": "Horreur",
+      "where": "Arte.tv (gratuit)",
+      "why": "Des fantômes qui s'infiltrent par Internet et une solitude contagieuse : une pépite de J-horror plus angoissante que jamais.",
+      "scores": {
+        "allocinePresse": 3.5,
         "allocineSpect": 3.3,
-        "senscritique": 6.8,
+        "senscritique": 6.9,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Nosferatu",
-      "year": 2024,
-      "director": "Robert Eggers",
-      "genre": "Horreur",
-      "where": "France.tv (gratuit)",
-      "why": "Le mythe du vampire revisité dans une esthétique gothique somptueuse, avec Lily-Rose Depp et Bill Skarsgård : idéal pour prolonger Halloween.",
-      "scores": {
-        "allocinePresse": 3.3,
-        "allocineSpect": 3.2,
-        "senscritique": 6.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Phoenix",
-      "year": 2014,
-      "director": "Christian Petzold",
+      "title": "La Belle Équipe",
+      "year": 1936,
+      "director": "Julien Duvivier",
       "genre": "Drame",
-      "where": "Arte.tv (gratuit)",
-      "why": "Une rescapée des camps, défigurée, retrouve son mari qui ne la reconnaît pas : une pépite de Petzold, vertigineuse jusqu'à sa scène finale.",
-      "scores": {
-        "allocinePresse": 4.2,
-        "allocineSpect": 3.7,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Police Python 357",
-      "year": 1976,
-      "director": "Alain Corneau",
-      "genre": "Polar",
-      "where": "Arte.tv (gratuit)",
-      "why": "Yves Montand en flic piégé par une enquête qui l'accuse lui-même, face à Simone Signoret et François Périer : un classique du polar français des années 70.",
+      "where": "Arte.tv (gratuit) · depuis le 3 novembre",
+      "why": "Jean Gabin et ses copains ouvriers gagnent à la loterie et ouvrent une guinguette : un classique du Front populaire, chaleureux puis amer.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": 3.6,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Apocalypse Z: New World",
-      "year": 2026,
-      "director": "Carles Torrens",
-      "genre": "Horreur",
-      "where": "Prime Video · depuis le 30 octobre",
-      "why": "La suite espagnole d'Apocalypse Z relance la survie en pleine pandémie zombie : à réserver aux amateurs du genre, l'accueil du public est mitigé.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 2.2,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "MobLand",
-      "year": 2025,
-      "director": "Ronan Bennett",
-      "genre": "Thriller",
-      "where": "Paramount+ · saison 2, un épisode chaque vendredi",
-      "why": "Tom Hardy en fixer d'une famille mafieuse londonienne, avec Helen Mirren et Pierce Brosnan : la saison 2 est en cours, de quoi rattraper le retard.",
-      "scores": {
-        "allocinePresse": 3.8,
-        "allocineSpect": 4.3,
+        "allocineSpect": 4.2,
         "senscritique": 7.5,
         "telerama": null
       }
@@ -150,16 +118,48 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Entretien avec un vampire",
-      "year": 2022,
-      "director": "Rolin Jones",
-      "genre": "Fantastique",
-      "where": "Netflix · depuis le 1er novembre",
-      "why": "L'adaptation ambitieuse d'Anne Rice, sensuelle et cruelle, arrive sur Netflix : deux saisons à dévorer d'un coup.",
+      "title": "The Greatest",
+      "year": 2026,
+      "director": "Josh Wakely",
+      "genre": "Biopic",
+      "where": "Prime Video · depuis le 4 novembre",
+      "why": "Les jeunes années de Muhammad Ali, de 1960 à 1964, en huit épisodes : une série toute fraîche sur la naissance d'une légende.",
       "scores": {
-        "allocinePresse": 4,
-        "allocineSpect": 3.4,
+        "allocinePresse": null,
+        "allocineSpect": null,
         "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Singapura",
+      "year": 2026,
+      "director": "Elsa Marpeau",
+      "genre": "Polar",
+      "where": "Canal+ · un épisode par semaine depuis le 2 novembre",
+      "why": "Un meurtre au sein de la communauté française expatriée de Singapour, avec Naïlia Harzoune : un polar dépaysant et vénéneux.",
+      "scores": {
+        "allocinePresse": 3.8,
+        "allocineSpect": 2.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Stick",
+      "year": 2025,
+      "director": "Jason Keller",
+      "genre": "Comédie",
+      "where": "Apple TV · saison 2 depuis le 4 novembre",
+      "why": "Owen Wilson en ancien golfeur qui coache un jeune prodige : une comédie douce-amère qui revient pour une saison 2.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 3.7,
+        "senscritique": 6.5,
         "telerama": null
       }
     }
