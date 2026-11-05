@@ -1,21 +1,37 @@
 {
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T05:18:36Z",
-  "intro": "Dix titres à voir chez toi : The Greatest et la saison 2 de Stick arrivent aujourd'hui, Le Théorème de Marguerite sur Netflix, et trois films gratuits sur Arte dont La Belle Équipe et The Game.",
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T05:20:00Z",
+  "intro": "Dix titres à voir chez toi : la saison 2 de Black Doves arrive aujourd'hui, Une belle course et L'Amour au présent sur Netflix, et trois classiques gratuits sur Arte dont Gas-oil et L'Homme de l'Ouest.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Ceux qui comptent",
-      "year": 2026,
-      "director": "Jean-Baptiste Leonetti",
+      "title": "Une belle course",
+      "year": 2022,
+      "director": "Christian Carion",
       "genre": "Comédie dramatique",
-      "where": "Canal+",
-      "why": "Sandrine Kiberlain et Pierre Lottin en âmes cabossées qui finissent par se trouver : une comédie tendre, tout juste arrivée sur Canal+.",
+      "where": "Netflix · depuis le 4 novembre",
+      "why": "Line Renaud et Dany Boon traversent Paris en taxi, le temps d'un dernier trajet plein de souvenirs : un feel-good tendre qui fait mouche.",
+      "scores": {
+        "allocinePresse": 3.1,
+        "allocineSpect": 3.9,
+        "senscritique": 6.3,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Amour au présent",
+      "year": 2024,
+      "director": "John Crowley",
+      "genre": "Romance",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "Florence Pugh et Andrew Garfield racontent dix ans d'une histoire d'amour dans le désordre : une romance lumineuse et déchirante.",
       "scores": {
         "allocinePresse": 3.2,
-        "allocineSpect": 3.5,
-        "senscritique": 5.7,
+        "allocineSpect": 3.8,
+        "senscritique": null,
         "telerama": null
       }
     },
@@ -38,28 +54,12 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Tenzing",
-      "year": 2026,
-      "director": "Jennifer Peedom",
-      "genre": "Aventure",
-      "where": "Apple TV",
-      "why": "L'ascension de l'Everest racontée du côté du sherpa Tenzing Norgay : un récit d'aventure ample et humain.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.7,
-        "senscritique": 6.8,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
       "title": "Le Théorème de Marguerite",
       "year": 2023,
       "director": "Anna Novion",
       "genre": "Comédie dramatique",
-      "where": "Netflix · depuis le 1er novembre",
-      "why": "Ella Rumpf en jeune mathématicienne qui voit sa vie basculer après une erreur : un portrait lumineux, drôle et singulier.",
+      "where": "Netflix",
+      "why": "Ella Rumpf en jeune mathématicienne qui doit tout reconstruire après une erreur : un portrait lumineux et singulier.",
       "scores": {
         "allocinePresse": 3.5,
         "allocineSpect": 3.9,
@@ -70,96 +70,96 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "The Game",
-      "year": 1997,
-      "director": "David Fincher",
-      "genre": "Thriller",
-      "where": "Arte.tv (gratuit) · depuis le 28 octobre",
-      "why": "Michael Douglas pris au piège d'un jeu grandeur nature qui dérape : un thriller paranoïaque de Fincher, redoutablement efficace.",
+      "title": "Apocalypse Z : Nouveau Monde",
+      "year": 2026,
+      "director": "Carles Torrens",
+      "genre": "Horreur",
+      "where": "Prime Video · depuis le 30 octobre",
+      "why": "La suite espagnole du film de zombies qui avait cartonné sur Prime Video : plus d'action et plus d'ampleur, pour une soirée frissons sans prise de tête.",
       "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 4,
-        "senscritique": 7.1,
+        "allocinePresse": null,
+        "allocineSpect": 2.2,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Kaïro",
-      "year": 2001,
-      "director": "Kiyoshi Kurosawa",
+      "title": "Dark Water",
+      "year": 2002,
+      "director": "Hideo Nakata",
       "genre": "Horreur",
       "where": "Arte.tv (gratuit)",
-      "why": "Des fantômes qui s'infiltrent par Internet et une solitude contagieuse : une pépite de J-horror plus angoissante que jamais.",
+      "why": "Une mère et sa fille dans un immeuble rongé par l'humidité : par le réalisateur de Ring, une ghost story japonaise mélancolique et glaçante.",
       "scores": {
-        "allocinePresse": 3.5,
+        "allocinePresse": 4.2,
         "allocineSpect": 3.3,
-        "senscritique": 6.9,
+        "senscritique": 6.7,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "La Belle Équipe",
-      "year": 1936,
-      "director": "Julien Duvivier",
-      "genre": "Drame",
-      "where": "Arte.tv (gratuit) · depuis le 3 novembre",
-      "why": "Jean Gabin et ses copains ouvriers gagnent à la loterie et ouvrent une guinguette : un classique du Front populaire, chaleureux puis amer.",
+      "title": "Gas-oil",
+      "year": 1955,
+      "director": "Gilles Grangier",
+      "genre": "Policier",
+      "where": "Arte.tv (gratuit)",
+      "why": "Jean Gabin en routier pris malgré lui dans une affaire de gangsters, avec Jeanne Moreau : un polar populaire à l'ancienne, sur des dialogues d'Audiard.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": 4.2,
-        "senscritique": 7.5,
+        "allocineSpect": 3.2,
+        "senscritique": 6.3,
         "telerama": null
       }
     },
     {
-      "type": "tv",
+      "type": "movie",
       "tmdbId": null,
-      "title": "The Greatest",
-      "year": 2026,
-      "director": "Josh Wakely",
-      "genre": "Biopic",
-      "where": "Prime Video · depuis le 4 novembre",
-      "why": "Les jeunes années de Muhammad Ali, de 1960 à 1964, en huit épisodes : une série toute fraîche sur la naissance d'une légende.",
+      "title": "L'Homme de l'Ouest",
+      "year": 1958,
+      "director": "Anthony Mann",
+      "genre": "Western",
+      "where": "Arte.tv (gratuit)",
+      "why": "Gary Cooper en ancien hors-la-loi rattrapé par son passé : un western sombre et tendu, parmi les plus beaux d'Anthony Mann.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
+        "allocineSpect": 3.6,
+        "senscritique": 7.2,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Singapura",
-      "year": 2026,
-      "director": "Elsa Marpeau",
-      "genre": "Polar",
-      "where": "Canal+ · un épisode par semaine depuis le 2 novembre",
-      "why": "Un meurtre au sein de la communauté française expatriée de Singapour, avec Naïlia Harzoune : un polar dépaysant et vénéneux.",
+      "title": "Black Doves",
+      "year": 2024,
+      "director": "Joe Barton",
+      "genre": "Espionnage",
+      "where": "Netflix · saison 2 depuis le 5 novembre",
+      "why": "Keira Knightley en espionne infiltrée et Ben Whishaw en tueur à gages reprennent du service à Londres : la saison 2 tombe d'un bloc aujourd'hui.",
       "scores": {
-        "allocinePresse": 3.8,
-        "allocineSpect": 2.9,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "Stick",
-      "year": 2025,
-      "director": "Jason Keller",
-      "genre": "Comédie",
-      "where": "Apple TV · saison 2 depuis le 4 novembre",
-      "why": "Owen Wilson en ancien golfeur qui coache un jeune prodige : une comédie douce-amère qui revient pour une saison 2.",
-      "scores": {
-        "allocinePresse": 3.6,
+        "allocinePresse": 3.7,
         "allocineSpect": 3.7,
-        "senscritique": 6.5,
+        "senscritique": 6.4,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "The Gilded Age",
+      "year": 2022,
+      "director": "Julian Fellowes",
+      "genre": "Drame d'époque",
+      "where": "HBO Max · saison 4 depuis le 2 novembre",
+      "why": "Rivalités mondaines dans le New York des années 1880, par le créateur de Downton Abbey : la saison 4 arrive chaque semaine.",
+      "scores": {
+        "allocinePresse": 3.9,
+        "allocineSpect": 4,
+        "senscritique": 6.7,
         "telerama": null
       }
     }
