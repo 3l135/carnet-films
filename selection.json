@@ -1,53 +1,117 @@
 {
-  "date": "2026-11-05",
-  "generatedAt": "2026-11-05T05:20:00Z",
-  "intro": "Dix titres à voir chez toi : la saison 2 de Black Doves arrive aujourd'hui, Une belle course et L'Amour au présent sur Netflix, et trois classiques gratuits sur Arte dont Gas-oil et L'Homme de l'Ouest.",
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T05:21:10Z",
+  "intro": "Dix titres à voir chez toi : Possible Love de Lee Chang-dong et Rental Family arrivent aujourd'hui sur Netflix et Disney+, Super Mario Galaxy sur Canal+, et un classique de Duvivier gratuit sur Arte.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Une belle course",
-      "year": 2022,
-      "director": "Christian Carion",
-      "genre": "Comédie dramatique",
-      "where": "Netflix · depuis le 4 novembre",
-      "why": "Line Renaud et Dany Boon traversent Paris en taxi, le temps d'un dernier trajet plein de souvenirs : un feel-good tendre qui fait mouche.",
-      "scores": {
-        "allocinePresse": 3.1,
-        "allocineSpect": 3.9,
-        "senscritique": 6.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Amour au présent",
-      "year": 2024,
-      "director": "John Crowley",
-      "genre": "Romance",
-      "where": "Netflix · depuis le 1er novembre",
-      "why": "Florence Pugh et Andrew Garfield racontent dix ans d'une histoire d'amour dans le désordre : une romance lumineuse et déchirante.",
-      "scores": {
-        "allocinePresse": 3.2,
-        "allocineSpect": 3.8,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Hamnet",
-      "year": 2025,
-      "director": "Chloé Zhao",
+      "title": "Possible Love",
+      "year": 2026,
+      "director": "Lee Chang-dong",
       "genre": "Drame",
-      "where": "Canal+",
-      "why": "Jessie Buckley et Paul Mescal en couple Shakespeare frappé par le deuil : un mélodrame bouleversant, à voir au calme.",
+      "where": "Netflix · depuis le 6 novembre",
+      "why": "Le retour de l'auteur de Burning, huit ans après : un drame conjugal subtil porté par Jeon Do-yeon, choisi pour représenter la Corée aux Oscars.",
       "scores": {
-        "allocinePresse": 3.8,
+        "allocinePresse": 4.8,
+        "allocineSpect": 3.3,
+        "senscritique": 7.3,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Rental Family – Dans la vie des autres",
+      "year": 2025,
+      "director": "Hikari",
+      "genre": "Comédie dramatique",
+      "where": "Disney+ · depuis le 6 novembre",
+      "why": "Brendan Fraser en acteur américain embauché à Tokyo pour jouer les proches de parfaits inconnus : une fable douce sur la solitude, très aimée du public.",
+      "scores": {
+        "allocinePresse": 2.9,
         "allocineSpect": 4.1,
+        "senscritique": 7.1,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Super Mario Galaxy, le film",
+      "year": 2026,
+      "director": "Aaron Horvath, Michael Jelenic",
+      "genre": "Animation",
+      "where": "Canal+ · depuis le 6 novembre",
+      "why": "Mario et Luigi partent dans l'espace avec Harmonie : une aventure colorée et rythmée pour une soirée en famille.",
+      "scores": {
+        "allocinePresse": 2.9,
+        "allocineSpect": 3.5,
+        "senscritique": 5.5,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Hit Man",
+      "year": 2023,
+      "director": "Richard Linklater",
+      "genre": "Comédie policière",
+      "where": "M6+ (gratuit)",
+      "why": "Glen Powell en prof de philo qui joue les faux tueurs à gages pour la police : une comédie maligne et sexy, à voir gratuitement.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 3.2,
+        "senscritique": 6.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Chimère",
+      "year": 2023,
+      "director": "Alice Rohrwacher",
+      "genre": "Drame poétique",
+      "where": "Arte.tv (gratuit) · aussi sur MUBI",
+      "why": "Josh O'Connor en pilleur de tombes étrusques hanté par un amour perdu : une fable italienne solaire et mélancolique.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 3.5,
         "senscritique": 7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Les Enfants des autres",
+      "year": 2022,
+      "director": "Rebecca Zlotowski",
+      "genre": "Drame",
+      "where": "Disney+",
+      "why": "Virginie Efira s'attache à la fille de son compagnon : un portrait tendre et juste d'une place qu'on ne sait pas nommer.",
+      "scores": {
+        "allocinePresse": 4.1,
+        "allocineSpect": 3.7,
+        "senscritique": 6.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Belle Équipe",
+      "year": 1936,
+      "director": "Julien Duvivier",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit) · version restaurée",
+      "why": "Cinq chômeurs gagnent à la loterie et ouvrent une guinguette : Gabin et Vanel dans un classique du Front populaire, superbement restauré.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 4.2,
+        "senscritique": 7.5,
         "telerama": null
       }
     },
@@ -68,70 +132,6 @@
       }
     },
     {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Apocalypse Z : Nouveau Monde",
-      "year": 2026,
-      "director": "Carles Torrens",
-      "genre": "Horreur",
-      "where": "Prime Video · depuis le 30 octobre",
-      "why": "La suite espagnole du film de zombies qui avait cartonné sur Prime Video : plus d'action et plus d'ampleur, pour une soirée frissons sans prise de tête.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 2.2,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Dark Water",
-      "year": 2002,
-      "director": "Hideo Nakata",
-      "genre": "Horreur",
-      "where": "Arte.tv (gratuit)",
-      "why": "Une mère et sa fille dans un immeuble rongé par l'humidité : par le réalisateur de Ring, une ghost story japonaise mélancolique et glaçante.",
-      "scores": {
-        "allocinePresse": 4.2,
-        "allocineSpect": 3.3,
-        "senscritique": 6.7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Gas-oil",
-      "year": 1955,
-      "director": "Gilles Grangier",
-      "genre": "Policier",
-      "where": "Arte.tv (gratuit)",
-      "why": "Jean Gabin en routier pris malgré lui dans une affaire de gangsters, avec Jeanne Moreau : un polar populaire à l'ancienne, sur des dialogues d'Audiard.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.2,
-        "senscritique": 6.3,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Homme de l'Ouest",
-      "year": 1958,
-      "director": "Anthony Mann",
-      "genre": "Western",
-      "where": "Arte.tv (gratuit)",
-      "why": "Gary Cooper en ancien hors-la-loi rattrapé par son passé : un western sombre et tendu, parmi les plus beaux d'Anthony Mann.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.6,
-        "senscritique": 7.2,
-        "telerama": null
-      }
-    },
-    {
       "type": "tv",
       "tmdbId": null,
       "title": "Black Doves",
@@ -139,7 +139,7 @@
       "director": "Joe Barton",
       "genre": "Espionnage",
       "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley en espionne infiltrée et Ben Whishaw en tueur à gages reprennent du service à Londres : la saison 2 tombe d'un bloc aujourd'hui.",
+      "why": "Keira Knightley et Ben Whishaw reprennent du service dans un Londres plein de complots : six épisodes à enchaîner ce week-end.",
       "scores": {
         "allocinePresse": 3.7,
         "allocineSpect": 3.7,
@@ -150,16 +150,16 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4 depuis le 2 novembre",
-      "why": "Rivalités mondaines dans le New York des années 1880, par le créateur de Downton Abbey : la saison 4 arrive chaque semaine.",
+      "title": "Singapura",
+      "year": 2026,
+      "director": "Elsa Marpeau",
+      "genre": "Thriller",
+      "where": "Canal+ · nouvel épisode chaque lundi depuis le 2 novembre",
+      "why": "Un meurtre secoue la communauté des expatriés français à Singapour : un thriller moite et feutré, plus atmosphérique que haletant.",
       "scores": {
-        "allocinePresse": 3.9,
-        "allocineSpect": 4,
-        "senscritique": 6.7,
+        "allocinePresse": 3.6,
+        "allocineSpect": 2.7,
+        "senscritique": 4.3,
         "telerama": null
       }
     }
