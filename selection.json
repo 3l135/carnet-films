@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-06",
-  "generatedAt": "2026-11-06T05:21:10Z",
-  "intro": "Dix titres à voir chez toi : Possible Love de Lee Chang-dong et Rental Family arrivent aujourd'hui sur Netflix et Disney+, Super Mario Galaxy sur Canal+, et un classique de Duvivier gratuit sur Arte.",
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T05:19:30Z",
+  "intro": "Dix titres à voir chez toi ce samedi : Possible Love sur Netflix, Ceux qui comptent sur Canal+, Mission: Impossible sur Paramount+, Sibyl gratuit sur Arte et le classique Annie Hall.",
   "items": [
     {
       "type": "movie",
@@ -10,12 +10,60 @@
       "year": 2026,
       "director": "Lee Chang-dong",
       "genre": "Drame",
-      "where": "Netflix · depuis le 6 novembre",
-      "why": "Le retour de l'auteur de Burning, huit ans après : un drame conjugal subtil porté par Jeon Do-yeon, choisi pour représenter la Corée aux Oscars.",
+      "where": "Netflix",
+      "why": "Huit ans après Burning, Lee Chang-dong signe un drame conjugal d'une grande finesse, porté par une Jeon Do-yeon bouleversante.",
       "scores": {
         "allocinePresse": 4.8,
-        "allocineSpect": 3.3,
+        "allocineSpect": 3.4,
         "senscritique": 7.3,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Ceux qui comptent",
+      "year": 2026,
+      "director": "Jean-Baptiste Leonetti",
+      "genre": "Drame",
+      "where": "Canal+ · depuis le 3 novembre",
+      "why": "Sandrine Kiberlain et Pierre Lottin dans un drame français sorti au printemps, à rattraper tranquillement chez soi.",
+      "scores": {
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.4,
+        "senscritique": 5.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Amour au présent",
+      "year": 2024,
+      "director": "John Crowley",
+      "genre": "Romance",
+      "where": "Netflix",
+      "why": "Florence Pugh et Andrew Garfield racontent dix ans d'un couple dans le désordre : une romance lumineuse qui fait pleurer sans tricher.",
+      "scores": {
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.8,
+        "senscritique": 6.5,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Mission: Impossible – The Final Reckoning",
+      "year": 2025,
+      "director": "Christopher McQuarrie",
+      "genre": "Action",
+      "where": "Paramount+",
+      "why": "Tom Cruise boucle la saga avec des cascades sous-marines et aériennes vertigineuses : du grand spectacle pour le canapé du samedi soir.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.5,
+        "senscritique": 5.7,
         "telerama": null
       }
     },
@@ -26,8 +74,8 @@
       "year": 2025,
       "director": "Hikari",
       "genre": "Comédie dramatique",
-      "where": "Disney+ · depuis le 6 novembre",
-      "why": "Brendan Fraser en acteur américain embauché à Tokyo pour jouer les proches de parfaits inconnus : une fable douce sur la solitude, très aimée du public.",
+      "where": "Disney+",
+      "why": "Brendan Fraser loue ses services de faux proche à Tokyo : une fable douce sur la solitude, adorée du public.",
       "scores": {
         "allocinePresse": 2.9,
         "allocineSpect": 4.1,
@@ -38,96 +86,32 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Super Mario Galaxy, le film",
-      "year": 2026,
-      "director": "Aaron Horvath, Michael Jelenic",
-      "genre": "Animation",
-      "where": "Canal+ · depuis le 6 novembre",
-      "why": "Mario et Luigi partent dans l'espace avec Harmonie : une aventure colorée et rythmée pour une soirée en famille.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 3.5,
-        "senscritique": 5.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Hit Man",
-      "year": 2023,
-      "director": "Richard Linklater",
-      "genre": "Comédie policière",
-      "where": "M6+ (gratuit)",
-      "why": "Glen Powell en prof de philo qui joue les faux tueurs à gages pour la police : une comédie maligne et sexy, à voir gratuitement.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.2,
-        "senscritique": 6.2,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "La Chimère",
-      "year": 2023,
-      "director": "Alice Rohrwacher",
-      "genre": "Drame poétique",
-      "where": "Arte.tv (gratuit) · aussi sur MUBI",
-      "why": "Josh O'Connor en pilleur de tombes étrusques hanté par un amour perdu : une fable italienne solaire et mélancolique.",
-      "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 3.5,
-        "senscritique": 7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Les Enfants des autres",
-      "year": 2022,
-      "director": "Rebecca Zlotowski",
+      "title": "Sibyl",
+      "year": 2019,
+      "director": "Justine Triet",
       "genre": "Drame",
-      "where": "Disney+",
-      "why": "Virginie Efira s'attache à la fille de son compagnon : un portrait tendre et juste d'une place qu'on ne sait pas nommer.",
+      "where": "Arte.tv (gratuit)",
+      "why": "Avant Anatomie d'une chute, Justine Triet filmait Virginie Efira en psy romancière qui se nourrit de sa patiente : un film retors et culotté qui divise.",
       "scores": {
-        "allocinePresse": 4.1,
-        "allocineSpect": 3.7,
-        "senscritique": 6.7,
+        "allocinePresse": 3.7,
+        "allocineSpect": 2.7,
+        "senscritique": 5.9,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "La Belle Équipe",
-      "year": 1936,
-      "director": "Julien Duvivier",
-      "genre": "Drame",
-      "where": "Arte.tv (gratuit) · version restaurée",
-      "why": "Cinq chômeurs gagnent à la loterie et ouvrent une guinguette : Gabin et Vanel dans un classique du Front populaire, superbement restauré.",
+      "title": "Annie Hall",
+      "year": 1977,
+      "director": "Woody Allen",
+      "genre": "Comédie romantique",
+      "where": "Prime Video · depuis le 1er novembre",
+      "why": "Le classique de la comédie new-yorkaise, avec Diane Keaton inoubliable : bavard, inventif et toujours aussi drôle près de cinquante ans plus tard.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 4.2,
-        "senscritique": 7.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Théorème de Marguerite",
-      "year": 2023,
-      "director": "Anna Novion",
-      "genre": "Comédie dramatique",
-      "where": "Netflix",
-      "why": "Ella Rumpf en jeune mathématicienne qui doit tout reconstruire après une erreur : un portrait lumineux et singulier.",
-      "scores": {
-        "allocinePresse": 3.5,
+        "allocinePresse": 4.6,
         "allocineSpect": 3.9,
-        "senscritique": 6.4,
+        "senscritique": 7.4,
         "telerama": null
       }
     },
@@ -150,16 +134,32 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Singapura",
-      "year": 2026,
-      "director": "Elsa Marpeau",
-      "genre": "Thriller",
-      "where": "Canal+ · nouvel épisode chaque lundi depuis le 2 novembre",
-      "why": "Un meurtre secoue la communauté des expatriés français à Singapour : un thriller moite et feutré, plus atmosphérique que haletant.",
+      "title": "The Gilded Age",
+      "year": 2022,
+      "director": "Julian Fellowes",
+      "genre": "Drame d'époque",
+      "where": "HBO Max · saison 4 en novembre",
+      "why": "Le créateur de Downton Abbey transpose ses intrigues de salon dans le New York des années 1880 : costumes, rivalités et répliques ciselées.",
       "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 2.7,
-        "senscritique": 4.3,
+        "allocinePresse": 3.9,
+        "allocineSpect": 4,
+        "senscritique": 6.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "The Greatest",
+      "year": 2026,
+      "director": "Ben Watkins",
+      "genre": "Biopic sportif",
+      "where": "Prime Video · 8 épisodes depuis le 4 novembre",
+      "why": "La jeunesse de Mohamed Ali racontée en huit épisodes, du ring de Louisville à la naissance d'une icône.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
         "telerama": null
       }
     }
