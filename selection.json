@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-07",
-  "generatedAt": "2026-11-07T05:19:30Z",
-  "intro": "Dix titres à voir chez toi ce samedi : Possible Love sur Netflix, Ceux qui comptent sur Canal+, Mission: Impossible sur Paramount+, Sibyl gratuit sur Arte et le classique Annie Hall.",
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T05:19:00Z",
+  "intro": "Dix titres à voir chez toi ce dimanche : Possible Love sur Netflix, Miséricorde et Z gratuits sur Arte, Nosferatu sur france.tv et le polar Singapura sur Canal+.",
   "items": [
     {
       "type": "movie",
@@ -11,7 +11,7 @@
       "director": "Lee Chang-dong",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Huit ans après Burning, Lee Chang-dong signe un drame conjugal d'une grande finesse, porté par une Jeon Do-yeon bouleversante.",
+      "why": "Le retour de Lee Chang-dong, huit ans après Burning : un drame conjugal tout en nuances, porté par Jeon Do-yeon.",
       "scores": {
         "allocinePresse": 4.8,
         "allocineSpect": 3.4,
@@ -22,48 +22,16 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Ceux qui comptent",
-      "year": 2026,
-      "director": "Jean-Baptiste Leonetti",
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
       "genre": "Drame",
-      "where": "Canal+ · depuis le 3 novembre",
-      "why": "Sandrine Kiberlain et Pierre Lottin dans un drame français sorti au printemps, à rattraper tranquillement chez soi.",
+      "where": "Netflix · depuis le 1er novembre",
+      "why": "Ella Rumpf en jeune matheuse qui voit sa thèse s'effondrer et réapprend à vivre : un film délicat, aussi touchant qu'inattendu.",
       "scores": {
-        "allocinePresse": 3.2,
-        "allocineSpect": 3.4,
-        "senscritique": 5.7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "L'Amour au présent",
-      "year": 2024,
-      "director": "John Crowley",
-      "genre": "Romance",
-      "where": "Netflix",
-      "why": "Florence Pugh et Andrew Garfield racontent dix ans d'un couple dans le désordre : une romance lumineuse qui fait pleurer sans tricher.",
-      "scores": {
-        "allocinePresse": 3.2,
-        "allocineSpect": 3.8,
-        "senscritique": 6.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Mission: Impossible – The Final Reckoning",
-      "year": 2025,
-      "director": "Christopher McQuarrie",
-      "genre": "Action",
-      "where": "Paramount+",
-      "why": "Tom Cruise boucle la saga avec des cascades sous-marines et aériennes vertigineuses : du grand spectacle pour le canapé du samedi soir.",
-      "scores": {
-        "allocinePresse": 3.4,
-        "allocineSpect": 3.5,
-        "senscritique": 5.7,
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": null,
         "telerama": null
       }
     },
@@ -74,8 +42,8 @@
       "year": 2025,
       "director": "Hikari",
       "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser loue ses services de faux proche à Tokyo : une fable douce sur la solitude, adorée du public.",
+      "where": "Disney+ · depuis le 6 novembre",
+      "why": "Brendan Fraser joue les faux proches à louer à Tokyo : une fable tendre sur la solitude, plébiscitée par le public.",
       "scores": {
         "allocinePresse": 2.9,
         "allocineSpect": 4.1,
@@ -86,32 +54,64 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Sibyl",
-      "year": 2019,
-      "director": "Justine Triet",
-      "genre": "Drame",
-      "where": "Arte.tv (gratuit)",
-      "why": "Avant Anatomie d'une chute, Justine Triet filmait Virginie Efira en psy romancière qui se nourrit de sa patiente : un film retors et culotté qui divise.",
+      "title": "Super Mario Galaxy, le film",
+      "year": 2026,
+      "director": "Aaron Horvath, Michael Jelenic",
+      "genre": "Animation",
+      "where": "Canal+ · depuis le 6 novembre",
+      "why": "Mario et Luigi partent dans l'espace : la critique a boudé, mais c'est le film familial idéal pour un dimanche avec les enfants.",
       "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 2.7,
-        "senscritique": 5.9,
+        "allocinePresse": 2.9,
+        "allocineSpect": 3.5,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Annie Hall",
-      "year": 1977,
-      "director": "Woody Allen",
-      "genre": "Comédie romantique",
-      "where": "Prime Video · depuis le 1er novembre",
-      "why": "Le classique de la comédie new-yorkaise, avec Diane Keaton inoubliable : bavard, inventif et toujours aussi drôle près de cinquante ans plus tard.",
+      "title": "Miséricorde",
+      "year": 2024,
+      "director": "Alain Guiraudie",
+      "genre": "Comédie noire",
+      "where": "Arte.tv (gratuit) · jusqu'au 12 novembre",
+      "why": "Un retour au village qui tourne au polar campagnard trouble et drôle : Guiraudie au sommet, à voir avant qu'il ne quitte Arte.",
       "scores": {
-        "allocinePresse": 4.6,
-        "allocineSpect": 3.9,
-        "senscritique": 7.4,
+        "allocinePresse": 3.9,
+        "allocineSpect": 3.3,
+        "senscritique": 6.8,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Nosferatu",
+      "year": 2024,
+      "director": "Robert Eggers",
+      "genre": "Horreur gothique",
+      "where": "france.tv (gratuit) · jusqu'au 25 novembre",
+      "why": "Eggers ressuscite le vampire de Murnau dans une Europe glaciale et somptueuse, avec Lily-Rose Depp possédée et Bill Skarsgård méconnaissable.",
+      "scores": {
+        "allocinePresse": 3.3,
+        "allocineSpect": 3.2,
+        "senscritique": 6.3,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Z",
+      "year": 1969,
+      "director": "Costa-Gavras",
+      "genre": "Thriller politique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Le classique de Costa-Gavras sur l'assassinat d'un député en Grèce, avec Yves Montand et Jean-Louis Trintignant : un thriller politique toujours aussi tendu.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 4.2,
+        "senscritique": 7.7,
         "telerama": null
       }
     },
@@ -123,7 +123,7 @@
       "director": "Joe Barton",
       "genre": "Espionnage",
       "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw reprennent du service dans un Londres plein de complots : six épisodes à enchaîner ce week-end.",
+      "why": "Keira Knightley et Ben Whishaw replongent dans les complots londoniens : six épisodes nerveux à enchaîner.",
       "scores": {
         "allocinePresse": 3.7,
         "allocineSpect": 3.7,
@@ -134,28 +134,28 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4 en novembre",
-      "why": "Le créateur de Downton Abbey transpose ses intrigues de salon dans le New York des années 1880 : costumes, rivalités et répliques ciselées.",
+      "title": "Singapura",
+      "year": 2026,
+      "director": "Elsa Marpeau",
+      "genre": "Thriller",
+      "where": "Canal+ · depuis le 2 novembre",
+      "why": "Un meurtre ébranle la communauté française expatriée de Singapour : un polar moite et élégant en six épisodes, avec India Hair.",
       "scores": {
-        "allocinePresse": 3.9,
-        "allocineSpect": 4,
-        "senscritique": 6.7,
+        "allocinePresse": 3.6,
+        "allocineSpect": 2.7,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Greatest",
+      "title": "La Prise du palais",
       "year": 2026,
-      "director": "Ben Watkins",
-      "genre": "Biopic sportif",
-      "where": "Prime Video · 8 épisodes depuis le 4 novembre",
-      "why": "La jeunesse de Mohamed Ali racontée en huit épisodes, du ring de Louisville à la naissance d'une icône.",
+      "director": "Natalia Santa",
+      "genre": "Drame historique",
+      "where": "Netflix · depuis le 6 novembre",
+      "why": "La prise d'otages du Palais de justice de Bogotá en 1985 reconstituée en huit épisodes : une page sombre de la Colombie, racontée sans fard.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
