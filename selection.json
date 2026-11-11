@@ -1,8 +1,40 @@
 {
-  "date": "2026-11-10",
-  "generatedAt": "2026-11-10T05:20:00Z",
-  "intro": "Dix titres à voir chez toi ce mardi : Marty Supreme sur Canal+, Rental Family sur Disney+, un trio gratuit sur Arte.tv (Sibyl, The Game, La Belle Équipe) et le retour de Black Doves sur Netflix.",
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T05:15:54Z",
+  "intro": "Dix titres à voir chez toi ce mercredi 11 novembre : Un bon avocat sur Netflix, Hamnet sur Canal+, Monte-Cristo gratuit sur Arte.tv et la saison 3 des Anneaux de pouvoir qui débarque sur Prime Video.",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Un bon avocat",
+      "year": 2026,
+      "director": "Tristan Séguéla",
+      "genre": "Drame judiciaire",
+      "where": "Netflix",
+      "why": "Laurent Lafitte en ténor du barreau tombé en disgrâce, qui a une semaine pour sauver sa peau face à Mélanie Laurent : un film de procès nerveux, présenté hors compétition à Venise.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Hamnet",
+      "year": 2025,
+      "director": "Chloé Zhao",
+      "genre": "Drame",
+      "where": "Canal+",
+      "why": "Jessie Buckley et Paul Mescal dans le deuil qui a nourri Hamlet : un mélodrame bouleversant et charnel, à voir sans distraction.",
+      "scores": {
+        "allocinePresse": 3.8,
+        "allocineSpect": 4.1,
+        "senscritique": 7,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -11,7 +43,7 @@
       "director": "Josh Safdie",
       "genre": "Comédie dramatique",
       "where": "Canal+ · depuis le 10 novembre",
-      "why": "Chalamet en virtuose du ping-pong prêt à toutes les combines dans le New York des années 50 : un tourbillon d'énergie, disponible depuis hier sur Canal+.",
+      "why": "Chalamet en virtuose du ping-pong prêt à toutes les combines dans le New York des années 50 : une course effrénée qu'on regarde le souffle court.",
       "scores": {
         "allocinePresse": 4.2,
         "allocineSpect": 3.8,
@@ -27,7 +59,7 @@
       "director": "Lee Chang-dong",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Le grand retour de Lee Chang-dong : un drame conjugal subtil et patient, idéal pour une soirée où l'on a envie de se laisser happer.",
+      "why": "Le retour de Lee Chang-dong, drame conjugal patient et troublant : la pépite d'auteur du catalogue Netflix ce mois-ci.",
       "scores": {
         "allocinePresse": 4.8,
         "allocineSpect": 3.4,
@@ -38,31 +70,15 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Rental Family – Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser, acteur américain perdu à Tokyo, loue ses services pour jouer le père, l'ami ou le mari des autres : une fable douce-amère qui a conquis le public.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Super Mario Galaxy, le film",
+      "title": "Ceux qui comptent",
       "year": 2026,
-      "director": "Aaron Horvath, Michael Jelenic",
-      "genre": "Animation",
-      "where": "Canal+ · Box Office",
-      "why": "Mario et Luigi partent dans les étoiles avec Yoshi et Harmonie : un pur divertissement familial, boudé par la presse mais adoré des spectateurs.",
+      "director": "Jean-Baptiste Leonetti",
+      "genre": "Comédie dramatique",
+      "where": "Canal+",
+      "why": "Sandrine Kiberlain, mère solaire, bouscule la vie d'un ermite joué par Pierre Lottin : une rencontre improbable, tendre et sans esbroufe.",
       "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 3.5,
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.4,
         "senscritique": null,
         "telerama": null
       }
@@ -70,79 +86,47 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Sibyl",
-      "year": 2019,
-      "director": "Justine Triet",
-      "genre": "Drame",
+      "title": "Le Comte de Monte-Cristo",
+      "year": 2024,
+      "director": "Matthieu Delaporte, Alexandre de La Patellière",
+      "genre": "Aventure",
       "where": "Arte.tv (gratuit)",
-      "why": "Virginie Efira en psy-romancière qui puise dans la vie d'une patiente (Adèle Exarchopoulos) : un vertige de manipulation signé Justine Triet, avant Anatomie d'une chute.",
+      "why": "Pierre Niney en vengeur masqué dans la grande fresque de Dumas : trois heures de panache qui filent à toute allure, offertes par Arte.",
       "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 2.7,
-        "senscritique": null,
+        "allocinePresse": 3.6,
+        "allocineSpect": 4.5,
+        "senscritique": 7.3,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "The Game",
-      "year": 1997,
-      "director": "David Fincher",
-      "genre": "Thriller",
+      "title": "La Chute de l'Empire romain",
+      "year": 1964,
+      "director": "Anthony Mann",
+      "genre": "Péplum",
       "where": "Arte.tv (gratuit)",
-      "why": "Michael Douglas, homme d'affaires blasé, se voit offrir un « jeu » qui dévore peu à peu sa vie : le Fincher le plus ludique et paranoïaque, à redécouvrir.",
-      "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 4,
-        "senscritique": 7.1,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "La Belle Équipe",
-      "year": 1936,
-      "director": "Julien Duvivier",
-      "genre": "Classique",
-      "where": "Arte.tv (gratuit)",
-      "why": "Jean Gabin et ses copains chômeurs gagnent à la loterie et ouvrent une guinguette : un classique du Front populaire, chaleureux puis poignant.",
+      "why": "Le dernier grand péplum hollywoodien, avec Sophia Loren et Alec Guinness, qui a inspiré Gladiator : un classique spectaculaire à redécouvrir en ce 11 Novembre.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": 4.2,
-        "senscritique": null,
+        "allocineSpect": 3.5,
+        "senscritique": 6.7,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Black Doves",
-      "year": 2024,
-      "director": "Joe Barton",
-      "genre": "Espionnage",
-      "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw reprennent du service dans un Londres d'espions et de tueurs : six épisodes nerveux, avec un humour noir bienvenu.",
-      "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 3.7,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "The Gilded Age",
+      "title": "Le Seigneur des Anneaux : Les Anneaux de pouvoir",
       "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4, un épisode par semaine",
-      "why": "Le créateur de Downton Abbey poursuit sa chronique des fortunes new-yorkaises de la fin du XIXe : costumes somptueux et rivalités mondaines délicieuses.",
+      "director": "J. D. Payne, Patrick McKay",
+      "genre": "Fantasy",
+      "where": "Prime Video · saison 3 depuis le 11 novembre (épisodes 1 à 4)",
+      "why": "Sauron forge l'Anneau unique dans une saison 3 attendue depuis deux ans : quatre épisodes d'un coup aujourd'hui, la suite les 18 et 25 novembre.",
       "scores": {
-        "allocinePresse": 3.9,
-        "allocineSpect": 4,
+        "allocinePresse": null,
+        "allocineSpect": null,
         "senscritique": null,
         "telerama": null
       }
@@ -150,12 +134,28 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Singapura",
-      "year": 2026,
-      "director": "Elsa Marpeau",
-      "genre": "Polar",
-      "where": "Canal+",
-      "why": "Un meurtre fait trembler la communauté des expatriés français de Singapour : une création originale Canal+ moite et vénéneuse, en six épisodes.",
+      "title": "Stick",
+      "year": 2025,
+      "director": "Jason Keller",
+      "genre": "Comédie",
+      "where": "Apple TV · saison 2 depuis le 4 novembre",
+      "why": "Owen Wilson, ancien golfeur reconverti en mentor, revient pour une saison 2 rejointe par Rhea Seehorn : une comédie sportive au grand cœur.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Rivals",
+      "year": 2024,
+      "director": "Dominic Treadwell-Collins",
+      "genre": "Drame",
+      "where": "Disney+ · saison 2, partie 2 depuis le 11 novembre",
+      "why": "Les rivalités télé et alcôves du Cotswolds des années 80, d'après Jilly Cooper : la suite de la saison 2 démarre aujourd'hui avec trois épisodes.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
