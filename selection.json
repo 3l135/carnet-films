@@ -1,20 +1,20 @@
 {
-  "date": "2026-11-12",
-  "generatedAt": "2026-11-12T05:16:27Z",
-  "intro": "Dix titres à voir chez toi ce jeudi 12 novembre : la saison finale de L'Impératrice sur Netflix, Rental Family sur Disney+, Sibyl gratuit sur Arte.tv et Apocalypse Now Final Cut pour le classique.",
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T05:15:38Z",
+  "intro": "Dix titres à voir chez toi ce vendredi 13 novembre : Send Help de Sam Raimi sur Disney+, Being Heumann sur Apple TV, la saison 3 des Anneaux de pouvoir sur Prime Video et La Belle Équipe gratuit sur Arte.tv pour le classique.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Rental Family : Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue comme faux proche à des inconnus : une fable douce-amère sur la solitude, que le public a nettement plus aimée que la presse.",
+      "title": "Send Help",
+      "year": 2026,
+      "director": "Sam Raimi",
+      "genre": "Thriller, comédie",
+      "where": "Disney+ · depuis le 13 novembre",
+      "why": "Rachel McAdams, employée méprisée, se retrouve naufragée sur une île avec son patron odieux : Sam Raimi renverse les rapports de force dans une comédie de survie féroce et gore, à découvrir dès aujourd'hui.",
       "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
+        "allocinePresse": null,
+        "allocineSpect": null,
         "senscritique": null,
         "telerama": null
       }
@@ -22,16 +22,48 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Possible Love",
+      "title": "Being Heumann",
       "year": 2026,
-      "director": "Lee Chang-dong",
+      "director": "Siân Heder",
+      "genre": "Drame",
+      "where": "Apple TV · depuis le 13 novembre",
+      "why": "La réalisatrice de CODA raconte l'occupation de 1977 menée par la militante Judy Heumann pour les droits des personnes handicapées : un film chaleureux et galvanisant, porté par une troupe d'acteurs concernés.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Amour au présent",
+      "year": 2024,
+      "director": "John Crowley",
+      "genre": "Romance, drame",
+      "where": "Netflix",
+      "why": "Florence Pugh et Andrew Garfield, dix ans de vie de couple racontés dans le désordre : un mélo lumineux qui fait rire avant de serrer la gorge.",
+      "scores": {
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.8,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Le retour de Lee Chang-dong, drame conjugal lent et troublant : la grande œuvre d'auteur du catalogue Netflix ce mois-ci.",
+      "why": "Une jeune mathématicienne brillante voit sa thèse s'effondrer et doit réapprendre à vivre hors des équations : Ella Rumpf est formidable dans cette pépite française passée trop inaperçue.",
       "scores": {
-        "allocinePresse": 4.8,
-        "allocineSpect": 3.4,
-        "senscritique": 7.3,
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": null,
         "telerama": null
       }
     },
@@ -42,7 +74,7 @@
       "year": 2025,
       "director": "Josh Safdie",
       "genre": "Comédie dramatique",
-      "where": "Canal+ · depuis le 10 novembre",
+      "where": "Canal+",
       "why": "Chalamet en virtuose du ping-pong prêt à toutes les combines dans le New York des années 50 : une course effrénée qu'on regarde le souffle court.",
       "scores": {
         "allocinePresse": 4.2,
@@ -54,79 +86,31 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Super Mario Galaxy, le film",
+      "title": "Possible Love",
       "year": 2026,
-      "director": "Aaron Horvath, Michael Jelenic",
-      "genre": "Animation",
-      "where": "Canal+ Box Office · depuis le 6 novembre",
-      "why": "Le plus gros succès mondial de l'année envoie Mario et Luigi dans l'espace : un pur divertissement familial, coloré et rythmé, pour une soirée avec les enfants.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Sibyl",
-      "year": 2019,
-      "director": "Justine Triet",
-      "genre": "Comédie dramatique",
-      "where": "Arte.tv (gratuit)",
-      "why": "Avant Anatomie d'une chute, Justine Triet offrait à Virginie Efira un rôle de psy-romancière qui se nourrit de la vie de sa patiente : un film vertigineux et clivant, gratuit sur Arte.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": 5.9,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Livre des solutions",
-      "year": 2023,
-      "director": "Michel Gondry",
-      "genre": "Comédie",
-      "where": "HBO Max · depuis le 11 novembre",
-      "why": "Pierre Niney en cinéaste ingérable qui fuit son film chez sa tante dans les Cévennes : l'autoportrait bricolé et fantasque de Gondry, une petite pépite à part.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 2.8,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Apocalypse Now Final Cut",
-      "year": 1979,
-      "director": "Francis Ford Coppola",
-      "genre": "Guerre",
-      "where": "Paramount+ · aussi sur HBO Max depuis le 7 novembre",
-      "why": "Le voyage de Martin Sheen au cœur des ténèbres vietnamiennes, dans le montage restauré voulu par Coppola : le classique absolu de la semaine, à voir sur le plus grand écran possible.",
+      "director": "Lee Chang-dong",
+      "genre": "Drame",
+      "where": "Netflix",
+      "why": "Le retour de Lee Chang-dong, drame conjugal lent et troublant : toujours la grande œuvre d'auteur du catalogue Netflix ce mois-ci.",
       "scores": {
         "allocinePresse": 4.8,
-        "allocineSpect": 4.4,
-        "senscritique": null,
+        "allocineSpect": 3.4,
+        "senscritique": 7.3,
         "telerama": null
       }
     },
     {
-      "type": "tv",
+      "type": "movie",
       "tmdbId": null,
-      "title": "L'Impératrice",
-      "year": 2022,
-      "director": "Katharina Eyssen",
-      "genre": "Drame historique",
-      "where": "Netflix · saison 3 depuis le 12 novembre",
-      "why": "Sissi face à ses choix dans l'ultime saison de la série allemande : six épisodes disponibles d'un coup aujourd'hui pour boucler la saga.",
+      "title": "La Belle Équipe",
+      "year": 1936,
+      "director": "Julien Duvivier",
+      "genre": "Drame, classique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Cinq ouvriers chômeurs gagnent à la loterie et ouvrent ensemble une guinguette au bord de l'eau : Jean Gabin chez Duvivier, le grand classique du Front populaire, gratuit sur Arte.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": null,
+        "allocineSpect": 4.2,
         "senscritique": null,
         "telerama": null
       }
@@ -134,15 +118,31 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Black Doves",
+      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir",
+      "year": 2022,
+      "director": "J. D. Payne, Patrick McKay",
+      "genre": "Fantasy",
+      "where": "Prime Video · saison 3 depuis le 11 novembre",
+      "why": "Sauron forge enfin l'Anneau unique dans une troisième saison plus resserrée et plus sombre, attendue au tournant par les fans de Tolkien.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.1,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Rivals",
       "year": 2024,
-      "director": "Joe Barton",
-      "genre": "Espionnage",
-      "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw reprennent du service dans une saison 2 plus ambitieuse et plus musclée, saluée par la critique anglo-saxonne.",
+      "director": "Dominic Treadwell-Collins",
+      "genre": "Drame, satire",
+      "where": "Disney+ · saison 2, partie 2 depuis le 11 novembre",
+      "why": "Les guerres de télévision dans les Cotswolds des années 80, entre champagne, coucheries et coups bas : la suite de la saison 2 de ce plaisir coupable très british est arrivée.",
       "scores": {
         "allocinePresse": null,
-        "allocineSpect": null,
+        "allocineSpect": 3.8,
         "senscritique": null,
         "telerama": null
       }
@@ -150,12 +150,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4, un épisode chaque lundi depuis le 2 novembre",
-      "why": "Le New York des fortunes de 1886 par le créateur de Downton Abbey : la saison 4 en est à son deuxième épisode, idéal pour s'y mettre maintenant.",
+      "title": "The Body",
+      "year": 2026,
+      "director": "Quinn Shephard",
+      "genre": "Horreur, drame",
+      "where": "Netflix · depuis le 11 novembre",
+      "why": "Dans un lycée catholique, des adolescentes sont prises de visions prophétiques : une nouvelle série d'horreur psychologique qui mise sur l'hystérie collective et le malaise.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
