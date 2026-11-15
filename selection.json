@@ -1,8 +1,24 @@
 {
-  "date": "2026-11-14",
-  "generatedAt": "2026-11-14T05:16:10Z",
-  "intro": "Dix titres à voir chez toi ce samedi 14 novembre : Juste une illusion de Toledano et Nakache arrive aujourd'hui sur Canal+, Jessica Chastain mène l'enquête dans Heartland sur Netflix, le casse européen 12 12 12 démarre sur Apple TV et Le Quai des brumes est gratuit sur Arte.tv pour le classique.",
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T05:17:14Z",
+  "intro": "Dix titres à voir chez toi ce dimanche 15 novembre : Police Flash 80 débarque aujourd'hui sur Canal+, la saison 3 des Anneaux de pouvoir monte en puissance sur Prime Video, et Apocalypse Now Final Cut sur HBO Max fait office de grand classique.",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Police Flash 80",
+      "year": 2026,
+      "director": "Jean-Baptiste Saurel",
+      "genre": "Comédie policière",
+      "where": "Canal+ · depuis le 15 novembre",
+      "why": "François Damiens en flic à l'ancienne, fan de Sardou, propulsé à la tête d'une brigade d'élite bricolée en 1984 : une parodie rétro bourrée de Minitel et de moustaches, idéale pour un dimanche soir.",
+      "scores": {
+        "allocinePresse": 3.3,
+        "allocineSpect": 3.3,
+        "senscritique": 5.8,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -10,8 +26,8 @@
       "year": 2026,
       "director": "Olivier Nakache, Éric Toledano",
       "genre": "Comédie dramatique",
-      "where": "Canal+ · depuis le 14 novembre",
-      "why": "Camille Cottin, Louis Garrel et Pierre Lottin dans une chronique familiale nostalgique plongée dans les années 80 : le duo d'Intouchables retrouve sa veine tendre, et le public l'a adoré en salles.",
+      "where": "Canal+",
+      "why": "Camille Cottin, Louis Garrel et Pierre Lottin dans une chronique familiale tendre et nostalgique des années 80, signée par le duo d'Intouchables.",
       "scores": {
         "allocinePresse": 3.8,
         "allocineSpect": 4.1,
@@ -22,64 +38,16 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Heartland",
+      "title": "Ceux qui comptent",
       "year": 2026,
-      "director": "Shana Feste",
-      "genre": "Thriller",
-      "where": "Netflix · depuis le 13 novembre",
-      "why": "Jessica Chastain en ancienne star de la country qui sort de sa retraite pour retrouver sa nièce disparue, au fil d'une enquête dans les coulisses troubles de Nashville : la nouveauté Netflix du week-end.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Un bon avocat",
-      "year": 2026,
-      "director": "Tristan Séguéla",
-      "genre": "Drame, judiciaire",
-      "where": "Netflix",
-      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine audience, a une semaine pour sauver sa carrière et préparer son propre procès : un thriller judiciaire français nerveux, présenté à Venise.",
-      "scores": {
-        "allocinePresse": 3.3,
-        "allocineSpect": 3.7,
-        "senscritique": 6.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Rental Family : Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
+      "director": "Jean-Baptiste Leonetti",
       "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue comme faux père ou faux ami auprès d'inconnus : une fable douce et émouvante que les spectateurs ont bien plus aimée que la presse.",
+      "where": "Canal+",
+      "why": "Sandrine Kiberlain, mère tornade qui s'accroche à l'hôtel familial perdu, et Pierre Lottin, solitaire devenu indispensable : une petite comédie burlesque et mélancolique portée par son duo.",
       "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Send Help",
-      "year": 2026,
-      "director": "Sam Raimi",
-      "genre": "Thriller, comédie",
-      "where": "Disney+ · depuis le 13 novembre",
-      "why": "Rachel McAdams, employée méprisée, naufragée sur une île avec son patron odieux : Sam Raimi renverse les rapports de force dans une comédie de survie féroce et gore.",
-      "scores": {
-        "allocinePresse": 3.4,
+        "allocinePresse": 3.2,
         "allocineSpect": 3.4,
-        "senscritique": null,
+        "senscritique": 5.7,
         "telerama": null
       }
     },
@@ -102,44 +70,76 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Le Quai des brumes",
-      "year": 1938,
-      "director": "Marcel Carné",
-      "genre": "Drame, classique",
-      "where": "Arte.tv (gratuit)",
-      "why": "Gabin en déserteur échoué au Havre et Michèle Morgan sous son béret ciré, sur des dialogues de Prévert : le sommet du réalisme poétique, en replay gratuit après sa diffusion du 11 novembre.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 4,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "Black Doves",
-      "year": 2024,
-      "director": "Joe Barton",
-      "genre": "Espionnage",
-      "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw replongent dans le Londres des espions et des tueurs à gages pour six nouveaux épisodes, aussi drôles que brutaux, saluées par la critique.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "12 12 12",
+      "title": "Un bon avocat",
       "year": 2026,
-      "director": "Dudi Appleton, Jim Keeble",
-      "genre": "Thriller, casse",
-      "where": "Apple TV · depuis le 13 novembre",
-      "why": "Un agent du FBI déchu (Anthony Mackie) traque un cambrioleur de génie (Jamie Dornan) à travers l'Europe, avec un coffre zurichois en ligne de mire : chaque épisode jongle entre préparation, casse et lendemains.",
+      "director": "Tristan Séguéla",
+      "genre": "Drame, judiciaire",
+      "where": "Netflix",
+      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine audience, a une semaine pour sauver sa peau : un thriller judiciaire français nerveux.",
+      "scores": {
+        "allocinePresse": 3.3,
+        "allocineSpect": 3.7,
+        "senscritique": 6.5,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Super Mario Galaxy, le film",
+      "year": 2026,
+      "director": "Aaron Horvath, Michael Jelenic",
+      "genre": "Animation",
+      "where": "Canal+ (Box Office)",
+      "why": "Mario et Luigi partent dans les étoiles au secours de Rosalina : la critique a fait la moue, mais c'est le gros carton familial de l'année, à voir avec les enfants.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Vacances forcées",
+      "year": 2025,
+      "director": "François Prévôt-Leygonie, Stephan Archinard",
+      "genre": "Comédie",
+      "where": "Disney+ · depuis le 13 novembre",
+      "why": "Une double réservation oblige deux familles que tout oppose à partager la même villa de luxe : Clovis Cornillac et Aure Atika dans une comédie de vacances sans prétention.",
+      "scores": {
+        "allocinePresse": 2.9,
+        "allocineSpect": 2.8,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Apocalypse Now Final Cut",
+      "year": 1979,
+      "director": "Francis Ford Coppola",
+      "genre": "Guerre, classique",
+      "where": "HBO Max",
+      "why": "Martin Sheen remonte le fleuve vers le colonel Kurtz dans le chef-d'œuvre halluciné de Coppola, ici dans son montage définitif : trois heures de vertige à (re)voir sur grand écran de salon.",
+      "scores": {
+        "allocinePresse": 4.8,
+        "allocineSpect": 4.4,
+        "senscritique": 8.9,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir",
+      "year": 2022,
+      "director": "J. D. Payne, Patrick McKay",
+      "genre": "Fantasy",
+      "where": "Prime Video · saison 3 depuis le 11 novembre",
+      "why": "La saison 3 resserre enfin son récit autour de Sauron et de la forge des anneaux, avec un rythme plus tenu que ses débuts ; nouveaux épisodes chaque semaine jusqu'au 25 novembre.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -150,12 +150,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "L'Impératrice",
-      "year": 2022,
-      "director": "Katharina Eyssen",
-      "genre": "Drame historique",
-      "where": "Netflix · saison 3 (finale) depuis le 12 novembre",
-      "why": "Sissi parcourt l'Europe et affronte ses choix dans l'ultime saison de cette fresque allemande qui dépoussière le mythe, loin des bluettes de Romy Schneider.",
+      "title": "Singapura",
+      "year": 2026,
+      "director": "Elsa Marpeau",
+      "genre": "Thriller",
+      "where": "Canal+ · un épisode chaque lundi",
+      "why": "La mort d'une expatriée provocante (Ariane Labed) fissure une résidence de Français à Singapour : un polar d'atmosphère moite et sensuel, plus fort sur ses actrices que sur son intrigue.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
