@@ -1,53 +1,53 @@
 {
-  "date": "2026-11-15",
-  "generatedAt": "2026-11-15T05:17:14Z",
-  "intro": "Dix titres à voir chez toi ce dimanche 15 novembre : Police Flash 80 débarque aujourd'hui sur Canal+, la saison 3 des Anneaux de pouvoir monte en puissance sur Prime Video, et Apocalypse Now Final Cut sur HBO Max fait office de grand classique.",
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T05:16:30Z",
+  "intro": "Dix titres à voir chez toi ce lundi 16 novembre : Send Help et Rental Family sur Disney+, deux trésors gratuits sur Arte.tv (La Chimère et Le Quai des brumes), et la saison 2 de Black Doves sur Netflix.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Police Flash 80",
+      "title": "Send Help",
       "year": 2026,
-      "director": "Jean-Baptiste Saurel",
-      "genre": "Comédie policière",
-      "where": "Canal+ · depuis le 15 novembre",
-      "why": "François Damiens en flic à l'ancienne, fan de Sardou, propulsé à la tête d'une brigade d'élite bricolée en 1984 : une parodie rétro bourrée de Minitel et de moustaches, idéale pour un dimanche soir.",
+      "director": "Sam Raimi",
+      "genre": "Thriller, comédie",
+      "where": "Disney+",
+      "why": "Rachel McAdams, employée méprisée, se retrouve seule sur une île déserte avec son patron odieux : Sam Raimi renverse le rapport de force dans un survival grinçant et gore, très drôle.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Rental Family – Dans la vie des autres",
+      "year": 2025,
+      "director": "Hikari",
+      "genre": "Comédie dramatique",
+      "where": "Disney+",
+      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue comme faux père, faux ami ou faux témoin : une fable douce sur la solitude, plébiscitée par le public.",
+      "scores": {
+        "allocinePresse": 2.9,
+        "allocineSpect": 4.1,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Un bon avocat",
+      "year": 2026,
+      "director": "Tristan Séguéla",
+      "genre": "Thriller judiciaire",
+      "where": "Netflix",
+      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine audience, a une semaine pour sauver sa carrière : un film de prétoire français tendu et efficace.",
       "scores": {
         "allocinePresse": 3.3,
-        "allocineSpect": 3.3,
-        "senscritique": 5.8,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Juste une illusion",
-      "year": 2026,
-      "director": "Olivier Nakache, Éric Toledano",
-      "genre": "Comédie dramatique",
-      "where": "Canal+",
-      "why": "Camille Cottin, Louis Garrel et Pierre Lottin dans une chronique familiale tendre et nostalgique des années 80, signée par le duo d'Intouchables.",
-      "scores": {
-        "allocinePresse": 3.8,
-        "allocineSpect": 4.1,
-        "senscritique": 6.7,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Ceux qui comptent",
-      "year": 2026,
-      "director": "Jean-Baptiste Leonetti",
-      "genre": "Comédie dramatique",
-      "where": "Canal+",
-      "why": "Sandrine Kiberlain, mère tornade qui s'accroche à l'hôtel familial perdu, et Pierre Lottin, solitaire devenu indispensable : une petite comédie burlesque et mélancolique portée par son duo.",
-      "scores": {
-        "allocinePresse": 3.2,
-        "allocineSpect": 3.4,
-        "senscritique": 5.7,
+        "allocineSpect": 3.7,
+        "senscritique": 6.5,
         "telerama": null
       }
     },
@@ -59,7 +59,7 @@
       "director": "Josh Safdie",
       "genre": "Comédie dramatique",
       "where": "Canal+",
-      "why": "Chalamet en virtuose du ping-pong prêt à toutes les combines dans le New York des années 50 : une course effrénée qu'on regarde le souffle court.",
+      "why": "Timothée Chalamet en champion de ping-pong prêt à toutes les combines dans le New York des années 50 : une course effrénée et électrique.",
       "scores": {
         "allocinePresse": 4.2,
         "allocineSpect": 3.8,
@@ -70,46 +70,14 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Un bon avocat",
-      "year": 2026,
-      "director": "Tristan Séguéla",
-      "genre": "Drame, judiciaire",
-      "where": "Netflix",
-      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine audience, a une semaine pour sauver sa peau : un thriller judiciaire français nerveux.",
-      "scores": {
-        "allocinePresse": 3.3,
-        "allocineSpect": 3.7,
-        "senscritique": 6.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Super Mario Galaxy, le film",
-      "year": 2026,
-      "director": "Aaron Horvath, Michael Jelenic",
-      "genre": "Animation",
-      "where": "Canal+ (Box Office)",
-      "why": "Mario et Luigi partent dans les étoiles au secours de Rosalina : la critique a fait la moue, mais c'est le gros carton familial de l'année, à voir avec les enfants.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Vacances forcées",
-      "year": 2025,
-      "director": "François Prévôt-Leygonie, Stephan Archinard",
+      "title": "Le Livre des solutions",
+      "year": 2023,
+      "director": "Michel Gondry",
       "genre": "Comédie",
-      "where": "Disney+ · depuis le 13 novembre",
-      "why": "Une double réservation oblige deux familles que tout oppose à partager la même villa de luxe : Clovis Cornillac et Aure Atika dans une comédie de vacances sans prétention.",
+      "where": "HBO Max",
+      "why": "Pierre Niney en cinéaste ingérable qui s'enfuit dans les Cévennes avec son film inachevé : Gondry fait de ses propres crises un autoportrait burlesque et attachant, qui divise le public mais séduit la presse.",
       "scores": {
-        "allocinePresse": 2.9,
+        "allocinePresse": 3.8,
         "allocineSpect": 2.8,
         "senscritique": null,
         "telerama": null
@@ -118,28 +86,60 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Apocalypse Now Final Cut",
-      "year": 1979,
-      "director": "Francis Ford Coppola",
-      "genre": "Guerre, classique",
-      "where": "HBO Max",
-      "why": "Martin Sheen remonte le fleuve vers le colonel Kurtz dans le chef-d'œuvre halluciné de Coppola, ici dans son montage définitif : trois heures de vertige à (re)voir sur grand écran de salon.",
+      "title": "Vaiana, la légende du bout du monde",
+      "year": 2026,
+      "director": "Thomas Kail",
+      "genre": "Aventure, famille",
+      "where": "VOD · location ou achat",
+      "why": "Le remake en prises de vues réelles du dessin animé Disney, avec Dwayne Johnson de retour en Maui : un spectacle visuellement soigné pour une soirée en famille, même si le récit n'apporte rien de neuf.",
       "scores": {
-        "allocinePresse": 4.8,
-        "allocineSpect": 4.4,
-        "senscritique": 8.9,
+        "allocinePresse": 2.6,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Chimère",
+      "year": 2023,
+      "director": "Alice Rohrwacher",
+      "genre": "Drame poétique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Josh O'Connor en archéologue anglais mêlé à une bande de pilleurs de tombes étrusques : une fable lumineuse et mélancolique, la pépite gratuite de la semaine.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 3.5,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Quai des brumes",
+      "year": 1938,
+      "director": "Marcel Carné",
+      "genre": "Drame, classique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Jean Gabin, déserteur échoué au Havre, croise Michèle Morgan et son béret : le sommet du réalisme poétique de Carné et Prévert, à (re)découvrir gratuitement.",
+      "scores": {
+        "allocinePresse": 2,
+        "allocineSpect": 4,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir",
-      "year": 2022,
-      "director": "J. D. Payne, Patrick McKay",
-      "genre": "Fantasy",
-      "where": "Prime Video · saison 3 depuis le 11 novembre",
-      "why": "La saison 3 resserre enfin son récit autour de Sauron et de la forge des anneaux, avec un rythme plus tenu que ses débuts ; nouveaux épisodes chaque semaine jusqu'au 25 novembre.",
+      "title": "Black Doves",
+      "year": 2024,
+      "director": "Joe Barton",
+      "genre": "Espionnage",
+      "where": "Netflix · saison 2 depuis le 5 novembre",
+      "why": "Keira Knightley et Ben Whishaw reprennent du service pour une mission encore plus périlleuse : six épisodes d'espionnage londonien nerveux et pince-sans-rire.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -150,12 +150,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Singapura",
-      "year": 2026,
-      "director": "Elsa Marpeau",
-      "genre": "Thriller",
-      "where": "Canal+ · un épisode chaque lundi",
-      "why": "La mort d'une expatriée provocante (Ariane Labed) fissure une résidence de Français à Singapour : un polar d'atmosphère moite et sensuel, plus fort sur ses actrices que sur son intrigue.",
+      "title": "The Gilded Age",
+      "year": 2022,
+      "director": "Julian Fellowes",
+      "genre": "Drame d'époque",
+      "where": "HBO Max · saison 4 depuis le 2 novembre",
+      "why": "Les rivalités mondaines du New York de la fin du XIXe siècle reprennent, plus sombres et plus piquantes : la saga en costumes du créateur de Downton Abbey.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
