@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-16",
-  "generatedAt": "2026-11-16T05:16:30Z",
-  "intro": "Dix titres à voir chez toi ce lundi 16 novembre : Send Help et Rental Family sur Disney+, deux trésors gratuits sur Arte.tv (La Chimère et Le Quai des brumes), et la saison 2 de Black Doves sur Netflix.",
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T05:15:52Z",
+  "intro": "Dix titres à voir chez toi ce mardi 17 novembre : le retour de Lee Chang-dong avec Possible Love sur Netflix, deux trésors gratuits sur Arte.tv (About Kim Sohee et La Belle Équipe), et La Comtesse de Monte-Cristo avec Audrey Fleurot sur TF1+.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Send Help",
+      "title": "Possible Love",
       "year": 2026,
-      "director": "Sam Raimi",
-      "genre": "Thriller, comédie",
-      "where": "Disney+",
-      "why": "Rachel McAdams, employée méprisée, se retrouve seule sur une île déserte avec son patron odieux : Sam Raimi renverse le rapport de force dans un survival grinçant et gore, très drôle.",
+      "director": "Lee Chang-dong",
+      "genre": "Drame",
+      "where": "Netflix",
+      "why": "Le retour du réalisateur de Burning, seize ans après Poetry : un couple ouvrier brisé par une grève face à une documentariste aisée qui veut les filmer. Un grand drame sur les fractures de classe, porté par Jeon Do-yeon.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -22,78 +22,14 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Rental Family – Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue comme faux père, faux ami ou faux témoin : une fable douce sur la solitude, plébiscitée par le public.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Un bon avocat",
+      "title": "Being Heumann",
       "year": 2026,
-      "director": "Tristan Séguéla",
-      "genre": "Thriller judiciaire",
-      "where": "Netflix",
-      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine audience, a une semaine pour sauver sa carrière : un film de prétoire français tendu et efficace.",
+      "director": "Siân Heder",
+      "genre": "Biopic",
+      "where": "Apple TV",
+      "why": "Ruth Madeley incarne Judy Heumann, figure du combat pour les droits des personnes handicapées aux États-Unis : un film combatif et chaleureux par la réalisatrice de CODA.",
       "scores": {
-        "allocinePresse": 3.3,
-        "allocineSpect": 3.7,
-        "senscritique": 6.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Marty Supreme",
-      "year": 2025,
-      "director": "Josh Safdie",
-      "genre": "Comédie dramatique",
-      "where": "Canal+",
-      "why": "Timothée Chalamet en champion de ping-pong prêt à toutes les combines dans le New York des années 50 : une course effrénée et électrique.",
-      "scores": {
-        "allocinePresse": 4.2,
-        "allocineSpect": 3.8,
-        "senscritique": 6.9,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Livre des solutions",
-      "year": 2023,
-      "director": "Michel Gondry",
-      "genre": "Comédie",
-      "where": "HBO Max",
-      "why": "Pierre Niney en cinéaste ingérable qui s'enfuit dans les Cévennes avec son film inachevé : Gondry fait de ses propres crises un autoportrait burlesque et attachant, qui divise le public mais séduit la presse.",
-      "scores": {
-        "allocinePresse": 3.8,
-        "allocineSpect": 2.8,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Vaiana, la légende du bout du monde",
-      "year": 2026,
-      "director": "Thomas Kail",
-      "genre": "Aventure, famille",
-      "where": "VOD · location ou achat",
-      "why": "Le remake en prises de vues réelles du dessin animé Disney, avec Dwayne Johnson de retour en Maui : un spectacle visuellement soigné pour une soirée en famille, même si le récit n'apporte rien de neuf.",
-      "scores": {
-        "allocinePresse": 2.6,
+        "allocinePresse": null,
         "allocineSpect": null,
         "senscritique": null,
         "telerama": null
@@ -102,15 +38,15 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "La Chimère",
-      "year": 2023,
-      "director": "Alice Rohrwacher",
-      "genre": "Drame poétique",
-      "where": "Arte.tv (gratuit)",
-      "why": "Josh O'Connor en archéologue anglais mêlé à une bande de pilleurs de tombes étrusques : une fable lumineuse et mélancolique, la pépite gratuite de la semaine.",
+      "title": "Send Help",
+      "year": 2026,
+      "director": "Sam Raimi",
+      "genre": "Thriller, comédie",
+      "where": "Disney+",
+      "why": "Rachel McAdams, employée méprisée, échouée sur une île déserte avec son patron odieux : Sam Raimi inverse les rapports de force dans un survival grinçant et très drôle.",
       "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 3.5,
+        "allocinePresse": null,
+        "allocineSpect": null,
         "senscritique": null,
         "telerama": null
       }
@@ -118,15 +54,95 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Le Quai des brumes",
-      "year": 1938,
-      "director": "Marcel Carné",
+      "title": "LOL 2.0",
+      "year": 2026,
+      "director": "Lisa Azuelos",
+      "genre": "Comédie",
+      "where": "Disney+",
+      "why": "Dix-huit ans après LOL, Sophie Marceau retrouve le rôle d'Anne face à une nouvelle génération d'ados : une suite légère et nostalgique pour une soirée sans prise de tête, qui divise davantage la presse que le public.",
+      "scores": {
+        "allocinePresse": 2.6,
+        "allocineSpect": 3,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Comédie dramatique",
+      "where": "Netflix",
+      "why": "Ella Rumpf en brillante doctorante en mathématiques dont la thèse s'effondre et qui doit tout réapprendre, à commencer par vivre : un portrait sensible et lumineux, très apprécié des spectateurs.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "About Kim Sohee",
+      "year": 2022,
+      "director": "July Jung",
+      "genre": "Drame social",
+      "where": "Arte.tv (gratuit)",
+      "why": "Une lycéenne coréenne envoyée en stage dans un centre d'appels se heurte à une machine qui broie les jeunes : une pépite bouleversante et implacable, à voir gratuitement.",
+      "scores": {
+        "allocinePresse": 3.8,
+        "allocineSpect": 4.1,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Belle Équipe",
+      "year": 1936,
+      "director": "Julien Duvivier",
       "genre": "Drame, classique",
       "where": "Arte.tv (gratuit)",
-      "why": "Jean Gabin, déserteur échoué au Havre, croise Michèle Morgan et son béret : le sommet du réalisme poétique de Carné et Prévert, à (re)découvrir gratuitement.",
+      "why": "Cinq chômeurs gagnent à la loterie et ouvrent ensemble une guinguette au bord de la Marne : Jean Gabin dans un classique du Front populaire, entre utopie fraternelle et amertume.",
       "scores": {
-        "allocinePresse": 2,
-        "allocineSpect": 4,
+        "allocinePresse": null,
+        "allocineSpect": 4.2,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir",
+      "year": 2022,
+      "director": "J. D. Payne et Patrick McKay",
+      "genre": "Fantasy",
+      "where": "Prime Video · saison 3 depuis le 11 novembre",
+      "why": "Sauron forge l'Anneau unique : la saison 3 resserre ses intrigues et gagne en souffle, avec de nouveaux épisodes mis en ligne par lots.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "La Comtesse de Monte-Cristo",
+      "year": 2026,
+      "director": "Djibril Glissant et Leonardo D'Antoni",
+      "genre": "Aventure, vengeance",
+      "where": "TF1+ (gratuit) · depuis le 16 novembre",
+      "why": "Audrey Fleurot fait de Mercédès l'héroïne vengeresse de Dumas dans cette ambitieuse relecture au féminin en huit épisodes, lancée lundi sur TF1.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
         "senscritique": null,
         "telerama": null
       }
@@ -140,22 +156,6 @@
       "genre": "Espionnage",
       "where": "Netflix · saison 2 depuis le 5 novembre",
       "why": "Keira Knightley et Ben Whishaw reprennent du service pour une mission encore plus périlleuse : six épisodes d'espionnage londonien nerveux et pince-sans-rire.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4 depuis le 2 novembre",
-      "why": "Les rivalités mondaines du New York de la fin du XIXe siècle reprennent, plus sombres et plus piquantes : la saga en costumes du créateur de Downton Abbey.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
