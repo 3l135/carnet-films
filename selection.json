@@ -1,8 +1,56 @@
 {
-  "date": "2026-11-17",
-  "generatedAt": "2026-11-17T05:15:52Z",
-  "intro": "Dix titres à voir chez toi ce mardi 17 novembre : le retour de Lee Chang-dong avec Possible Love sur Netflix, deux trésors gratuits sur Arte.tv (About Kim Sohee et La Belle Équipe), et La Comtesse de Monte-Cristo avec Audrey Fleurot sur TF1+.",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T05:15:40Z",
+  "intro": "Dix titres à voir chez toi ce mercredi 18 novembre : L'Odyssée de Nolan arrive en VOD, Nicolas Cage devient John Madden sur Prime Video, et deux merveilles gratuites sur Arte.tv (La Chimère et Le Quai des brumes).",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Odyssée",
+      "year": 2026,
+      "director": "Christopher Nolan",
+      "genre": "Épopée, aventure",
+      "where": "VOD · achat numérique depuis le 18 novembre",
+      "why": "Le carton de l'été arrive chez soi dès aujourd'hui : Matt Damon en Ulysse dans une relecture spectaculaire d'Homère, saluée par la presse comme par le public. Le grand film de l'année à rattraper.",
+      "scores": {
+        "allocinePresse": 4.1,
+        "allocineSpect": 4.3,
+        "senscritique": 7.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Madden",
+      "year": 2026,
+      "director": "David O. Russell",
+      "genre": "Biopic, sport",
+      "where": "Prime Video · depuis le 18 novembre",
+      "why": "Nicolas Cage se métamorphose en John Madden, légende du football américain, face à Christian Bale : un biopic excentrique sorti directement en streaming aujourd'hui, à découvrir par curiosité.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Marty Supreme",
+      "year": 2025,
+      "director": "Josh Safdie",
+      "genre": "Comédie dramatique, sport",
+      "where": "Canal+ (myCANAL)",
+      "why": "Timothée Chalamet en génie arrogant du ping-pong dans le New York des années 50 : une course effrénée et électrique, l'un des films les mieux notés par la presse cette année.",
+      "scores": {
+        "allocinePresse": 4.2,
+        "allocineSpect": 3.8,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -11,7 +59,7 @@
       "director": "Lee Chang-dong",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Le retour du réalisateur de Burning, seize ans après Poetry : un couple ouvrier brisé par une grève face à une documentariste aisée qui veut les filmer. Un grand drame sur les fractures de classe, porté par Jeon Do-yeon.",
+      "why": "Le retour du réalisateur de Burning : un couple ouvrier brisé par une grève face à une documentariste aisée. Un grand drame sur les fractures de classe, à ne pas laisser passer.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -22,78 +70,14 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Being Heumann",
-      "year": 2026,
-      "director": "Siân Heder",
-      "genre": "Biopic",
-      "where": "Apple TV",
-      "why": "Ruth Madeley incarne Judy Heumann, figure du combat pour les droits des personnes handicapées aux États-Unis : un film combatif et chaleureux par la réalisatrice de CODA.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Send Help",
-      "year": 2026,
-      "director": "Sam Raimi",
-      "genre": "Thriller, comédie",
-      "where": "Disney+",
-      "why": "Rachel McAdams, employée méprisée, échouée sur une île déserte avec son patron odieux : Sam Raimi inverse les rapports de force dans un survival grinçant et très drôle.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "LOL 2.0",
-      "year": 2026,
-      "director": "Lisa Azuelos",
-      "genre": "Comédie",
-      "where": "Disney+",
-      "why": "Dix-huit ans après LOL, Sophie Marceau retrouve le rôle d'Anne face à une nouvelle génération d'ados : une suite légère et nostalgique pour une soirée sans prise de tête, qui divise davantage la presse que le public.",
-      "scores": {
-        "allocinePresse": 2.6,
-        "allocineSpect": 3,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Théorème de Marguerite",
-      "year": 2023,
-      "director": "Anna Novion",
+      "title": "Rental Family - Dans la vie des autres",
+      "year": 2025,
+      "director": "Hikari",
       "genre": "Comédie dramatique",
-      "where": "Netflix",
-      "why": "Ella Rumpf en brillante doctorante en mathématiques dont la thèse s'effondre et qui doit tout réapprendre, à commencer par vivre : un portrait sensible et lumineux, très apprécié des spectateurs.",
+      "where": "Disney+",
+      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue pour jouer un mari, un père ou un ami : une fable tendre sur la solitude, plus aimée du public que de la critique.",
       "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 3.9,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "About Kim Sohee",
-      "year": 2022,
-      "director": "July Jung",
-      "genre": "Drame social",
-      "where": "Arte.tv (gratuit)",
-      "why": "Une lycéenne coréenne envoyée en stage dans un centre d'appels se heurte à une machine qui broie les jeunes : une pépite bouleversante et implacable, à voir gratuitement.",
-      "scores": {
-        "allocinePresse": 3.8,
+        "allocinePresse": 2.9,
         "allocineSpect": 4.1,
         "senscritique": null,
         "telerama": null
@@ -102,15 +86,47 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "La Belle Équipe",
-      "year": 1936,
-      "director": "Julien Duvivier",
+      "title": "Un bon avocat",
+      "year": 2026,
+      "director": "Tristan Séguéla",
+      "genre": "Thriller judiciaire",
+      "where": "Netflix",
+      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine plaidoirie, a une semaine pour préparer son propre procès : un film de prétoire élégant, présenté à Venise.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Chimère",
+      "year": 2023,
+      "director": "Alice Rohrwacher",
+      "genre": "Drame, fable",
+      "where": "Arte.tv (gratuit)",
+      "why": "Josh O'Connor en pilleur de tombes étrusques hanté par un amour perdu : une fable italienne poétique et solaire, une pépite à voir gratuitement.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 3.5,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Quai des brumes",
+      "year": 1938,
+      "director": "Marcel Carné",
       "genre": "Drame, classique",
       "where": "Arte.tv (gratuit)",
-      "why": "Cinq chômeurs gagnent à la loterie et ouvrent ensemble une guinguette au bord de la Marne : Jean Gabin dans un classique du Front populaire, entre utopie fraternelle et amertume.",
+      "why": "Gabin le déserteur et Michèle Morgan sous un béret au Havre : le chef-d'œuvre du réalisme poétique, avec les dialogues de Prévert, en libre accès.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 4.2,
+        "allocinePresse": 2,
+        "allocineSpect": 4,
         "senscritique": null,
         "telerama": null
       }
@@ -118,28 +134,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir",
-      "year": 2022,
-      "director": "J. D. Payne et Patrick McKay",
-      "genre": "Fantasy",
-      "where": "Prime Video · saison 3 depuis le 11 novembre",
-      "why": "Sauron forge l'Anneau unique : la saison 3 resserre ses intrigues et gagne en souffle, avec de nouveaux épisodes mis en ligne par lots.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "La Comtesse de Monte-Cristo",
+      "title": "La Loi de la bête",
       "year": 2026,
-      "director": "Djibril Glissant et Leonardo D'Antoni",
-      "genre": "Aventure, vengeance",
-      "where": "TF1+ (gratuit) · depuis le 16 novembre",
-      "why": "Audrey Fleurot fait de Mercédès l'héroïne vengeresse de Dumas dans cette ambitieuse relecture au féminin en huit épisodes, lancée lundi sur TF1.",
+      "director": "Kasper Bajon",
+      "genre": "Polar",
+      "where": "Netflix · depuis le 18 novembre",
+      "why": "Inspirée d'une affaire réelle de 1988 en Pologne, une mini-série de quatre épisodes où un enquêteur et un psychiatre, anciens amis, voient ressurgir le dossier qui les a séparés.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -150,12 +150,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Black Doves",
-      "year": 2024,
-      "director": "Joe Barton",
-      "genre": "Espionnage",
-      "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw reprennent du service pour une mission encore plus périlleuse : six épisodes d'espionnage londonien nerveux et pince-sans-rire.",
+      "title": "The Gilded Age",
+      "year": 2022,
+      "director": "Julian Fellowes",
+      "genre": "Drame historique",
+      "where": "HBO Max · saison 4 depuis le 2 novembre",
+      "why": "Le créateur de Downton Abbey poursuit sa chronique du New York des années 1880 : rivalités mondaines, robes somptueuses et nouveaux épisodes chaque lundi.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
