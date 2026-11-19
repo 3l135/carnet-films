@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-18",
-  "generatedAt": "2026-11-18T05:15:40Z",
-  "intro": "Dix titres à voir chez toi ce mercredi 18 novembre : L'Odyssée de Nolan arrive en VOD, Nicolas Cage devient John Madden sur Prime Video, et deux merveilles gratuites sur Arte.tv (La Chimère et Le Quai des brumes).",
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T05:16:30Z",
+  "intro": "Dix titres à voir chez toi ce jeudi 19 novembre : Sam Raimi déchaîné sur Disney+, The Altruists sur l'affaire FTX chez Netflix, et Revoir Paris en accès libre sur Arte.tv.",
   "items": [
     {
       "type": "movie",
@@ -11,7 +11,7 @@
       "director": "Christopher Nolan",
       "genre": "Épopée, aventure",
       "where": "VOD · achat numérique depuis le 18 novembre",
-      "why": "Le carton de l'été arrive chez soi dès aujourd'hui : Matt Damon en Ulysse dans une relecture spectaculaire d'Homère, saluée par la presse comme par le public. Le grand film de l'année à rattraper.",
+      "why": "Matt Damon en Ulysse dans la relecture monumentale d'Homère par Nolan : le grand spectacle de l'année, désormais disponible chez soi.",
       "scores": {
         "allocinePresse": 4.1,
         "allocineSpect": 4.3,
@@ -22,12 +22,12 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Madden",
+      "title": "Send Help",
       "year": 2026,
-      "director": "David O. Russell",
-      "genre": "Biopic, sport",
-      "where": "Prime Video · depuis le 18 novembre",
-      "why": "Nicolas Cage se métamorphose en John Madden, légende du football américain, face à Christian Bale : un biopic excentrique sorti directement en streaming aujourd'hui, à découvrir par curiosité.",
+      "director": "Sam Raimi",
+      "genre": "Thriller, comédie",
+      "where": "Disney+",
+      "why": "Rachel McAdams, employée méprisée, échoue sur une île déserte avec son patron odieux : Sam Raimi retrouve sa veine gore et grinçante dans un survival jubilatoire.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -41,9 +41,9 @@
       "title": "Marty Supreme",
       "year": 2025,
       "director": "Josh Safdie",
-      "genre": "Comédie dramatique, sport",
+      "genre": "Comédie dramatique",
       "where": "Canal+ (myCANAL)",
-      "why": "Timothée Chalamet en génie arrogant du ping-pong dans le New York des années 50 : une course effrénée et électrique, l'un des films les mieux notés par la presse cette année.",
+      "why": "Timothée Chalamet en champion de ping-pong prêt à tout dans le New York des années 50 : une course frénétique et électrisante, parmi les films les mieux notés de la presse.",
       "scores": {
         "allocinePresse": 4.2,
         "allocineSpect": 3.8,
@@ -54,15 +54,31 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Possible Love",
-      "year": 2026,
-      "director": "Lee Chang-dong",
+      "title": "L'Amour au présent",
+      "year": 2024,
+      "director": "John Crowley",
+      "genre": "Romance",
+      "where": "Netflix",
+      "why": "Florence Pugh et Andrew Garfield racontent dix ans d'amour dans le désordre : un mélodrame lumineux qui fait rire avant de serrer le cœur.",
+      "scores": {
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.8,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Le retour du réalisateur de Burning : un couple ouvrier brisé par une grève face à une documentariste aisée. Un grand drame sur les fractures de classe, à ne pas laisser passer.",
+      "why": "Une brillante doctorante en mathématiques voit sa thèse s'effondrer et réapprend à vivre : Ella Rumpf irrésistible dans un portrait sensible et original.",
       "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
         "senscritique": null,
         "telerama": null
       }
@@ -70,92 +86,76 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Rental Family - Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue pour jouer un mari, un père ou un ami : une fable tendre sur la solitude, plus aimée du public que de la critique.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Un bon avocat",
-      "year": 2026,
-      "director": "Tristan Séguéla",
-      "genre": "Thriller judiciaire",
-      "where": "Netflix",
-      "why": "Laurent Lafitte, ténor du barreau terrassé par une overdose en pleine plaidoirie, a une semaine pour préparer son propre procès : un film de prétoire élégant, présenté à Venise.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "La Chimère",
-      "year": 2023,
-      "director": "Alice Rohrwacher",
-      "genre": "Drame, fable",
-      "where": "Arte.tv (gratuit)",
-      "why": "Josh O'Connor en pilleur de tombes étrusques hanté par un amour perdu : une fable italienne poétique et solaire, une pépite à voir gratuitement.",
-      "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 3.5,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Quai des brumes",
-      "year": 1938,
-      "director": "Marcel Carné",
-      "genre": "Drame, classique",
-      "where": "Arte.tv (gratuit)",
-      "why": "Gabin le déserteur et Michèle Morgan sous un béret au Havre : le chef-d'œuvre du réalisme poétique, avec les dialogues de Prévert, en libre accès.",
-      "scores": {
-        "allocinePresse": 2,
-        "allocineSpect": 4,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "La Loi de la bête",
-      "year": 2026,
-      "director": "Kasper Bajon",
-      "genre": "Polar",
-      "where": "Netflix · depuis le 18 novembre",
-      "why": "Inspirée d'une affaire réelle de 1988 en Pologne, une mini-série de quatre épisodes où un enquêteur et un psychiatre, anciens amis, voient ressurgir le dossier qui les a séparés.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "The Gilded Age",
+      "title": "Revoir Paris",
       "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame historique",
-      "where": "HBO Max · saison 4 depuis le 2 novembre",
-      "why": "Le créateur de Downton Abbey poursuit sa chronique du New York des années 1880 : rivalités mondaines, robes somptueuses et nouveaux épisodes chaque lundi.",
+      "director": "Alice Winocour",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit) · jusqu'au 8 décembre",
+      "why": "Virginie Efira, césarisée pour ce rôle, reconstitue la nuit d'un attentat dont elle a perdu le souvenir : un film pudique et bouleversant sur la mémoire et la reconstruction.",
+      "scores": {
+        "allocinePresse": 4,
+        "allocineSpect": 3.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Undertone",
+      "year": 2025,
+      "director": "Ian Tuason",
+      "genre": "Horreur",
+      "where": "VOD · location depuis le 19 novembre",
+      "why": "Une animatrice de podcast paranormal écoute un enregistrement qu'elle n'aurait pas dû entendre : une petite production canadienne qui fait peur presque uniquement par le son.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "La Chute de l'Empire romain",
+      "year": 1964,
+      "director": "Anthony Mann",
+      "genre": "Péplum, classique",
+      "where": "Arte.tv (gratuit)",
+      "why": "De Marc Aurèle à Commode, la grande fresque d'Anthony Mann avec Sophia Loren : le péplum d'âge d'or qui a inspiré Gladiator, à revoir gratuitement.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 3.5,
+        "senscritique": 6.7,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "The Altruists",
+      "year": 2026,
+      "director": "Graham Moore, Jacqueline Hoyt",
+      "genre": "Drame, arnaque",
+      "where": "Netflix · depuis le 19 novembre",
+      "why": "Julia Garner et Anthony Boyle dans l'ascension et la chute de FTX et de Sam Bankman-Fried : une mini-série sur l'une des plus grandes fraudes financières du siècle.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Black Doves",
+      "year": 2024,
+      "director": "Joe Barton",
+      "genre": "Espionnage",
+      "where": "Netflix · saison 2 depuis le 5 novembre",
+      "why": "Keira Knightley, espionne mariée à un futur Premier ministre, et Ben Whishaw en tueur à gages reviennent dans une saison plus nerveuse, plus drôle et plus violente.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
