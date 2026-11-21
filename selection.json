@@ -1,20 +1,36 @@
 {
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T05:16:22Z",
-  "intro": "Dix titres à voir chez toi ce vendredi 20 novembre : Le Rêve américain sur Disney+, le biopic Michael sur Canal+, Lee Chang-dong sur Netflix et la saison finale de Yellowjackets.",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T05:40:00Z",
+  "intro": "Dix titres à voir chez toi ce samedi 21 novembre : L'Odyssée de Nolan en VOD, la Caméra d'or Le Gâteau du président sur Canal+, Lee Chang-dong sur Netflix et Le Quai des brumes gratuit sur Arte.tv.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Le Rêve américain",
+      "title": "L'Odyssée",
       "year": 2026,
-      "director": "Anthony Marciano",
-      "genre": "Comédie, sport",
-      "where": "Disney+ · depuis le 20 novembre",
-      "why": "Jean-Pascal Zadi et Raphaël Quenard, deux copains d'Amiens, se rêvent agents de joueurs NBA : une comédie chaleureuse inspirée d'une histoire vraie, plébiscitée par le public en salle.",
+      "director": "Christopher Nolan",
+      "genre": "Épopée, aventure",
+      "where": "VOD · achat (depuis le 18 novembre)",
+      "why": "Matt Damon en Ulysse dans la relecture monumentale du poème d'Homère : le grand événement cinéma de l'été arrive en vidéo à la demande, à voir sur le plus grand écran possible.",
       "scores": {
-        "allocinePresse": 3.6,
+        "allocinePresse": 4.1,
         "allocineSpect": 4.3,
+        "senscritique": 7.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Gâteau du président",
+      "year": 2025,
+      "director": "Hasan Hadi",
+      "genre": "Drame",
+      "where": "Canal+ (myCANAL)",
+      "why": "Dans l'Irak sous embargo des années 1990, une fillette doit trouver de quoi confectionner le gâteau d'anniversaire de Saddam Hussein : une Caméra d'or cannoise, tendre et cruelle à la fois.",
+      "scores": {
+        "allocinePresse": 4,
+        "allocineSpect": 4.1,
         "senscritique": null,
         "telerama": null
       }
@@ -27,7 +43,7 @@
       "director": "Lee Chang-dong",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Le grand retour de Lee Chang-dong, huit ans après Burning : deux couples face à face, une fresque sur le désir et les fractures de classe en Corée.",
+      "why": "Le retour de Lee Chang-dong, huit ans après Burning : deux couples que tout sépare socialement, une œuvre ample et troublante saluée unanimement depuis Venise.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -38,92 +54,76 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Rental Family – Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser, acteur américain perdu à Tokyo, se loue comme mari, père ou ami d'un jour : une fable tendre sur la solitude, adorée des spectateurs.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Les Orphelins",
-      "year": 2025,
-      "director": "Olivier Schneider",
-      "genre": "Action",
-      "where": "Netflix · depuis le 20 novembre",
-      "why": "Alban Lenoir et Dali Benssalah, frères de foyer devenus ennemis, forcés de s'allier : un buddy movie d'action à la française, nerveux et sans chichis, pour un vendredi soir.",
-      "scores": {
-        "allocinePresse": 3,
-        "allocineSpect": 3.2,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Michael",
+      "title": "Send Help",
       "year": 2026,
-      "director": "Antoine Fuqua",
-      "genre": "Biopic, musical",
-      "where": "Canal+ (myCANAL) · depuis le 20 novembre",
-      "why": "Jaafar Jackson incarne son oncle dans le biopic du roi de la pop, carton planétaire de l'année : boudé par la presse mais porté par ses numéros musicaux, il arrive sur Canal+.",
+      "director": "Sam Raimi",
+      "genre": "Thriller, comédie",
+      "where": "Disney+",
+      "why": "Rachel McAdams et Dylan O'Brien, patron et employée échoués sur une île déserte où les rapports de force s'inversent : Sam Raimi revient à la série B gore et jubilatoire.",
       "scores": {
-        "allocinePresse": 2.4,
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Enfer des Ardennes",
+      "year": 2026,
+      "director": "Rod Lurie",
+      "genre": "Guerre, survie",
+      "where": "HBO Max · depuis le 19 novembre",
+      "why": "Hiver 1944 : Scott Eastwood, soldat blessé coupé de son unité derrière les lignes allemandes, n'a qu'une radio pour survivre. Un survival de guerre tendu, inspiré de faits réels.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Comédie dramatique",
+      "where": "Netflix",
+      "why": "Ella Rumpf en brillante thésarde en maths dont la vie bascule après une erreur de démonstration : une pépite française délicate et lumineuse, passée inaperçue en salle.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Quai des brumes",
+      "year": 1938,
+      "director": "Marcel Carné",
+      "genre": "Drame, classique",
+      "where": "Arte.tv (gratuit)",
+      "why": "Jean Gabin, déserteur échoué au Havre, et Michèle Morgan sous son béret : le chef-d'œuvre du réalisme poétique de Carné et Prévert, à (re)voir gratuitement.",
+      "scores": {
+        "allocinePresse": 2,
         "allocineSpect": 4,
         "senscritique": null,
         "telerama": null
       }
     },
     {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Smile",
-      "year": 2022,
-      "director": "Parker Finn",
-      "genre": "Horreur",
-      "where": "Netflix · depuis le 20 novembre",
-      "why": "Une psychiatre hantée par un sourire maléfique après le suicide d'une patiente : un premier film d'horreur redoutablement efficace, devenu un petit classique du genre.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "La vie est un long fleuve tranquille",
-      "year": 1988,
-      "director": "Étienne Chatiliez",
-      "genre": "Comédie, classique",
-      "where": "Disney+ · depuis le 20 novembre",
-      "why": "Deux bébés échangés à la naissance, les Le Quesnoy et les Groseille : la satire sociale culte de Chatiliez, toujours aussi féroce, avec un tout jeune Benoît Magimel.",
-      "scores": {
-        "allocinePresse": 4.4,
-        "allocineSpect": 3.8,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
       "type": "tv",
       "tmdbId": null,
-      "title": "Yellowjackets",
-      "year": 2021,
-      "director": "Ashley Lyle, Bart Nickerson",
-      "genre": "Thriller, horreur",
-      "where": "Paramount+ · saison 4 (finale) depuis le 20 novembre",
-      "why": "Les survivantes d'un crash dans la nature sauvage, entre 1996 et aujourd'hui : la série culte livre enfin ses dernières réponses, un épisode par semaine.",
+      "title": "La Loi de la bête",
+      "year": 2026,
+      "director": "Kasper Bajon",
+      "genre": "Polar",
+      "where": "Netflix · depuis le 18 novembre",
+      "why": "Une mini-série polonaise inspirée d'une affaire criminelle réelle : le retour d'un condamné dans sa ville met à l'épreuve deux amis et l'État de droit.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -134,12 +134,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Percy Jackson et les Olympiens",
-      "year": 2023,
-      "director": "Jonathan E. Steinberg, Dan Shotz",
-      "genre": "Fantasy, aventure",
-      "where": "Disney+ · saison 3 depuis le 20 novembre",
-      "why": "Walker Scobell reprend le rôle du demi-dieu pour l'adaptation du Sort du Titan : l'aventure familiale idéale pour les soirées d'automne.",
+      "title": "Le Seigneur des Anneaux : Les Anneaux de pouvoir",
+      "year": 2022,
+      "director": "J. D. Payne, Patrick McKay",
+      "genre": "Fantasy",
+      "where": "Prime Video · saison 3 (épisodes hebdomadaires)",
+      "why": "La saison 3 accélère vers la guerre contre Sauron et resserre son récit : de quoi rattraper la fresque de la Terre du Milieu au fil des épisodes du mercredi.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
