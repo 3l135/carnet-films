@@ -1,21 +1,21 @@
 {
-  "date": "2026-11-22",
-  "generatedAt": "2026-11-22T05:15:58Z",
-  "intro": "Dix titres à voir chez toi ce dimanche 22 novembre : le biopic Michael sur Canal+, la pépite animée Mars Express sur Netflix, Revoir Paris et un grand péplum gratuits sur Arte.tv, et la saison finale de Yellowjackets.",
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T05:16:44Z",
+  "intro": "Dix titres à voir chez toi ce lundi 23 novembre : Send Help de Sam Raimi sur Disney+, L'Odyssée de Nolan en VOD, trois films gratuits sur Arte.tv dont Le Quai des brumes, et l'affaire FTX en mini-série avec The Altruists.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Michael",
+      "title": "Send Help",
       "year": 2026,
-      "director": "Antoine Fuqua",
-      "genre": "Biopic, musical",
-      "where": "Canal+ (à la demande depuis le 20 novembre)",
-      "why": "Jaafar Jackson incarne son oncle dans ce biopic à grand spectacle sur l'ascension du roi de la pop : la presse a été sévère, mais le public a adoré et le film arrive tout juste sur Canal+.",
+      "director": "Sam Raimi",
+      "genre": "Thriller, comédie",
+      "where": "Disney+",
+      "why": "Une employée méprisée et son patron odieux, seuls survivants d'un crash sur une île déserte : Sam Raimi renoue avec la série B horrifique et jubilatoire, portée par Rachel McAdams.",
       "scores": {
-        "allocinePresse": 2.4,
-        "allocineSpect": 4,
-        "senscritique": 5.6,
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.4,
+        "senscritique": null,
         "telerama": null
       }
     },
@@ -27,7 +27,7 @@
       "director": "Christopher Nolan",
       "genre": "Épopée, aventure",
       "where": "VOD · achat (depuis le 18 novembre)",
-      "why": "Matt Damon en Ulysse dans la relecture monumentale d'Homère par Nolan : le grand événement de l'été est désormais disponible à la maison, idéalement sur un grand écran.",
+      "why": "Matt Damon en Ulysse dans la relecture monumentale d'Homère par Nolan : l'événement de l'été se savoure désormais à la maison, sur le plus grand écran possible.",
       "scores": {
         "allocinePresse": 4.1,
         "allocineSpect": 4.3,
@@ -38,12 +38,60 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Possible Love",
-      "year": 2026,
-      "director": "Lee Chang-dong",
-      "genre": "Drame",
+      "title": "L'Amour au présent",
+      "year": 2024,
+      "director": "John Crowley",
+      "genre": "Romance, drame",
       "where": "Netflix",
-      "why": "Le retour de Lee Chang-dong, huit ans après Burning : deux couples que tout sépare socialement, dans une œuvre ample et troublante.",
+      "why": "Florence Pugh et Andrew Garfield racontent dix ans d'amour dans le désordre, entre fous rires et épreuve de la maladie : un mélo lumineux qui doit tout à son duo.",
+      "scores": {
+        "allocinePresse": 3.2,
+        "allocineSpect": 3.8,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Comédie dramatique",
+      "where": "Netflix",
+      "why": "Une brillante doctorante en mathématiques voit sa thèse s'effondrer et réapprend à vivre hors de l'École normale : un portrait tendre et singulier, porté par Ella Rumpf.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "About Kim Sohee",
+      "year": 2022,
+      "director": "July Jung",
+      "genre": "Drame social",
+      "where": "Arte.tv (gratuit)",
+      "why": "Une lycéenne en stage dans un centre d'appels sombre peu à peu, puis une policière enquête : un film coréen implacable sur l'exploitation des jeunes, tiré d'un fait réel.",
+      "scores": {
+        "allocinePresse": 3.8,
+        "allocineSpect": 4.1,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Rabia",
+      "year": 2024,
+      "director": "Mareike Engelhardt",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit)",
+      "why": "Une jeune Française partie à Raqqa se retrouve prisonnière d'une maison où l'on forme les futures épouses de combattants : un huis clos glaçant avec Megan Northam et Lubna Azabal.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -54,76 +102,44 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Rental Family – Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser en acteur américain à Tokyo, loué par une agence pour jouer les proches de parfaits inconnus : une fable douce-amère que les spectateurs ont bien plus aimée que la critique.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Mars Express",
-      "year": 2023,
-      "director": "Jérémie Périn",
-      "genre": "Animation, SF",
-      "where": "Netflix · depuis le 22 novembre",
-      "why": "Un polar cyberpunk sur Mars entre détective et androïdes : une pépite de l'animation française, adulte et virtuose, passée trop discrètement en salle.",
-      "scores": {
-        "allocinePresse": 4,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Revoir Paris",
-      "year": 2022,
-      "director": "Alice Winocour",
-      "genre": "Drame",
+      "title": "Le Quai des brumes",
+      "year": 1938,
+      "director": "Marcel Carné",
+      "genre": "Drame, classique",
       "where": "Arte.tv (gratuit)",
-      "why": "Virginie Efira, rescapée d'un attentat dans une brasserie parisienne, tente de reconstituer la nuit qu'elle a oubliée : un film pudique et bouleversant sur la mémoire et la reconstruction.",
+      "why": "Gabin, Michèle Morgan et son béret, Le Havre noyé de brouillard et les dialogues de Prévert : le chef-d'œuvre du réalisme poétique, à (re)voir gratuitement.",
       "scores": {
-        "allocinePresse": 4,
-        "allocineSpect": 3.9,
-        "senscritique": 6.5,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "La Chute de l'Empire romain",
-      "year": 1964,
-      "director": "Anthony Mann",
-      "genre": "Péplum, classique",
-      "where": "Arte.tv (gratuit)",
-      "why": "Sophia Loren, Stephen Boyd et Alec Guinness dans l'un des derniers grands péplums hollywoodiens, fresque crépusculaire sur la décadence de Rome après Marc Aurèle.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 3.5,
-        "senscritique": 6.7,
+        "allocinePresse": 2,
+        "allocineSpect": 4,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Black Doves",
-      "year": 2024,
-      "director": "Joe Barton",
-      "genre": "Espionnage",
-      "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw reprennent du service dans une saison 2 plus ambitieuse et plus musclée, entre humour sec et rebondissements à la chaîne.",
+      "title": "The Altruists",
+      "year": 2026,
+      "director": "Graham Moore, Jacqueline Hoyt",
+      "genre": "Drame, arnaque",
+      "where": "Netflix · mini-série depuis le 19 novembre",
+      "why": "Julia Garner et Anthony Boyle incarnent le duo derrière l'effondrement de la plateforme crypto FTX : une mini-série sur l'idéalisme qui vire à la fraude géante.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Percy Jackson et les Olympiens",
+      "year": 2023,
+      "director": "Jonathan E. Steinberg, Dan Shotz",
+      "genre": "Fantasy, aventure",
+      "where": "Disney+ · saison 3 depuis le 20 novembre",
+      "why": "Le demi-dieu repart en mission dans une troisième saison adaptée du Sort du Titan : de l'aventure mythologique à partager en famille.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -139,23 +155,7 @@
       "director": "Ashley Lyle, Bart Nickerson",
       "genre": "Thriller, survie",
       "where": "Paramount+ · saison 4 (finale) depuis le 20 novembre, épisodes hebdomadaires",
-      "why": "La quatrième et dernière saison de la série culte sur des lycéennes rescapées d'un crash en pleine forêt : l'heure des réponses, entre horreur et drame psychologique.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4 (épisodes le lundi)",
-      "why": "Le créateur de Downton Abbey poursuit sa chronique des rivalités entre vieille aristocratie et nouveaux riches du New York des années 1880, avec un luxe de costumes et de piques.",
+      "why": "La dernière saison de la série culte sur des lycéennes rescapées d'un crash en pleine forêt : l'heure des réponses, entre horreur et drame psychologique.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
