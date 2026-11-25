@@ -1,8 +1,104 @@
 {
-  "date": "2026-11-24",
-  "generatedAt": "2026-11-24T05:15:49Z",
-  "intro": "Dix titres à voir chez toi ce mardi 24 novembre : le retour de Lee Chang-dong avec Possible Love sur Netflix, Brendan Fraser dans Rental Family sur Disney+, la pépite animée Mars Express, Virginie Efira gratuite sur Arte.tv et la saison 2 de Black Doves.",
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T05:17:00Z",
+  "intro": "Dix titres à voir chez toi ce mercredi 25 novembre : L'Odyssée de Nolan enfin en VOD, Send Help de Sam Raimi sur Disney+, le classique Le Quai des brumes gratuit sur Arte.tv et le lancement de Blade Runner 2099 sur Prime Video.",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Odyssée",
+      "year": 2026,
+      "director": "Christopher Nolan",
+      "genre": "Épopée, aventure",
+      "where": "VOD · achat ou location (depuis le 18 novembre)",
+      "why": "Nolan s'attaque à Homère avec Matt Damon en Ulysse : un voyage de retour monumental, désormais à revoir chez soi après son triomphe en salles.",
+      "scores": {
+        "allocinePresse": 4.1,
+        "allocineSpect": 4.3,
+        "senscritique": 7.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Send Help",
+      "year": 2026,
+      "director": "Sam Raimi",
+      "genre": "Horreur, comédie",
+      "where": "Disney+",
+      "why": "Rachel McAdams et Dylan O'Brien, employée et patron échoués sur une île : Sam Raimi revient à la série B grinçante, entre survie et règlement de comptes.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Michael",
+      "year": 2026,
+      "director": "Antoine Fuqua",
+      "genre": "Biopic, musical",
+      "where": "Canal+ · à la demande",
+      "why": "Jaafar Jackson incarne son oncle dans ce biopic du roi de la pop : boudé par la critique, adoré par le public, surtout pour ses scènes de concert.",
+      "scores": {
+        "allocinePresse": 2.4,
+        "allocineSpect": 4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Théorème de Marguerite",
+      "year": 2023,
+      "director": "Anna Novion",
+      "genre": "Comédie dramatique",
+      "where": "Netflix",
+      "why": "Ella Rumpf en brillante doctorante en maths qui voit sa vie dérailler : une pépite française délicate sur l'obsession, l'échec et le fait de se réinventer.",
+      "scores": {
+        "allocinePresse": 3.5,
+        "allocineSpect": 3.9,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Rabia",
+      "year": 2024,
+      "director": "Mareike Engelhardt",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit)",
+      "why": "Megan Northam en jeune Française partie rejoindre Daech en Syrie : un premier film glaçant et maîtrisé sur l'embrigadement, porté par Lubna Azabal.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.6,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Quai des brumes",
+      "year": 1938,
+      "director": "Marcel Carné",
+      "genre": "Classique, drame",
+      "where": "Arte.tv (gratuit)",
+      "why": "Gabin et Michèle Morgan dans le brouillard du Havre, sur des dialogues de Prévert : le grand classique du réalisme poétique, à (re)découvrir gratuitement.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": 4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -11,119 +107,7 @@
       "director": "Lee Chang-dong",
       "genre": "Drame",
       "where": "Netflix",
-      "why": "Deux couples coréens que tout sépare se rapprochent le temps d'un été filmé par une documentariste : le retour très attendu de l'auteur de Burning, Lion d'argent à Venise.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Rental Family - Dans la vie des autres",
-      "year": 2025,
-      "director": "Hikari",
-      "genre": "Comédie dramatique",
-      "where": "Disney+",
-      "why": "Brendan Fraser en acteur américain à Tokyo, loué pour jouer les proches de parfaits inconnus : une fable douce-amère sur la solitude, plébiscitée par le public.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Rêve américain",
-      "year": 2026,
-      "director": "Anthony Marciano",
-      "genre": "Comédie",
-      "where": "Disney+",
-      "why": "Raphaël Quenard et Jean-Pascal Zadi, deux potes qui rêvent de NBA, dans une comédie inspirée d'une histoire vraie : énergique, drôle et étonnamment touchante.",
-      "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 4.2,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Un bon avocat",
-      "year": 2026,
-      "director": "Tristan Séguéla",
-      "genre": "Thriller judiciaire",
-      "where": "Netflix",
-      "why": "Laurent Lafitte en ténor du barreau face à Mélanie Laurent dans un procès sous haute tension : un film de prétoire efficace pour une soirée canapé.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Avedon",
-      "year": 2026,
-      "director": "Ron Howard",
-      "genre": "Documentaire",
-      "where": "Netflix",
-      "why": "Ron Howard plonge dans les archives de Richard Avedon, le photographe qui a façonné l'image du XXe siècle, de la mode aux portraits de l'Ouest américain.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Mars Express",
-      "year": 2023,
-      "director": "Jérémie Périn",
-      "genre": "Animation, SF",
-      "where": "Netflix",
-      "why": "Une détective et son coéquipier androïde enquêtent sur Mars : une pépite d'animation française, polar cyberpunk d'une ambition rare, à rattraper absolument.",
-      "scores": {
-        "allocinePresse": 4,
-        "allocineSpect": 4.1,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Un amour impossible",
-      "year": 2018,
-      "director": "Catherine Corsini",
-      "genre": "Drame",
-      "where": "Arte.tv (gratuit)",
-      "why": "Virginie Efira bouleversante dans l'adaptation de Christine Angot : des décennies d'un amour à sens unique et d'une relation mère-fille, filmées avec une grande justesse.",
-      "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 3.8,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "Black Doves",
-      "year": 2024,
-      "director": "Joe Barton",
-      "genre": "Espionnage",
-      "where": "Netflix · saison 2 depuis le 5 novembre",
-      "why": "Keira Knightley et Ben Whishaw reprennent du service dans un Londres d'espions et de tueurs à gages : une saison 2 nerveuse et toujours aussi élégante.",
+      "why": "Deux couples coréens que tout sépare se croisent le temps d'un été : le retour du cinéaste de Burning, toujours aussi subtil, est l'événement auteur du mois.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -134,12 +118,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Stick",
-      "year": 2025,
-      "director": "Jason Keller",
-      "genre": "Comédie, sport",
-      "where": "Apple TV · saison 2 depuis le 4 novembre",
-      "why": "Owen Wilson en ancien golfeur pro devenu mentor d'un jeune prodige : une série feel-good qui revient pour une deuxième saison sur les greens.",
+      "title": "Blade Runner 2099",
+      "year": 2026,
+      "director": "Silka Luisa",
+      "genre": "SF",
+      "where": "Prime Video · dès le 25 novembre",
+      "why": "Michelle Yeoh et Hunter Schafer prolongent l'univers de Blade Runner cinquante ans après 2049 : la grosse série SF de la fin d'année arrive aujourd'hui.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -150,12 +134,28 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Altruists",
-      "year": 2026,
-      "director": "Graham Moore, Jacqueline Hoyt",
-      "genre": "Drame, arnaque",
-      "where": "Netflix · mini-série depuis le 19 novembre",
-      "why": "Julia Garner et Anthony Boyle incarnent le duo derrière l'effondrement de la plateforme crypto FTX : une mini-série sur l'idéalisme qui vire à la fraude géante.",
+      "title": "Yellowjackets",
+      "year": 2021,
+      "director": "Ashley Lyle, Bart Nickerson",
+      "genre": "Thriller, horreur",
+      "where": "Paramount+ · saison 4 (finale) depuis le 20 novembre",
+      "why": "Les survivantes du crash reviennent pour une dernière saison : l'occasion de boucler, entre forêt sauvage et traumas d'adultes, une série culte du genre.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "The Gilded Age",
+      "year": 2022,
+      "director": "Julian Fellowes",
+      "genre": "Drame d'époque",
+      "where": "HBO Max · saison 4, un épisode par semaine",
+      "why": "Le créateur de Downton Abbey poursuit sa chronique des grandes fortunes new-yorkaises de 1880 : costumes, rivalités mondaines et intrigues feutrées.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
