@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-25T05:17:00Z",
-  "intro": "Dix titres à voir chez toi ce mercredi 25 novembre : L'Odyssée de Nolan enfin en VOD, Send Help de Sam Raimi sur Disney+, le classique Le Quai des brumes gratuit sur Arte.tv et le lancement de Blade Runner 2099 sur Prime Video.",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T05:17:00Z",
+  "intro": "Dix titres à voir chez toi ce jeudi 26 novembre : Le Rêve américain sur Disney+, Un amour impossible gratuit sur Arte.tv, Apocalypse Now Final Cut sur HBO Max et l'anime Fool Night qui débarque aujourd'hui sur Netflix.",
   "items": [
     {
       "type": "movie",
@@ -10,8 +10,8 @@
       "year": 2026,
       "director": "Christopher Nolan",
       "genre": "Épopée, aventure",
-      "where": "VOD · achat ou location (depuis le 18 novembre)",
-      "why": "Nolan s'attaque à Homère avec Matt Damon en Ulysse : un voyage de retour monumental, désormais à revoir chez soi après son triomphe en salles.",
+      "where": "VOD · achat ou location",
+      "why": "Le voyage d'Ulysse revu par Nolan, avec Matt Damon : un spectacle colossal qui gagne encore à être vu sur le plus grand écran possible de la maison.",
       "scores": {
         "allocinePresse": 4.1,
         "allocineSpect": 4.3,
@@ -22,15 +22,15 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Send Help",
+      "title": "Le Rêve américain",
       "year": 2026,
-      "director": "Sam Raimi",
-      "genre": "Horreur, comédie",
+      "director": "Anthony Marciano",
+      "genre": "Comédie",
       "where": "Disney+",
-      "why": "Rachel McAdams et Dylan O'Brien, employée et patron échoués sur une île : Sam Raimi revient à la série B grinçante, entre survie et règlement de comptes.",
+      "why": "Jean-Pascal Zadi et Raphaël Quenard, deux inconnus partis d'Amiens et d'Orly pour devenir agents NBA : une histoire vraie feel-good, très appréciée du public.",
       "scores": {
-        "allocinePresse": 3.4,
-        "allocineSpect": 3.4,
+        "allocinePresse": 3.6,
+        "allocineSpect": 4.2,
         "senscritique": null,
         "telerama": null
       }
@@ -38,47 +38,15 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Michael",
-      "year": 2026,
-      "director": "Antoine Fuqua",
-      "genre": "Biopic, musical",
-      "where": "Canal+ · à la demande",
-      "why": "Jaafar Jackson incarne son oncle dans ce biopic du roi de la pop : boudé par la critique, adoré par le public, surtout pour ses scènes de concert.",
-      "scores": {
-        "allocinePresse": 2.4,
-        "allocineSpect": 4,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Théorème de Marguerite",
-      "year": 2023,
-      "director": "Anna Novion",
-      "genre": "Comédie dramatique",
-      "where": "Netflix",
-      "why": "Ella Rumpf en brillante doctorante en maths qui voit sa vie dérailler : une pépite française délicate sur l'obsession, l'échec et le fait de se réinventer.",
-      "scores": {
-        "allocinePresse": 3.5,
-        "allocineSpect": 3.9,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Rabia",
-      "year": 2024,
-      "director": "Mareike Engelhardt",
+      "title": "Un amour impossible",
+      "year": 2018,
+      "director": "Catherine Corsini",
       "genre": "Drame",
       "where": "Arte.tv (gratuit)",
-      "why": "Megan Northam en jeune Française partie rejoindre Daech en Syrie : un premier film glaçant et maîtrisé sur l'embrigadement, porté par Lubna Azabal.",
+      "why": "Virginie Efira bouleversante dans l'adaptation de Christine Angot : des années 50 aux années 90, la relation d'une mère et de sa fille face à un homme toxique.",
       "scores": {
-        "allocinePresse": 3.4,
-        "allocineSpect": 3.6,
+        "allocinePresse": 3.7,
+        "allocineSpect": 3.8,
         "senscritique": null,
         "telerama": null
       }
@@ -86,31 +54,63 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Le Quai des brumes",
-      "year": 1938,
-      "director": "Marcel Carné",
-      "genre": "Classique, drame",
-      "where": "Arte.tv (gratuit)",
-      "why": "Gabin et Michèle Morgan dans le brouillard du Havre, sur des dialogues de Prévert : le grand classique du réalisme poétique, à (re)découvrir gratuitement.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": 4,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Possible Love",
-      "year": 2026,
-      "director": "Lee Chang-dong",
-      "genre": "Drame",
-      "where": "Netflix",
-      "why": "Deux couples coréens que tout sépare se croisent le temps d'un été : le retour du cinéaste de Burning, toujours aussi subtil, est l'événement auteur du mois.",
+      "title": "Les Filles du docteur March",
+      "year": 2019,
+      "director": "Greta Gerwig",
+      "genre": "Drame d'époque",
+      "where": "HBO Max · depuis le 25 novembre",
+      "why": "Saoirse Ronan, Florence Pugh et Timothée Chalamet dans une relecture vive et moderne du roman d'Alcott : parfaite pour un soir d'hiver.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Le Livre des solutions",
+      "year": 2023,
+      "director": "Michel Gondry",
+      "genre": "Comédie",
+      "where": "HBO Max",
+      "why": "Pierre Niney en cinéaste ingérable réfugié dans les Cévennes : Gondry fait son autoportrait bricolé, drôle et inventif, qui divise autant qu'il amuse.",
+      "scores": {
+        "allocinePresse": 3.8,
+        "allocineSpect": 2.8,
+        "senscritique": 6.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Undertone",
+      "year": 2025,
+      "director": "Ian Tuason",
+      "genre": "Horreur",
+      "where": "VOD · location",
+      "why": "Une animatrice de podcast paranormal reçoit d'étranges enregistrements : une horreur minimaliste qui mise tout sur le son, à écouter au casque, lumières éteintes.",
+      "scores": {
+        "allocinePresse": 2.9,
+        "allocineSpect": 2.4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Apocalypse Now Final Cut",
+      "year": 1979,
+      "director": "Francis Ford Coppola",
+      "genre": "Classique, guerre",
+      "where": "HBO Max",
+      "why": "La descente du capitaine Willard vers Kurtz dans sa version restaurée préférée de Coppola : un monument du cinéma à (re)voir dans les meilleures conditions.",
+      "scores": {
+        "allocinePresse": 4.8,
+        "allocineSpect": 4.4,
         "senscritique": null,
         "telerama": null
       }
@@ -122,8 +122,8 @@
       "year": 2026,
       "director": "Silka Luisa",
       "genre": "SF",
-      "where": "Prime Video · dès le 25 novembre",
-      "why": "Michelle Yeoh et Hunter Schafer prolongent l'univers de Blade Runner cinquante ans après 2049 : la grosse série SF de la fin d'année arrive aujourd'hui.",
+      "where": "Prime Video · depuis le 25 novembre",
+      "why": "Michelle Yeoh et Hunter Schafer dans l'univers de Blade Runner, un demi-siècle après 2049 : les huit épisodes de la grosse série SF de fin d'année sont disponibles.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -134,12 +134,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Yellowjackets",
-      "year": 2021,
-      "director": "Ashley Lyle, Bart Nickerson",
-      "genre": "Thriller, horreur",
-      "where": "Paramount+ · saison 4 (finale) depuis le 20 novembre",
-      "why": "Les survivantes du crash reviennent pour une dernière saison : l'occasion de boucler, entre forêt sauvage et traumas d'adultes, une série culte du genre.",
+      "title": "The Altruists",
+      "year": 2026,
+      "director": "Graham Moore, Jacqueline Hoyt",
+      "genre": "Drame, arnaque",
+      "where": "Netflix · mini-série",
+      "why": "Julia Garner et Anthony Boyle en Caroline Ellison et Sam Bankman-Fried : la chute de FTX racontée comme un couple toxique au cœur d'une arnaque géante.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -150,12 +150,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Gilded Age",
-      "year": 2022,
-      "director": "Julian Fellowes",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · saison 4, un épisode par semaine",
-      "why": "Le créateur de Downton Abbey poursuit sa chronique des grandes fortunes new-yorkaises de 1880 : costumes, rivalités mondaines et intrigues feutrées.",
+      "title": "Fool Night",
+      "year": 2026,
+      "director": "Atsushi Yukawa",
+      "genre": "Animation, SF",
+      "where": "Netflix · dès le 26 novembre",
+      "why": "Dans un monde privé de soleil, des humains acceptent de devenir des plantes pour produire de l'oxygène : un anime sombre et original, tous les épisodes d'un coup.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
