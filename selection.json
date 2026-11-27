@@ -1,21 +1,69 @@
 {
-  "date": "2026-11-26",
-  "generatedAt": "2026-11-26T05:17:00Z",
-  "intro": "Dix titres à voir chez toi ce jeudi 26 novembre : Le Rêve américain sur Disney+, Un amour impossible gratuit sur Arte.tv, Apocalypse Now Final Cut sur HBO Max et l'anime Fool Night qui débarque aujourd'hui sur Netflix.",
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T05:16:00Z",
+  "intro": "Dix titres à voir chez toi ce vendredi 27 novembre : Quasimodo avec Vincent Cassel sur Netflix, Is This Thing On? de Bradley Cooper sur Disney+, Dunkerque gratuit sur Arte.tv et la saison finale de Yellowjackets.",
   "items": [
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "L'Odyssée",
+      "title": "Quasimodo, l'âme de Paris",
       "year": 2026,
-      "director": "Christopher Nolan",
-      "genre": "Épopée, aventure",
-      "where": "VOD · achat ou location",
-      "why": "Le voyage d'Ulysse revu par Nolan, avec Matt Damon : un spectacle colossal qui gagne encore à être vu sur le plus grand écran possible de la maison.",
+      "director": "Jean-François Richet",
+      "genre": "Drame historique",
+      "where": "Netflix · dès le 27 novembre",
+      "why": "Vincent Cassel en tailleur de pierre bossu dans le Paris de 1830, à la veille des Trois Glorieuses : la grande fresque française de Netflix, qui arrive aujourd'hui.",
       "scores": {
-        "allocinePresse": 4.1,
-        "allocineSpect": 4.3,
-        "senscritique": 7.2,
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Is This Thing On?",
+      "year": 2025,
+      "director": "Bradley Cooper",
+      "genre": "Comédie dramatique",
+      "where": "Disney+ · dès le 27 novembre",
+      "why": "Will Arnett, en plein divorce, se réfugie sur les scènes de stand-up new-yorkaises face à Laura Dern : un film de couple modeste et tendre, à voir en duo.",
+      "scores": {
+        "allocinePresse": 3.6,
+        "allocineSpect": 3.4,
+        "senscritique": 6.5,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "The Mosquito Bowl",
+      "year": 2026,
+      "director": "Peter Berg",
+      "genre": "Guerre, sport",
+      "where": "Netflix",
+      "why": "Des stars du football américain s'affrontent sur un terrain de fortune avant la bataille d'Okinawa : un film de guerre musclé avec Nicholas Galitzine et Bill Skarsgård.",
+      "scores": {
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Michael",
+      "year": 2026,
+      "director": "Antoine Fuqua",
+      "genre": "Biopic, musique",
+      "where": "Canal+ · à la demande",
+      "why": "Jaafar Jackson incarne son oncle des Jackson Five aux grandes tournées : boudé par la presse, adoré du public, le phénomène de l'année est à rattraper chez soi.",
+      "scores": {
+        "allocinePresse": 2.4,
+        "allocineSpect": 4,
+        "senscritique": 5.6,
         "telerama": null
       }
     },
@@ -27,7 +75,7 @@
       "director": "Anthony Marciano",
       "genre": "Comédie",
       "where": "Disney+",
-      "why": "Jean-Pascal Zadi et Raphaël Quenard, deux inconnus partis d'Amiens et d'Orly pour devenir agents NBA : une histoire vraie feel-good, très appréciée du public.",
+      "why": "Jean-Pascal Zadi et Raphaël Quenard en agents NBA improbables partis de rien : une histoire vraie feel-good, idéale pour un vendredi soir.",
       "scores": {
         "allocinePresse": 3.6,
         "allocineSpect": 4.2,
@@ -43,7 +91,7 @@
       "director": "Catherine Corsini",
       "genre": "Drame",
       "where": "Arte.tv (gratuit)",
-      "why": "Virginie Efira bouleversante dans l'adaptation de Christine Angot : des années 50 aux années 90, la relation d'une mère et de sa fille face à un homme toxique.",
+      "why": "Virginie Efira au sommet dans l'adaptation de Christine Angot : quarante ans d'une relation mère-fille abîmée par un homme toxique, gratuitement en replay.",
       "scores": {
         "allocinePresse": 3.7,
         "allocineSpect": 3.8,
@@ -54,63 +102,31 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Les Filles du docteur March",
-      "year": 2019,
-      "director": "Greta Gerwig",
-      "genre": "Drame d'époque",
-      "where": "HBO Max · depuis le 25 novembre",
-      "why": "Saoirse Ronan, Florence Pugh et Timothée Chalamet dans une relecture vive et moderne du roman d'Alcott : parfaite pour un soir d'hiver.",
+      "title": "Dunkerque",
+      "year": 2017,
+      "director": "Christopher Nolan",
+      "genre": "Guerre",
+      "where": "Arte.tv (gratuit) · aussi sur Netflix et HBO Max",
+      "why": "L'évacuation de mai 1940 racontée sur terre, sur mer et dans les airs, au rythme d'un compte à rebours : le Nolan le plus tendu, parfait en complément de L'Odyssée.",
+      "scores": {
+        "allocinePresse": 4.1,
+        "allocineSpect": 3.9,
+        "senscritique": 6.9,
+        "telerama": null
+      }
+    },
+    {
+      "type": "tv",
+      "tmdbId": null,
+      "title": "Yellowjackets",
+      "year": 2021,
+      "director": "Ashley Lyle, Bart Nickerson",
+      "genre": "Thriller, horreur",
+      "where": "Paramount+ · saison 4 (finale) depuis le 20 novembre",
+      "why": "Les survivantes du crash dans la forêt reviennent pour une ultime saison, un épisode par semaine : le moment de rattraper ce mélange de survie et de mystère.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Livre des solutions",
-      "year": 2023,
-      "director": "Michel Gondry",
-      "genre": "Comédie",
-      "where": "HBO Max",
-      "why": "Pierre Niney en cinéaste ingérable réfugié dans les Cévennes : Gondry fait son autoportrait bricolé, drôle et inventif, qui divise autant qu'il amuse.",
-      "scores": {
-        "allocinePresse": 3.8,
-        "allocineSpect": 2.8,
-        "senscritique": 6.2,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Undertone",
-      "year": 2025,
-      "director": "Ian Tuason",
-      "genre": "Horreur",
-      "where": "VOD · location",
-      "why": "Une animatrice de podcast paranormal reçoit d'étranges enregistrements : une horreur minimaliste qui mise tout sur le son, à écouter au casque, lumières éteintes.",
-      "scores": {
-        "allocinePresse": 2.9,
-        "allocineSpect": 2.4,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Apocalypse Now Final Cut",
-      "year": 1979,
-      "director": "Francis Ford Coppola",
-      "genre": "Classique, guerre",
-      "where": "HBO Max",
-      "why": "La descente du capitaine Willard vers Kurtz dans sa version restaurée préférée de Coppola : un monument du cinéma à (re)voir dans les meilleures conditions.",
-      "scores": {
-        "allocinePresse": 4.8,
-        "allocineSpect": 4.4,
         "senscritique": null,
         "telerama": null
       }
@@ -123,7 +139,7 @@
       "director": "Silka Luisa",
       "genre": "SF",
       "where": "Prime Video · depuis le 25 novembre",
-      "why": "Michelle Yeoh et Hunter Schafer dans l'univers de Blade Runner, un demi-siècle après 2049 : les huit épisodes de la grosse série SF de fin d'année sont disponibles.",
+      "why": "Michelle Yeoh et Hunter Schafer dans l'univers de Blade Runner, cinquante ans après 2049 : toute la saison est disponible pour un week-end de SF.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -134,28 +150,12 @@
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "The Altruists",
-      "year": 2026,
-      "director": "Graham Moore, Jacqueline Hoyt",
-      "genre": "Drame, arnaque",
-      "where": "Netflix · mini-série",
-      "why": "Julia Garner et Anthony Boyle en Caroline Ellison et Sam Bankman-Fried : la chute de FTX racontée comme un couple toxique au cœur d'une arnaque géante.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "Fool Night",
-      "year": 2026,
-      "director": "Atsushi Yukawa",
-      "genre": "Animation, SF",
-      "where": "Netflix · dès le 26 novembre",
-      "why": "Dans un monde privé de soleil, des humains acceptent de devenir des plantes pour produire de l'oxygène : un anime sombre et original, tous les épisodes d'un coup.",
+      "title": "Percy Jackson et les Olympiens",
+      "year": 2023,
+      "director": "Rick Riordan, Jonathan E. Steinberg",
+      "genre": "Aventure, fantasy",
+      "where": "Disney+ · saison 3 depuis le 20 novembre",
+      "why": "Le demi-dieu et ses amis repartent à l'aventure avec les monstres de la mythologie grecque : une saison 3 hebdomadaire à partager en famille.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
