@@ -1,8 +1,40 @@
 {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T05:16:00Z",
-  "intro": "Dix titres à voir chez toi ce vendredi 27 novembre : Quasimodo avec Vincent Cassel sur Netflix, Is This Thing On? de Bradley Cooper sur Disney+, Dunkerque gratuit sur Arte.tv et la saison finale de Yellowjackets.",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T05:16:58Z",
+  "intro": "Dix titres à voir chez toi ce samedi 28 novembre : L'Odyssée de Nolan en VOD, Send Help de Sam Raimi sur Disney+, Apocalypse Now Final Cut sur HBO Max et Rabia gratuit sur Arte.tv.",
   "items": [
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "L'Odyssée",
+      "year": 2026,
+      "director": "Christopher Nolan",
+      "genre": "Épopée, aventure",
+      "where": "VOD · achat ou location depuis le 18 novembre",
+      "why": "Le retour d'Ulysse vers Ithaque filmé comme une odyssée de guerre et de monstres : le grand film de l'été, plébiscité par le public, enfin à revoir chez soi.",
+      "scores": {
+        "allocinePresse": 4.1,
+        "allocineSpect": 4.3,
+        "senscritique": 7.2,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Send Help",
+      "year": 2026,
+      "director": "Sam Raimi",
+      "genre": "Comédie horrifique",
+      "where": "Disney+",
+      "why": "Une employée méprisée et son patron odieux échouent sur une île déserte, et les rapports de force s'inversent : Sam Raimi s'amuse comme au temps d'Evil Dead, avec Rachel McAdams déchaînée.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.4,
+        "senscritique": null,
+        "telerama": null
+      }
+    },
     {
       "type": "movie",
       "tmdbId": null,
@@ -10,8 +42,8 @@
       "year": 2026,
       "director": "Jean-François Richet",
       "genre": "Drame historique",
-      "where": "Netflix · dès le 27 novembre",
-      "why": "Vincent Cassel en tailleur de pierre bossu dans le Paris de 1830, à la veille des Trois Glorieuses : la grande fresque française de Netflix, qui arrive aujourd'hui.",
+      "where": "Netflix · depuis le 27 novembre",
+      "why": "Vincent Cassel en tailleur de pierre bossu dans le Paris de 1830, à la veille des Trois Glorieuses : la grande fresque française de Netflix, sortie hier.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -26,7 +58,7 @@
       "year": 2025,
       "director": "Bradley Cooper",
       "genre": "Comédie dramatique",
-      "where": "Disney+ · dès le 27 novembre",
+      "where": "Disney+ · depuis le 27 novembre",
       "why": "Will Arnett, en plein divorce, se réfugie sur les scènes de stand-up new-yorkaises face à Laura Dern : un film de couple modeste et tendre, à voir en duo.",
       "scores": {
         "allocinePresse": 3.6,
@@ -38,12 +70,28 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "The Mosquito Bowl",
-      "year": 2026,
-      "director": "Peter Berg",
-      "genre": "Guerre, sport",
-      "where": "Netflix",
-      "why": "Des stars du football américain s'affrontent sur un terrain de fortune avant la bataille d'Okinawa : un film de guerre musclé avec Nicholas Galitzine et Bill Skarsgård.",
+      "title": "Rabia",
+      "year": 2024,
+      "director": "Mareike Engelhardt",
+      "genre": "Drame",
+      "where": "Arte.tv (gratuit)",
+      "why": "Une jeune Française partie en Syrie se retrouve enfermée dans une maison de futures épouses de djihadistes, sous la coupe d'une Lubna Azabal glaçante : un huis clos dur et nécessaire.",
+      "scores": {
+        "allocinePresse": 3.4,
+        "allocineSpect": 3.6,
+        "senscritique": 6.4,
+        "telerama": null
+      }
+    },
+    {
+      "type": "movie",
+      "tmdbId": null,
+      "title": "Les Filles du docteur March",
+      "year": 2019,
+      "director": "Greta Gerwig",
+      "genre": "Drame, romance",
+      "where": "HBO Max · depuis le 25 novembre",
+      "why": "Saoirse Ronan, Florence Pugh et Timothée Chalamet dans une relecture vive et moderne du roman de Louisa May Alcott : le film doudou idéal pour l'arrivée de décembre.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -54,76 +102,44 @@
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Michael",
-      "year": 2026,
-      "director": "Antoine Fuqua",
-      "genre": "Biopic, musique",
-      "where": "Canal+ · à la demande",
-      "why": "Jaafar Jackson incarne son oncle des Jackson Five aux grandes tournées : boudé par la presse, adoré du public, le phénomène de l'année est à rattraper chez soi.",
-      "scores": {
-        "allocinePresse": 2.4,
-        "allocineSpect": 4,
-        "senscritique": 5.6,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Le Rêve américain",
-      "year": 2026,
-      "director": "Anthony Marciano",
-      "genre": "Comédie",
-      "where": "Disney+",
-      "why": "Jean-Pascal Zadi et Raphaël Quenard en agents NBA improbables partis de rien : une histoire vraie feel-good, idéale pour un vendredi soir.",
-      "scores": {
-        "allocinePresse": 3.6,
-        "allocineSpect": 4.2,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "movie",
-      "tmdbId": null,
-      "title": "Un amour impossible",
+      "title": "Annihilation",
       "year": 2018,
-      "director": "Catherine Corsini",
-      "genre": "Drame",
-      "where": "Arte.tv (gratuit)",
-      "why": "Virginie Efira au sommet dans l'adaptation de Christine Angot : quarante ans d'une relation mère-fille abîmée par un homme toxique, gratuitement en replay.",
+      "director": "Alex Garland",
+      "genre": "SF",
+      "where": "Prime Video · depuis le 25 novembre",
+      "why": "Natalie Portman s'enfonce dans une zone où la nature mute de façon aussi belle qu'inquiétante : une pépite de SF sortie directement en streaming en France, à redécouvrir.",
       "scores": {
-        "allocinePresse": 3.7,
-        "allocineSpect": 3.8,
-        "senscritique": null,
+        "allocinePresse": null,
+        "allocineSpect": null,
+        "senscritique": 6.1,
         "telerama": null
       }
     },
     {
       "type": "movie",
       "tmdbId": null,
-      "title": "Dunkerque",
-      "year": 2017,
-      "director": "Christopher Nolan",
+      "title": "Apocalypse Now Final Cut",
+      "year": 1979,
+      "director": "Francis Ford Coppola",
       "genre": "Guerre",
-      "where": "Arte.tv (gratuit) · aussi sur Netflix et HBO Max",
-      "why": "L'évacuation de mai 1940 racontée sur terre, sur mer et dans les airs, au rythme d'un compte à rebours : le Nolan le plus tendu, parfait en complément de L'Odyssée.",
+      "where": "HBO Max",
+      "why": "La remontée du fleuve vers le colonel Kurtz dans la version restaurée voulue par Coppola : le classique absolu du film de guerre, pour une soirée d'hiver sans interruption.",
       "scores": {
-        "allocinePresse": 4.1,
-        "allocineSpect": 3.9,
-        "senscritique": 6.9,
+        "allocinePresse": 4.8,
+        "allocineSpect": 4.4,
+        "senscritique": null,
         "telerama": null
       }
     },
     {
       "type": "tv",
       "tmdbId": null,
-      "title": "Yellowjackets",
-      "year": 2021,
-      "director": "Ashley Lyle, Bart Nickerson",
-      "genre": "Thriller, horreur",
-      "where": "Paramount+ · saison 4 (finale) depuis le 20 novembre",
-      "why": "Les survivantes du crash dans la forêt reviennent pour une ultime saison, un épisode par semaine : le moment de rattraper ce mélange de survie et de mystère.",
+      "title": "Black Doves",
+      "year": 2024,
+      "director": "Joe Barton",
+      "genre": "Espionnage",
+      "where": "Netflix · saison 2 depuis le 5 novembre",
+      "why": "Keira Knightley et Ben Whishaw reprennent du service dans un Londres d'espions et de tueurs à gages : six épisodes nerveux à enchaîner ce week-end.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
@@ -139,23 +155,7 @@
       "director": "Silka Luisa",
       "genre": "SF",
       "where": "Prime Video · depuis le 25 novembre",
-      "why": "Michelle Yeoh et Hunter Schafer dans l'univers de Blade Runner, cinquante ans après 2049 : toute la saison est disponible pour un week-end de SF.",
-      "scores": {
-        "allocinePresse": null,
-        "allocineSpect": null,
-        "senscritique": null,
-        "telerama": null
-      }
-    },
-    {
-      "type": "tv",
-      "tmdbId": null,
-      "title": "Percy Jackson et les Olympiens",
-      "year": 2023,
-      "director": "Rick Riordan, Jonathan E. Steinberg",
-      "genre": "Aventure, fantasy",
-      "where": "Disney+ · saison 3 depuis le 20 novembre",
-      "why": "Le demi-dieu et ses amis repartent à l'aventure avec les monstres de la mythologie grecque : une saison 3 hebdomadaire à partager en famille.",
+      "why": "Michelle Yeoh et Hunter Schafer dans l'univers de Blade Runner, cinquante ans après 2049 : toute la saison est disponible pour prolonger la soirée SF après Annihilation.",
       "scores": {
         "allocinePresse": null,
         "allocineSpect": null,
